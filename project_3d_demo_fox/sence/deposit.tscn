@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://cp7gtpj8m2mdg"]
+
+[ext_resource type="Script" uid="uid://mthda7y7n888" path="res://script/deposit.gd" id="1_dd0rx"]
+
+[node name="Deposit" type="Node3D"]
+script = ExtResource("1_dd0rx")
+
+[node name="Area_activate" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area_activate"]
+
+[connection signal="body_entered" from="Area_activate" to="." method="_on_area_activate_body_entered"]

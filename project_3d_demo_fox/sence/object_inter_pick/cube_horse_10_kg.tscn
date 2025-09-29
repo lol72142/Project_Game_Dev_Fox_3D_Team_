@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://by54gks6vvqwo"]
+
+[ext_resource type="PackedScene" uid="uid://cupdv6luetiu0" path="res://sence/Horse.glb" id="1_c4idl"]
+[ext_resource type="PackedScene" uid="uid://c4endkkv5qabi" path="res://sence/inter_component_obj.tscn" id="2_r1dhn"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7foga"]
+size = Vector3(0.6, 1, 0.6)
+
+[node name="cube_horse_10kg" type="RigidBody3D" groups=["item_deposit"]]
+mass = 10.0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_7foga")
+
+[node name="Horse" parent="." instance=ExtResource("1_c4idl")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+
+[node name="inter_component_obj" parent="." node_paths=PackedStringArray("object_ref") instance=ExtResource("2_r1dhn")]
+object_ref = NodePath("..")
