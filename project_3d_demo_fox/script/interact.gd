@@ -4,14 +4,13 @@ extends Node
 @onready var raycast_: RayCast3D = %RayCast3D
 @onready var camera_: Camera3D = %Camera3D
 @onready var hand_: Marker3D = %Hand
-@onready var player: CharacterBody3D = $".."
 
 var current_obj_inter: Object
 var last_potential_obj: Object
 var insteraction_component: Node
 
-func _physics_process(delta: float) -> void:
-	
+func _process(delta: float) -> void:
+	$"../AimCursor".modulate = Color(255,255,255,1.0)
 	if current_obj_inter:
 		if Input.is_action_just_pressed('secound'):
 			if insteraction_component:
@@ -35,7 +34,7 @@ func _physics_process(delta: float) -> void:
 				if insteraction_component.can_interact == false:
 					return
 				last_potential_obj = current_obj_inter
-				
+				$"../AimCursor".modulate = Color(255,0,0,1.0)
 				if Input.is_action_pressed("primary"):
 					current_obj_inter = po_object
-					insteraction_component.pre_interact(player)
+					insteraction_component.pre_interact(hand_)

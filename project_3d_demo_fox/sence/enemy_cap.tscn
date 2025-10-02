@@ -34,4 +34,4 @@ script = ExtResource("3_gmvms")
 metadata/_custom_type_script = "uid://d4ndiff0ngmlv"
 
 [node name="Untitled" parent="." instance=ExtResource("5_gjatf")]
-transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -0.000301562, 0, -0.168786)
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -0.000301562, 0, 0.3478431)

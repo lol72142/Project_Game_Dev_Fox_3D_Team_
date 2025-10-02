@@ -62,6 +62,9 @@ func _physics_process(delta: float) -> void:
 	var target_FOV = Base_FOV + FOV_change * velocity_clamed
 	camera.fov = lerp(camera.fov, target_FOV, delta * 1)
 	
+	#if position.y <= -100.0:
+		#queue_free()
+	
 	move_and_slide()
 
 func head_bob(time) -> Vector3:
@@ -69,3 +72,4 @@ func head_bob(time) -> Vector3:
 	posi.y = sin(time * Walk_bo_freq) * Walk_bo_amp
 	posi.x = sin(time * Walk_bo_freq / 2) * Walk_bo_amp
 	return posi
+	
