@@ -27,8 +27,21 @@ func process(delta: float) -> void:
 	if enemy.global_position.distance_to(player.global_position) < enemy.chace_distance:
 		emit_signal('Transition', self, "EnemyChase")
 	
+#func physics_process(delta: float) -> void:
+	#enemy.velocity = warder_direction * enemy.walk_speed
+	#
+	#if not enemy.is_on_floor():
+		#enemy.velocity.y -= gravity * delta
+		
 func physics_process(delta: float) -> void:
 	enemy.velocity = warder_direction * enemy.walk_speed
 	
 	if not enemy.is_on_floor():
 		enemy.velocity.y -= gravity * delta
+	
+	var horizontal_velocity = Vector3(enemy.velocity.x, 0, enemy.velocity.z)
+	if horizontal_velocity.length() > 0.1 and enemy.global_position.distance_to(player.global_position) > enemy.chace_distance:
+		var direction = horizontal_velocity.normalized()
+		var target_rotation = atan2(direction.x, direction.z)
+		
+		enemy.rotation.y = lerp_angle(enemy.rotation.y, target_rotation, delta * 2.0)  # 5.0 = turn speed
