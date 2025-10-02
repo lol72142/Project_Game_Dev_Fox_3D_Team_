@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://ba1x65lq21ms4"]
+
+[ext_resource type="PackedScene" uid="uid://dl4hckn4uxmi3" path="res://super_nature/CommonTree_2.gltf" id="1_ppt2v"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_snyu7"]
+radius = 0.75
+height = 8.0
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_udxc6"]
+radius = 0.75
+height = 8.0
+
+[node name="CommonTree_22" instance=ExtResource("1_ppt2v")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.661681, 0)
+shape = SubResource("CapsuleShape3D_snyu7")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="StaticBody3D" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.015189, 0)
+shape = SubResource("CapsuleShape3D_udxc6")
