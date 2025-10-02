@@ -1,7 +1,6 @@
 extends RigidBody3D
 
 func _integrate_forces(state: PhysicsDirectBodyState3D) -> void:
-	print("a")
 	var contact_count = state.get_contact_count()
 	if contact_count > 0:
 		for i in range(contact_count):

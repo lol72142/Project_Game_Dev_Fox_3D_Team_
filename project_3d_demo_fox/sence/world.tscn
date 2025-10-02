@@ -1,4 +1,4 @@
-[gd_scene load_steps=56 format=3 uid="uid://b05vi2tlnpcfv"]
+[gd_scene load_steps=57 format=3 uid="uid://b05vi2tlnpcfv"]
 
 [ext_resource type="PackedScene" uid="uid://bbxop6nt0x0t1" path="res://sence/player.tscn" id="1_f3sb7"]
 [ext_resource type="Texture2D" uid="uid://bsfp64dod28al" path="res://Grass_Ground_Texture.jpg" id="2_2rab3"]
@@ -32,6 +32,7 @@
 [ext_resource type="ArrayMesh" uid="uid://d0klhs1na7w4p" path="res://farm_h/OBJ/SmallBarn.obj" id="30_lt5b1"]
 [ext_resource type="ArrayMesh" uid="uid://crc4xt5dcegar" path="res://farm_h/OBJ/TowerWindmill.obj" id="31_s1t77"]
 [ext_resource type="PackedScene" uid="uid://crumkuh7mqpre" path="res://sence/object_inter_pick/chicken_3_kg.tscn" id="32_haiqs"]
+[ext_resource type="PackedScene" uid="uid://du1fd074vg7b1" path="res://sence/object_inter_pick/car_vehi.tscn" id="33_haiqs"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_f3sb7"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -506,10 +507,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.19775, -31)
 [node name="inter_com_pick_able" type="Node3D" parent="."]
 
 [node name="cube_1kg" parent="inter_com_pick_able" instance=ExtResource("3_aqk2v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.38218, 0, 0)
 
 [node name="cube_horse_10kg" parent="inter_com_pick_able" instance=ExtResource("4_aqk2v")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3)
-mass = 5.0
 
 [node name="chicken_1kg" parent="inter_com_pick_able" instance=ExtResource("32_haiqs")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 75.4221, 0.0390233, -11.6798)
@@ -534,6 +535,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 59.9899, 0.0390252, -29.2892)
 
 [node name="chicken_1kg8" parent="inter_com_pick_able" instance=ExtResource("32_haiqs")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 80.4723, 7.47434, -11.9491)
+
+[node name="cube_1kg2" parent="inter_com_pick_able" instance=ExtResource("33_haiqs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.28917, 0.0430002, -0.146071)
 
 [node name="bill_bord" type="Node3D" parent="."]
 
