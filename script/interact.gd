@@ -10,7 +10,7 @@ var current_obj_inter: Object
 var last_potential_obj: Object
 var insteraction_component: Node
 var max_range = -5
-var min_range = -1
+var min_range = -2
 var current_range = -4
 
 func _physics_process(delta: float) -> void:
@@ -26,7 +26,9 @@ func _physics_process(delta: float) -> void:
 				insteraction_component.interact()
 				
 		else:
-			print("aaa")
+			current_range = -4
+			hand_.position.z = current_range
+			raycast_.target_position.z = current_range
 			if insteraction_component:
 				insteraction_component.post_interact()
 				current_obj_inter = null
@@ -52,12 +54,15 @@ func _input(event: InputEvent) -> void:
 		if current_range >= max_range:
 			hand_.position.z = current_range
 			raycast_.target_position.z = current_range
-			
 		else:
-			current_range += 1
+			current_range += 0.5
+			
 	elif event.is_action("scroll_down"):
 		current_range += 0.5
 		if current_range <= min_range:
 			hand_.position.z = current_range
 			raycast_.target_position.z = current_range
+		else:
+			current_range -= 0.5
+		
 			

@@ -1,8 +1,7 @@
-[gd_scene load_steps=21 format=3 uid="uid://btxvjhxs3wn1b"]
+[gd_scene load_steps=20 format=3 uid="uid://btxvjhxs3wn1b"]
 
 [ext_resource type="Script" uid="uid://clhgpds7ta4bd" path="res://Forest/forest.gd" id="1_ouyis"]
-[ext_resource type="PackedScene" uid="uid://v6dfp3jtp4hi" path="res://Forest/Tree/with_col/moretree_1.tscn" id="3_851gr"]
-[ext_resource type="PackedScene" uid="uid://c6g1hyug1yf61" path="res://Forest/Tree/with_col/mmmoretree_1.tscn" id="4_gdb1i"]
+[ext_resource type="PackedScene" uid="uid://vg0146rwyhtg" path="res://Forest/nature_aaa.tscn" id="2_ouyis"]
 [ext_resource type="PackedScene" uid="uid://hl3hqs7ulecw" path="res://Forest/Building/Lantern.tscn" id="8_hlfit"]
 [ext_resource type="ArrayMesh" uid="uid://bxecf50pc56s0" path="res://farm_h/OBJ/BigBarn.obj" id="8_xqgi7"]
 [ext_resource type="PackedScene" uid="uid://e3u0uhb4kmol" path="res://Forest/Building/farmland.tscn" id="9_17w74"]
@@ -17,6 +16,7 @@
 
 [sub_resource type="Environment" id="Environment_tyvbe"]
 ambient_light_source = 2
+ambient_light_color = Color(1, 1, 1, 1)
 tonemap_exposure = 0.1
 fog_enabled = true
 fog_light_energy = 0.4
@@ -46,6 +46,7 @@ script = ExtResource("1_ouyis")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 60.8585, 0)
+light_color = Color(0, 0, 0, 1)
 light_energy = 3.0
 light_specular = 0.0
 light_bake_mode = 1
@@ -60,26 +61,7 @@ environment = SubResource("Environment_tyvbe")
 
 [node name="env" type="Node3D" parent="ForPath"]
 
-[node name="Nature" type="Node3D" parent="ForPath/env"]
-transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0)
-
-[node name="big_moretree_1" parent="ForPath/env/Nature" instance=ExtResource("4_gdb1i")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.699, 0, -17.0454)
-
-[node name="big_moretree_5" parent="ForPath/env/Nature" instance=ExtResource("4_gdb1i")]
-transform = Transform3D(0.198136, 0, -0.980174, 0, 1, 0, 0.980174, 0, 0.198136, 34.8414, 0, -17.0454)
-
-[node name="big_moretree_2" parent="ForPath/env/Nature" instance=ExtResource("4_gdb1i")]
-transform = Transform3D(0.97455, 0, -0.224169, 0, 1, 0, 0.224169, 0, 0.97455, -14.6, 0, -16.002)
-
-[node name="moretree9" parent="ForPath/env/Nature" instance=ExtResource("3_851gr")]
-transform = Transform3D(0.91713, 0, -0.398589, 0, 1, 0, 0.398589, 0, 0.91713, -26.8814, 0, -31.8553)
-
-[node name="big_moretree_3" parent="ForPath/env/Nature" instance=ExtResource("4_gdb1i")]
-transform = Transform3D(0.00411899, 0, 0.999992, 0, 1, 0, -0.999992, 0, 0.00411899, -15.4891, 0, 13.1804)
-
-[node name="big_moretree_4" parent="ForPath/env/Nature" instance=ExtResource("4_gdb1i")]
-transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, -6.77037, 0, -16.6459)
+[node name="Nature" parent="ForPath/env" instance=ExtResource("2_ouyis")]
 
 [node name="Building" type="Node3D" parent="ForPath/env"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
@@ -608,6 +590,8 @@ transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 172.017, 0, 36.3236)
 [node name="Home" parent="ForPath/env" instance=ExtResource("11_ouyis")]
 transform = Transform3D(0.940229, 0, -0.340544, 0, 1, 0, 0.340544, 0, 0.940229, -185.742, 0.5, -184.334)
 
+[node name="test" type="Node3D" parent="ForPath/env"]
+
 [node name="CharacterBody3D" parent="." instance=ExtResource("11_3q7rk")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -181.356, 1.14404, -182.324)
 
@@ -800,32 +784,26 @@ shape = SubResource("BoxShape3D_ouyis")
 
 [node name="OuterForest" type="Node3D" parent="."]
 
-[node name="wallttree" parent="OuterForest" instance=ExtResource("14_dlcfm")]
-transform = Transform3D(-2.18557e-07, 0, 5, 0, 5, 0, -5, 0, -2.18557e-07, -228.394, 0, -142.591)
-
 [node name="wallttree2" parent="OuterForest" instance=ExtResource("14_dlcfm")]
-transform = Transform3D(-2.18557e-07, 0, 5, 0, 5, 0, -5, 0, -2.18557e-07, -228.394, 0, -82.6731)
+transform = Transform3D(-2.18557e-07, 0, 5, 0, 5, 0, -5, 0, -2.18557e-07, -200.70396, 0, -82.6731)
 
 [node name="wallttree3" parent="OuterForest" instance=ExtResource("14_dlcfm")]
 transform = Transform3D(-2.18557e-07, 0, 5, 0, 5, 0, -5, 0, -2.18557e-07, -228.394, 0, 48.6384)
 
-[node name="wallttree4" parent="OuterForest" instance=ExtResource("14_dlcfm")]
-transform = Transform3D(-2.18557e-07, 0, 5, 0, 5, 0, -5, 0, -2.18557e-07, -228.394, 0, 105.589)
-
 [node name="wallttree5" parent="OuterForest" instance=ExtResource("14_dlcfm")]
-transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -70.7196, 0, 240.773)
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -70.7196, 0, 232.94768)
 
 [node name="wallttree6" parent="OuterForest" instance=ExtResource("14_dlcfm")]
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 51.6558, 0, 240.773)
 
 [node name="wallttree7" parent="OuterForest" instance=ExtResource("14_dlcfm")]
-transform = Transform3D(-2.18557e-07, 0, 5, 0, 5, 0, -5, 0, -2.18557e-07, 254.364, 0, 80.4402)
+transform = Transform3D(-2.18557e-07, 0, 5, 0, 5, 0, -5, 0, -2.18557e-07, 252.61363, 0, 80.4402)
 
 [node name="wallttree8" parent="OuterForest" instance=ExtResource("14_dlcfm")]
 transform = Transform3D(-2.18557e-07, 0, 5, 0, 5, 0, -5, 0, -2.18557e-07, 254.364, 0, -97.6804)
 
 [node name="wallttree9" parent="OuterForest" instance=ExtResource("14_dlcfm")]
-transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 168.887, 0, -236.398)
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 168.887, 0, -217.6847)
 
 [node name="wallttree10" parent="OuterForest" instance=ExtResource("14_dlcfm")]
-transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -84.2577, 0, -231.111)
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -84.2577, 0, -213.31306)

@@ -84,6 +84,8 @@ func _physics_process(delta: float) -> void:
 	var target_FOV = Base_FOV + FOV_change * velocity_clamed
 	camera.fov = lerp(camera.fov, target_FOV, delta * 1)
 	
+	
+
 	#if position.y <= -100.0:
 		#queue_free()
 	

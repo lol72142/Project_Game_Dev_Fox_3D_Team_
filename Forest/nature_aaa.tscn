@@ -1,0 +1,54 @@
+[gd_scene load_steps=4 format=3 uid="uid://vg0146rwyhtg"]
+
+[ext_resource type="Script" uid="uid://dxhm7m338dmjr" path="res://script/nature_parent.gd" id="1_cayok"]
+[ext_resource type="PackedScene" uid="uid://c6g1hyug1yf61" path="res://Forest/Tree/with_col/mmmoretree_1.tscn" id="2_21bij"]
+[ext_resource type="PackedScene" uid="uid://v6dfp3jtp4hi" path="res://Forest/Tree/with_col/moretree_1.tscn" id="3_2pveo"]
+
+[node name="Nature" type="Node3D" node_paths=PackedStringArray("player_node")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0)
+script = ExtResource("1_cayok")
+player_node = NodePath("")
+
+[node name="big_moretree_1" parent="." instance=ExtResource("2_21bij")]
+transform = Transform3D(0.99774915, 0, 0.06705755, 0, 1, 0, -0.06705755, 0, 0.99774915, 8.699, 0, -17.0454)
+
+[node name="big_moretree_5" parent="." instance=ExtResource("2_21bij")]
+transform = Transform3D(0.198136, 0, -0.980174, 0, 1, 0, 0.980174, 0, 0.198136, 34.8414, 0, -17.0454)
+
+[node name="big_moretree_2" parent="." instance=ExtResource("2_21bij")]
+transform = Transform3D(0.764089, 0, 0.6451107, 0, 1, 0, -0.6451107, 0, 0.764089, -14.6, 0, -16.002)
+
+[node name="moretree2" parent="big_moretree_2" index="0"]
+visible = true
+
+[node name="moretree4" parent="big_moretree_2" index="2"]
+visible = true
+
+[node name="moretree5" parent="big_moretree_2" index="3"]
+visible = true
+
+[node name="moretree6" parent="big_moretree_2" index="4"]
+visible = true
+
+[node name="moretree7" parent="big_moretree_2" index="5"]
+visible = true
+
+[node name="moretree8" parent="big_moretree_2" index="6"]
+visible = true
+
+[node name="moretree9" parent="." instance=ExtResource("3_2pveo")]
+transform = Transform3D(0.91713, 0, -0.398589, 0, 1, 0, 0.398589, 0, 0.91713, -26.8814, 0, -31.8553)
+visible = true
+
+[node name="big_moretree_3" parent="." instance=ExtResource("2_21bij")]
+transform = Transform3D(0.00411899, 0, 0.999992, 0, 1, 0, -0.999992, 0, 0.00411899, -15.4891, 0, 13.1804)
+
+[node name="big_moretree_4" parent="." instance=ExtResource("2_21bij")]
+transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, -6.77037, 0, -16.6459)
+
+[editable path="big_moretree_1"]
+[editable path="big_moretree_1/moretree2"]
+[editable path="big_moretree_1/moretree2/Tree_1"]
+[editable path="big_moretree_2"]
+[editable path="big_moretree_2/moretree2"]
+[editable path="big_moretree_2/moretree2/Tree_1"]

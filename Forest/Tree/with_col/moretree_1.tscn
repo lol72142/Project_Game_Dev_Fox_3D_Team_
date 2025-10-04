@@ -1,8 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://v6dfp3jtp4hi"]
+[gd_scene load_steps=4 format=3 uid="uid://v6dfp3jtp4hi"]
 
 [ext_resource type="PackedScene" uid="uid://8donvon65h2o" path="res://Forest/Tree/with_col/tree_1.tscn" id="1_0fwx1"]
+[ext_resource type="Script" uid="uid://ubdwopw2rf6u" path="res://script/moretree_1_tag.gd" id="1_6gngx"]
 
-[node name="moretree" type="Node3D"]
+[sub_resource type="BoxShape3D" id="BoxShape3D_b656q"]
+size = Vector3(30, 5, 30)
+
+[node name="moretree" type="StaticBody3D" groups=["textures"]]
+visible = false
+script = ExtResource("1_6gngx")
 
 [node name="Tree_1" parent="." instance=ExtResource("1_0fwx1")]
 transform = Transform3D(0.984808, 0, 0.173648, 0, 1, 0, -0.173648, 0, 0.984808, -3.18515, 0, 0)
@@ -33,3 +39,11 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -6.039
 
 [node name="Tree_10" parent="." instance=ExtResource("1_0fwx1")]
 transform = Transform3D(-0.173648, 0, 0.984808, 0, 1, 0, -0.984808, 0, -0.173648, 6.15726, 0, 4.30117)
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+shape = SubResource("BoxShape3D_b656q")
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]
+[connection signal="body_exited" from="Area3D" to="." method="_on_area_3d_body_exited"]

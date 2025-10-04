@@ -9,12 +9,6 @@ transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0)
 
 [node name="moretree" type="Node3D" parent="more"]
 
-[node name="Tree_1" parent="more/moretree" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.984808, 0, 0.173648, 0, 1, 0, -0.173648, 0, 0.984808, -3.18515, 0, 0)
-
-[node name="Tree_2" parent="more/moretree" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.939693, 0, 0.34202, 0, 1, 0, -0.34202, 0, 0.939693, -2.28977, 0, 3.73129)
-
 [node name="Tree_3" parent="more/moretree" instance=ExtResource("1_7y31o")]
 transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, -1.62153, 0, -4.53096)
 
@@ -24,38 +18,14 @@ transform = Transform3D(0.766044, 0, 0.642788, 0, 1, 0, -0.642788, 0, 0.766044, 
 [node name="Tree_5" parent="more/moretree" instance=ExtResource("1_7y31o")]
 transform = Transform3D(0.642788, 0, 0.766044, 0, 1, 0, -0.766044, 0, 0.642788, 2.64216, 0, -7.57602)
 
-[node name="Tree_6" parent="more/moretree" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, 0.5, 4.01101, 0, 0.920482)
-
-[node name="Tree_7" parent="more/moretree" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.34202, 0, 0.939693, 0, 1, 0, -0.939693, 0, 0.34202, 0.570691, 0, 3.54817)
-
-[node name="Tree_8" parent="more/moretree" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.173648, 0, 0.984808, 0, 1, 0, -0.984808, 0, 0.173648, -6.7028, 0, 3.20482)
-
 [node name="Tree_9" parent="more/moretree" instance=ExtResource("1_7y31o")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -6.03959, 0, -4.15552)
-
-[node name="Tree_10" parent="more/moretree" instance=ExtResource("1_7y31o")]
-transform = Transform3D(-0.173648, 0, 0.984808, 0, 1, 0, -0.984808, 0, -0.173648, 6.15726, 0, 4.30117)
 
 [node name="moretree3" type="Node3D" parent="more"]
 transform = Transform3D(-0.500302, 0, 0.865851, 0, 1, 0, -0.865851, 0, -0.500302, 0, 0, 0)
 
-[node name="Tree_1" parent="more/moretree3" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.984808, 0, 0.173648, 0, 1, 0, -0.173648, 0, 0.984808, -3.18515, 0, 0)
-
-[node name="Tree_2" parent="more/moretree3" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.939693, 0, 0.34202, 0, 1, 0, -0.34202, 0, 0.939693, -2.28977, 0, 3.73129)
-
-[node name="Tree_3" parent="more/moretree3" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, -1.62153, 0, -4.53096)
-
 [node name="Tree_4" parent="more/moretree3" instance=ExtResource("1_7y31o")]
 transform = Transform3D(0.766044, 0, 0.642788, 0, 1, 0, -0.642788, 0, 0.766044, 3.78285, 0, -3.1115)
-
-[node name="Tree_5" parent="more/moretree3" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.642788, 0, 0.766044, 0, 1, 0, -0.766044, 0, 0.642788, 2.64216, 0, -7.57602)
 
 [node name="Tree_6" parent="more/moretree3" instance=ExtResource("1_7y31o")]
 transform = Transform3D(0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, 0.5, 4.01101, 0, 0.920482)
@@ -63,32 +33,14 @@ transform = Transform3D(0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, 0.5, 4.01101, 0
 [node name="Tree_7" parent="more/moretree3" instance=ExtResource("1_7y31o")]
 transform = Transform3D(0.34202, 0, 0.939693, 0, 1, 0, -0.939693, 0, 0.34202, 0.570691, 0, 3.54817)
 
-[node name="Tree_8" parent="more/moretree3" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.173648, 0, 0.984808, 0, 1, 0, -0.984808, 0, 0.173648, -6.7028, 0, 3.20482)
-
-[node name="Tree_9" parent="more/moretree3" instance=ExtResource("1_7y31o")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -6.03959, 0, -4.15552)
-
 [node name="Tree_10" parent="more/moretree3" instance=ExtResource("1_7y31o")]
 transform = Transform3D(-0.173648, 0, 0.984808, 0, 1, 0, -0.984808, 0, -0.173648, 6.15726, 0, 4.30117)
 
 [node name="moretree4" type="Node3D" parent="more"]
 transform = Transform3D(-0.928466, 0, 0.371416, 0, 1, 0, -0.371416, 0, -0.928466, 0, 0, 0)
 
-[node name="Tree_1" parent="more/moretree4" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.984808, 0, 0.173648, 0, 1, 0, -0.173648, 0, 0.984808, -3.18515, 0, 0)
-
 [node name="Tree_2" parent="more/moretree4" instance=ExtResource("1_7y31o")]
 transform = Transform3D(0.939693, 0, 0.34202, 0, 1, 0, -0.34202, 0, 0.939693, -2.28977, 0, 3.73129)
-
-[node name="Tree_3" parent="more/moretree4" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, -1.62153, 0, -4.53096)
-
-[node name="Tree_4" parent="more/moretree4" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.766044, 0, 0.642788, 0, 1, 0, -0.642788, 0, 0.766044, 3.78285, 0, -3.1115)
-
-[node name="Tree_5" parent="more/moretree4" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.642788, 0, 0.766044, 0, 1, 0, -0.766044, 0, 0.642788, 2.64216, 0, -7.57602)
 
 [node name="Tree_6" parent="more/moretree4" instance=ExtResource("1_7y31o")]
 transform = Transform3D(0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, 0.5, 4.01101, 0, 0.920482)
@@ -96,23 +48,11 @@ transform = Transform3D(0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, 0.5, 4.01101, 0
 [node name="Tree_7" parent="more/moretree4" instance=ExtResource("1_7y31o")]
 transform = Transform3D(0.34202, 0, 0.939693, 0, 1, 0, -0.939693, 0, 0.34202, 0.570691, 0, 3.54817)
 
-[node name="Tree_8" parent="more/moretree4" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.173648, 0, 0.984808, 0, 1, 0, -0.984808, 0, 0.173648, -6.7028, 0, 3.20482)
-
-[node name="Tree_9" parent="more/moretree4" instance=ExtResource("1_7y31o")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -6.03959, 0, -4.15552)
-
 [node name="Tree_10" parent="more/moretree4" instance=ExtResource("1_7y31o")]
 transform = Transform3D(-0.173648, 0, 0.984808, 0, 1, 0, -0.984808, 0, -0.173648, 6.15726, 0, 4.30117)
 
 [node name="moretree2" type="Node3D" parent="more"]
 transform = Transform3D(0.574848, 0, 0.81826, 0, 1, 0, -0.81826, 0, 0.574848, 1.24387, 0, -1.09837)
-
-[node name="Tree_1" parent="more/moretree2" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.984808, 0, 0.173648, 0, 1, 0, -0.173648, 0, 0.984808, -3.18515, 0, 0)
-
-[node name="Tree_2" parent="more/moretree2" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.939693, 0, 0.34202, 0, 1, 0, -0.34202, 0, 0.939693, -2.28977, 0, 3.73129)
 
 [node name="Tree_3" parent="more/moretree2" instance=ExtResource("1_7y31o")]
 transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, -1.62153, 0, -4.53096)
@@ -126,15 +66,6 @@ transform = Transform3D(0.642788, 0, 0.766044, 0, 1, 0, -0.766044, 0, 0.642788, 
 [node name="Tree_6" parent="more/moretree2" instance=ExtResource("1_7y31o")]
 transform = Transform3D(0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, 0.5, 4.01101, 0, 0.920482)
 
-[node name="Tree_7" parent="more/moretree2" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.34202, 0, 0.939693, 0, 1, 0, -0.939693, 0, 0.34202, 0.570691, 0, 3.54817)
-
-[node name="Tree_8" parent="more/moretree2" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.173648, 0, 0.984808, 0, 1, 0, -0.984808, 0, 0.173648, -6.7028, 0, 3.20482)
-
-[node name="Tree_9" parent="more/moretree2" instance=ExtResource("1_7y31o")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -6.03959, 0, -4.15552)
-
 [node name="Tree_10" parent="more/moretree2" instance=ExtResource("1_7y31o")]
 transform = Transform3D(-0.173648, 0, 0.984808, 0, 1, 0, -0.984808, 0, -0.173648, 6.15726, 0, 4.30117)
 
@@ -142,12 +73,6 @@ transform = Transform3D(-0.173648, 0, 0.984808, 0, 1, 0, -0.984808, 0, -0.173648
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.9283, 0, 0)
 
 [node name="moretree" type="Node3D" parent="more2"]
-
-[node name="Tree_1" parent="more2/moretree" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.984808, 0, 0.173648, 0, 1, 0, -0.173648, 0, 0.984808, -3.18515, 0, 0)
-
-[node name="Tree_2" parent="more2/moretree" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.939693, 0, 0.34202, 0, 1, 0, -0.34202, 0, 0.939693, -2.28977, 0, 3.73129)
 
 [node name="Tree_3" parent="more2/moretree" instance=ExtResource("1_7y31o")]
 transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, -1.62153, 0, -4.53096)
@@ -158,38 +83,14 @@ transform = Transform3D(0.766044, 0, 0.642788, 0, 1, 0, -0.642788, 0, 0.766044, 
 [node name="Tree_5" parent="more2/moretree" instance=ExtResource("1_7y31o")]
 transform = Transform3D(0.642788, 0, 0.766044, 0, 1, 0, -0.766044, 0, 0.642788, 2.64216, 0, -7.57602)
 
-[node name="Tree_6" parent="more2/moretree" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, 0.5, 4.01101, 0, 0.920482)
-
-[node name="Tree_7" parent="more2/moretree" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.34202, 0, 0.939693, 0, 1, 0, -0.939693, 0, 0.34202, 0.570691, 0, 3.54817)
-
-[node name="Tree_8" parent="more2/moretree" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.173648, 0, 0.984808, 0, 1, 0, -0.984808, 0, 0.173648, -6.7028, 0, 3.20482)
-
 [node name="Tree_9" parent="more2/moretree" instance=ExtResource("1_7y31o")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -6.03959, 0, -4.15552)
-
-[node name="Tree_10" parent="more2/moretree" instance=ExtResource("1_7y31o")]
-transform = Transform3D(-0.173648, 0, 0.984808, 0, 1, 0, -0.984808, 0, -0.173648, 6.15726, 0, 4.30117)
 
 [node name="moretree3" type="Node3D" parent="more2"]
 transform = Transform3D(-0.500302, 0, 0.865851, 0, 1, 0, -0.865851, 0, -0.500302, 0, 0, 0)
 
-[node name="Tree_1" parent="more2/moretree3" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.984808, 0, 0.173648, 0, 1, 0, -0.173648, 0, 0.984808, -3.18515, 0, 0)
-
-[node name="Tree_2" parent="more2/moretree3" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.939693, 0, 0.34202, 0, 1, 0, -0.34202, 0, 0.939693, -2.28977, 0, 3.73129)
-
-[node name="Tree_3" parent="more2/moretree3" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, -1.62153, 0, -4.53096)
-
 [node name="Tree_4" parent="more2/moretree3" instance=ExtResource("1_7y31o")]
 transform = Transform3D(0.766044, 0, 0.642788, 0, 1, 0, -0.642788, 0, 0.766044, 3.78285, 0, -3.1115)
-
-[node name="Tree_5" parent="more2/moretree3" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.642788, 0, 0.766044, 0, 1, 0, -0.766044, 0, 0.642788, 2.64216, 0, -7.57602)
 
 [node name="Tree_6" parent="more2/moretree3" instance=ExtResource("1_7y31o")]
 transform = Transform3D(0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, 0.5, 4.01101, 0, 0.920482)
@@ -197,32 +98,11 @@ transform = Transform3D(0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, 0.5, 4.01101, 0
 [node name="Tree_7" parent="more2/moretree3" instance=ExtResource("1_7y31o")]
 transform = Transform3D(0.34202, 0, 0.939693, 0, 1, 0, -0.939693, 0, 0.34202, 0.570691, 0, 3.54817)
 
-[node name="Tree_8" parent="more2/moretree3" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.173648, 0, 0.984808, 0, 1, 0, -0.984808, 0, 0.173648, -6.7028, 0, 3.20482)
-
-[node name="Tree_9" parent="more2/moretree3" instance=ExtResource("1_7y31o")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -6.03959, 0, -4.15552)
-
-[node name="Tree_10" parent="more2/moretree3" instance=ExtResource("1_7y31o")]
-transform = Transform3D(-0.173648, 0, 0.984808, 0, 1, 0, -0.984808, 0, -0.173648, 6.15726, 0, 4.30117)
-
 [node name="moretree4" type="Node3D" parent="more2"]
 transform = Transform3D(-0.928466, 0, 0.371416, 0, 1, 0, -0.371416, 0, -0.928466, 0, 0, 0)
 
-[node name="Tree_1" parent="more2/moretree4" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.984808, 0, 0.173648, 0, 1, 0, -0.173648, 0, 0.984808, -3.18515, 0, 0)
-
 [node name="Tree_2" parent="more2/moretree4" instance=ExtResource("1_7y31o")]
 transform = Transform3D(0.939693, 0, 0.34202, 0, 1, 0, -0.34202, 0, 0.939693, -2.28977, 0, 3.73129)
-
-[node name="Tree_3" parent="more2/moretree4" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, -1.62153, 0, -4.53096)
-
-[node name="Tree_4" parent="more2/moretree4" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.766044, 0, 0.642788, 0, 1, 0, -0.642788, 0, 0.766044, 3.78285, 0, -3.1115)
-
-[node name="Tree_5" parent="more2/moretree4" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.642788, 0, 0.766044, 0, 1, 0, -0.766044, 0, 0.642788, 2.64216, 0, -7.57602)
 
 [node name="Tree_6" parent="more2/moretree4" instance=ExtResource("1_7y31o")]
 transform = Transform3D(0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, 0.5, 4.01101, 0, 0.920482)
@@ -230,23 +110,11 @@ transform = Transform3D(0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, 0.5, 4.01101, 0
 [node name="Tree_7" parent="more2/moretree4" instance=ExtResource("1_7y31o")]
 transform = Transform3D(0.34202, 0, 0.939693, 0, 1, 0, -0.939693, 0, 0.34202, 0.570691, 0, 3.54817)
 
-[node name="Tree_8" parent="more2/moretree4" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.173648, 0, 0.984808, 0, 1, 0, -0.984808, 0, 0.173648, -6.7028, 0, 3.20482)
-
-[node name="Tree_9" parent="more2/moretree4" instance=ExtResource("1_7y31o")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -6.03959, 0, -4.15552)
-
 [node name="Tree_10" parent="more2/moretree4" instance=ExtResource("1_7y31o")]
 transform = Transform3D(-0.173648, 0, 0.984808, 0, 1, 0, -0.984808, 0, -0.173648, 6.15726, 0, 4.30117)
 
 [node name="moretree2" type="Node3D" parent="more2"]
 transform = Transform3D(0.574848, 0, 0.81826, 0, 1, 0, -0.81826, 0, 0.574848, 1.24387, 0, -1.09837)
-
-[node name="Tree_1" parent="more2/moretree2" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.984808, 0, 0.173648, 0, 1, 0, -0.173648, 0, 0.984808, -3.18515, 0, 0)
-
-[node name="Tree_2" parent="more2/moretree2" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.939693, 0, 0.34202, 0, 1, 0, -0.34202, 0, 0.939693, -2.28977, 0, 3.73129)
 
 [node name="Tree_3" parent="more2/moretree2" instance=ExtResource("1_7y31o")]
 transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, -1.62153, 0, -4.53096)
@@ -254,20 +122,8 @@ transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, -1.62153, 
 [node name="Tree_4" parent="more2/moretree2" instance=ExtResource("1_7y31o")]
 transform = Transform3D(0.766044, 0, 0.642788, 0, 1, 0, -0.642788, 0, 0.766044, 3.78285, 0, -3.1115)
 
-[node name="Tree_5" parent="more2/moretree2" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.642788, 0, 0.766044, 0, 1, 0, -0.766044, 0, 0.642788, 2.64216, 0, -7.57602)
-
 [node name="Tree_6" parent="more2/moretree2" instance=ExtResource("1_7y31o")]
 transform = Transform3D(0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, 0.5, 4.01101, 0, 0.920482)
-
-[node name="Tree_7" parent="more2/moretree2" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.34202, 0, 0.939693, 0, 1, 0, -0.939693, 0, 0.34202, 0.570691, 0, 3.54817)
-
-[node name="Tree_8" parent="more2/moretree2" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.173648, 0, 0.984808, 0, 1, 0, -0.984808, 0, 0.173648, -6.7028, 0, 3.20482)
-
-[node name="Tree_9" parent="more2/moretree2" instance=ExtResource("1_7y31o")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -6.03959, 0, -4.15552)
 
 [node name="Tree_10" parent="more2/moretree2" instance=ExtResource("1_7y31o")]
 transform = Transform3D(-0.173648, 0, 0.984808, 0, 1, 0, -0.984808, 0, -0.173648, 6.15726, 0, 4.30117)
@@ -277,86 +133,26 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.8034, 0, 0)
 
 [node name="moretree" type="Node3D" parent="more3"]
 
-[node name="Tree_1" parent="more3/moretree" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.984808, 0, 0.173648, 0, 1, 0, -0.173648, 0, 0.984808, -3.18515, 0, 0)
-
-[node name="Tree_2" parent="more3/moretree" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.939693, 0, 0.34202, 0, 1, 0, -0.34202, 0, 0.939693, -2.28977, 0, 3.73129)
-
 [node name="Tree_3" parent="more3/moretree" instance=ExtResource("1_7y31o")]
 transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, -1.62153, 0, -4.53096)
 
 [node name="Tree_4" parent="more3/moretree" instance=ExtResource("1_7y31o")]
 transform = Transform3D(0.766044, 0, 0.642788, 0, 1, 0, -0.642788, 0, 0.766044, 3.78285, 0, -3.1115)
 
-[node name="Tree_5" parent="more3/moretree" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.642788, 0, 0.766044, 0, 1, 0, -0.766044, 0, 0.642788, 2.64216, 0, -7.57602)
-
-[node name="Tree_6" parent="more3/moretree" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, 0.5, 4.01101, 0, 0.920482)
-
-[node name="Tree_7" parent="more3/moretree" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.34202, 0, 0.939693, 0, 1, 0, -0.939693, 0, 0.34202, 0.570691, 0, 3.54817)
-
-[node name="Tree_8" parent="more3/moretree" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.173648, 0, 0.984808, 0, 1, 0, -0.984808, 0, 0.173648, -6.7028, 0, 3.20482)
-
 [node name="Tree_9" parent="more3/moretree" instance=ExtResource("1_7y31o")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -6.03959, 0, -4.15552)
-
-[node name="Tree_10" parent="more3/moretree" instance=ExtResource("1_7y31o")]
-transform = Transform3D(-0.173648, 0, 0.984808, 0, 1, 0, -0.984808, 0, -0.173648, 6.15726, 0, 4.30117)
 
 [node name="moretree3" type="Node3D" parent="more3"]
 transform = Transform3D(-0.500302, 0, 0.865851, 0, 1, 0, -0.865851, 0, -0.500302, 0, 0, 0)
 
-[node name="Tree_1" parent="more3/moretree3" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.984808, 0, 0.173648, 0, 1, 0, -0.173648, 0, 0.984808, -3.18515, 0, 0)
-
-[node name="Tree_2" parent="more3/moretree3" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.939693, 0, 0.34202, 0, 1, 0, -0.34202, 0, 0.939693, -2.28977, 0, 3.73129)
-
-[node name="Tree_3" parent="more3/moretree3" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, -1.62153, 0, -4.53096)
-
-[node name="Tree_4" parent="more3/moretree3" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.766044, 0, 0.642788, 0, 1, 0, -0.642788, 0, 0.766044, 3.78285, 0, -3.1115)
-
-[node name="Tree_5" parent="more3/moretree3" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.642788, 0, 0.766044, 0, 1, 0, -0.766044, 0, 0.642788, 2.64216, 0, -7.57602)
-
 [node name="Tree_6" parent="more3/moretree3" instance=ExtResource("1_7y31o")]
 transform = Transform3D(0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, 0.5, 4.01101, 0, 0.920482)
-
-[node name="Tree_7" parent="more3/moretree3" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.34202, 0, 0.939693, 0, 1, 0, -0.939693, 0, 0.34202, 0.570691, 0, 3.54817)
-
-[node name="Tree_8" parent="more3/moretree3" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.173648, 0, 0.984808, 0, 1, 0, -0.984808, 0, 0.173648, -6.7028, 0, 3.20482)
-
-[node name="Tree_9" parent="more3/moretree3" instance=ExtResource("1_7y31o")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -6.03959, 0, -4.15552)
-
-[node name="Tree_10" parent="more3/moretree3" instance=ExtResource("1_7y31o")]
-transform = Transform3D(-0.173648, 0, 0.984808, 0, 1, 0, -0.984808, 0, -0.173648, 6.15726, 0, 4.30117)
 
 [node name="moretree4" type="Node3D" parent="more3"]
 transform = Transform3D(-0.928466, 0, 0.371416, 0, 1, 0, -0.371416, 0, -0.928466, 0, 0, 0)
 
-[node name="Tree_1" parent="more3/moretree4" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.984808, 0, 0.173648, 0, 1, 0, -0.173648, 0, 0.984808, -3.18515, 0, 0)
-
 [node name="Tree_2" parent="more3/moretree4" instance=ExtResource("1_7y31o")]
 transform = Transform3D(0.939693, 0, 0.34202, 0, 1, 0, -0.34202, 0, 0.939693, -2.28977, 0, 3.73129)
-
-[node name="Tree_3" parent="more3/moretree4" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, -1.62153, 0, -4.53096)
-
-[node name="Tree_4" parent="more3/moretree4" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.766044, 0, 0.642788, 0, 1, 0, -0.642788, 0, 0.766044, 3.78285, 0, -3.1115)
-
-[node name="Tree_5" parent="more3/moretree4" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.642788, 0, 0.766044, 0, 1, 0, -0.766044, 0, 0.642788, 2.64216, 0, -7.57602)
 
 [node name="Tree_6" parent="more3/moretree4" instance=ExtResource("1_7y31o")]
 transform = Transform3D(0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, 0.5, 4.01101, 0, 0.920482)
@@ -364,23 +160,11 @@ transform = Transform3D(0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, 0.5, 4.01101, 0
 [node name="Tree_7" parent="more3/moretree4" instance=ExtResource("1_7y31o")]
 transform = Transform3D(0.34202, 0, 0.939693, 0, 1, 0, -0.939693, 0, 0.34202, 0.570691, 0, 3.54817)
 
-[node name="Tree_8" parent="more3/moretree4" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.173648, 0, 0.984808, 0, 1, 0, -0.984808, 0, 0.173648, -6.7028, 0, 3.20482)
-
-[node name="Tree_9" parent="more3/moretree4" instance=ExtResource("1_7y31o")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -6.03959, 0, -4.15552)
-
 [node name="Tree_10" parent="more3/moretree4" instance=ExtResource("1_7y31o")]
 transform = Transform3D(-0.173648, 0, 0.984808, 0, 1, 0, -0.984808, 0, -0.173648, 6.15726, 0, 4.30117)
 
 [node name="moretree2" type="Node3D" parent="more3"]
 transform = Transform3D(0.574848, 0, 0.81826, 0, 1, 0, -0.81826, 0, 0.574848, 1.24387, 0, -1.09837)
-
-[node name="Tree_1" parent="more3/moretree2" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.984808, 0, 0.173648, 0, 1, 0, -0.173648, 0, 0.984808, -3.18515, 0, 0)
-
-[node name="Tree_2" parent="more3/moretree2" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.939693, 0, 0.34202, 0, 1, 0, -0.34202, 0, 0.939693, -2.28977, 0, 3.73129)
 
 [node name="Tree_3" parent="more3/moretree2" instance=ExtResource("1_7y31o")]
 transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, -1.62153, 0, -4.53096)
@@ -388,20 +172,8 @@ transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, -1.62153, 
 [node name="Tree_4" parent="more3/moretree2" instance=ExtResource("1_7y31o")]
 transform = Transform3D(0.766044, 0, 0.642788, 0, 1, 0, -0.642788, 0, 0.766044, 3.78285, 0, -3.1115)
 
-[node name="Tree_5" parent="more3/moretree2" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.642788, 0, 0.766044, 0, 1, 0, -0.766044, 0, 0.642788, 2.64216, 0, -7.57602)
-
 [node name="Tree_6" parent="more3/moretree2" instance=ExtResource("1_7y31o")]
 transform = Transform3D(0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, 0.5, 4.01101, 0, 0.920482)
-
-[node name="Tree_7" parent="more3/moretree2" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.34202, 0, 0.939693, 0, 1, 0, -0.939693, 0, 0.34202, 0.570691, 0, 3.54817)
-
-[node name="Tree_8" parent="more3/moretree2" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.173648, 0, 0.984808, 0, 1, 0, -0.984808, 0, 0.173648, -6.7028, 0, 3.20482)
-
-[node name="Tree_9" parent="more3/moretree2" instance=ExtResource("1_7y31o")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -6.03959, 0, -4.15552)
 
 [node name="Tree_10" parent="more3/moretree2" instance=ExtResource("1_7y31o")]
 transform = Transform3D(-0.173648, 0, 0.984808, 0, 1, 0, -0.984808, 0, -0.173648, 6.15726, 0, 4.30117)
@@ -410,12 +182,6 @@ transform = Transform3D(-0.173648, 0, 0.984808, 0, 1, 0, -0.984808, 0, -0.173648
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.7509, 0, 0)
 
 [node name="moretree" type="Node3D" parent="more4"]
-
-[node name="Tree_1" parent="more4/moretree" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.984808, 0, 0.173648, 0, 1, 0, -0.173648, 0, 0.984808, -3.18515, 0, 0)
-
-[node name="Tree_2" parent="more4/moretree" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.939693, 0, 0.34202, 0, 1, 0, -0.34202, 0, 0.939693, -2.28977, 0, 3.73129)
 
 [node name="Tree_3" parent="more4/moretree" instance=ExtResource("1_7y31o")]
 transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, -1.62153, 0, -4.53096)
@@ -426,38 +192,14 @@ transform = Transform3D(0.766044, 0, 0.642788, 0, 1, 0, -0.642788, 0, 0.766044, 
 [node name="Tree_5" parent="more4/moretree" instance=ExtResource("1_7y31o")]
 transform = Transform3D(0.642788, 0, 0.766044, 0, 1, 0, -0.766044, 0, 0.642788, 2.64216, 0, -7.57602)
 
-[node name="Tree_6" parent="more4/moretree" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, 0.5, 4.01101, 0, 0.920482)
-
-[node name="Tree_7" parent="more4/moretree" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.34202, 0, 0.939693, 0, 1, 0, -0.939693, 0, 0.34202, 0.570691, 0, 3.54817)
-
-[node name="Tree_8" parent="more4/moretree" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.173648, 0, 0.984808, 0, 1, 0, -0.984808, 0, 0.173648, -6.7028, 0, 3.20482)
-
 [node name="Tree_9" parent="more4/moretree" instance=ExtResource("1_7y31o")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -6.03959, 0, -4.15552)
-
-[node name="Tree_10" parent="more4/moretree" instance=ExtResource("1_7y31o")]
-transform = Transform3D(-0.173648, 0, 0.984808, 0, 1, 0, -0.984808, 0, -0.173648, 6.15726, 0, 4.30117)
 
 [node name="moretree3" type="Node3D" parent="more4"]
 transform = Transform3D(-0.500302, 0, 0.865851, 0, 1, 0, -0.865851, 0, -0.500302, 0, 0, 0)
 
-[node name="Tree_1" parent="more4/moretree3" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.984808, 0, 0.173648, 0, 1, 0, -0.173648, 0, 0.984808, -3.18515, 0, 0)
-
-[node name="Tree_2" parent="more4/moretree3" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.939693, 0, 0.34202, 0, 1, 0, -0.34202, 0, 0.939693, -2.28977, 0, 3.73129)
-
-[node name="Tree_3" parent="more4/moretree3" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, -1.62153, 0, -4.53096)
-
 [node name="Tree_4" parent="more4/moretree3" instance=ExtResource("1_7y31o")]
 transform = Transform3D(0.766044, 0, 0.642788, 0, 1, 0, -0.642788, 0, 0.766044, 3.78285, 0, -3.1115)
-
-[node name="Tree_5" parent="more4/moretree3" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.642788, 0, 0.766044, 0, 1, 0, -0.766044, 0, 0.642788, 2.64216, 0, -7.57602)
 
 [node name="Tree_6" parent="more4/moretree3" instance=ExtResource("1_7y31o")]
 transform = Transform3D(0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, 0.5, 4.01101, 0, 0.920482)
@@ -465,32 +207,14 @@ transform = Transform3D(0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, 0.5, 4.01101, 0
 [node name="Tree_7" parent="more4/moretree3" instance=ExtResource("1_7y31o")]
 transform = Transform3D(0.34202, 0, 0.939693, 0, 1, 0, -0.939693, 0, 0.34202, 0.570691, 0, 3.54817)
 
-[node name="Tree_8" parent="more4/moretree3" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.173648, 0, 0.984808, 0, 1, 0, -0.984808, 0, 0.173648, -6.7028, 0, 3.20482)
-
-[node name="Tree_9" parent="more4/moretree3" instance=ExtResource("1_7y31o")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -6.03959, 0, -4.15552)
-
 [node name="Tree_10" parent="more4/moretree3" instance=ExtResource("1_7y31o")]
 transform = Transform3D(-0.173648, 0, 0.984808, 0, 1, 0, -0.984808, 0, -0.173648, 6.15726, 0, 4.30117)
 
 [node name="moretree4" type="Node3D" parent="more4"]
 transform = Transform3D(-0.928466, 0, 0.371416, 0, 1, 0, -0.371416, 0, -0.928466, 0, 0, 0)
 
-[node name="Tree_1" parent="more4/moretree4" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.984808, 0, 0.173648, 0, 1, 0, -0.173648, 0, 0.984808, -3.18515, 0, 0)
-
 [node name="Tree_2" parent="more4/moretree4" instance=ExtResource("1_7y31o")]
 transform = Transform3D(0.939693, 0, 0.34202, 0, 1, 0, -0.34202, 0, 0.939693, -2.28977, 0, 3.73129)
-
-[node name="Tree_3" parent="more4/moretree4" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, -1.62153, 0, -4.53096)
-
-[node name="Tree_4" parent="more4/moretree4" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.766044, 0, 0.642788, 0, 1, 0, -0.642788, 0, 0.766044, 3.78285, 0, -3.1115)
-
-[node name="Tree_5" parent="more4/moretree4" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.642788, 0, 0.766044, 0, 1, 0, -0.766044, 0, 0.642788, 2.64216, 0, -7.57602)
 
 [node name="Tree_6" parent="more4/moretree4" instance=ExtResource("1_7y31o")]
 transform = Transform3D(0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, 0.5, 4.01101, 0, 0.920482)
@@ -498,23 +222,11 @@ transform = Transform3D(0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, 0.5, 4.01101, 0
 [node name="Tree_7" parent="more4/moretree4" instance=ExtResource("1_7y31o")]
 transform = Transform3D(0.34202, 0, 0.939693, 0, 1, 0, -0.939693, 0, 0.34202, 0.570691, 0, 3.54817)
 
-[node name="Tree_8" parent="more4/moretree4" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.173648, 0, 0.984808, 0, 1, 0, -0.984808, 0, 0.173648, -6.7028, 0, 3.20482)
-
-[node name="Tree_9" parent="more4/moretree4" instance=ExtResource("1_7y31o")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -6.03959, 0, -4.15552)
-
 [node name="Tree_10" parent="more4/moretree4" instance=ExtResource("1_7y31o")]
 transform = Transform3D(-0.173648, 0, 0.984808, 0, 1, 0, -0.984808, 0, -0.173648, 6.15726, 0, 4.30117)
 
 [node name="moretree2" type="Node3D" parent="more4"]
 transform = Transform3D(0.574848, 0, 0.81826, 0, 1, 0, -0.81826, 0, 0.574848, 1.24387, 0, -1.09837)
-
-[node name="Tree_1" parent="more4/moretree2" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.984808, 0, 0.173648, 0, 1, 0, -0.173648, 0, 0.984808, -3.18515, 0, 0)
-
-[node name="Tree_2" parent="more4/moretree2" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.939693, 0, 0.34202, 0, 1, 0, -0.34202, 0, 0.939693, -2.28977, 0, 3.73129)
 
 [node name="Tree_3" parent="more4/moretree2" instance=ExtResource("1_7y31o")]
 transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, -1.62153, 0, -4.53096)
@@ -528,15 +240,6 @@ transform = Transform3D(0.642788, 0, 0.766044, 0, 1, 0, -0.766044, 0, 0.642788, 
 [node name="Tree_6" parent="more4/moretree2" instance=ExtResource("1_7y31o")]
 transform = Transform3D(0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, 0.5, 4.01101, 0, 0.920482)
 
-[node name="Tree_7" parent="more4/moretree2" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.34202, 0, 0.939693, 0, 1, 0, -0.939693, 0, 0.34202, 0.570691, 0, 3.54817)
-
-[node name="Tree_8" parent="more4/moretree2" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.173648, 0, 0.984808, 0, 1, 0, -0.984808, 0, 0.173648, -6.7028, 0, 3.20482)
-
-[node name="Tree_9" parent="more4/moretree2" instance=ExtResource("1_7y31o")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -6.03959, 0, -4.15552)
-
 [node name="Tree_10" parent="more4/moretree2" instance=ExtResource("1_7y31o")]
 transform = Transform3D(-0.173648, 0, 0.984808, 0, 1, 0, -0.984808, 0, -0.173648, 6.15726, 0, 4.30117)
 
@@ -544,12 +247,6 @@ transform = Transform3D(-0.173648, 0, 0.984808, 0, 1, 0, -0.984808, 0, -0.173648
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.1676, 0, 0)
 
 [node name="moretree" type="Node3D" parent="more5"]
-
-[node name="Tree_1" parent="more5/moretree" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.984808, 0, 0.173648, 0, 1, 0, -0.173648, 0, 0.984808, -3.18515, 0, 0)
-
-[node name="Tree_2" parent="more5/moretree" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.939693, 0, 0.34202, 0, 1, 0, -0.34202, 0, 0.939693, -2.28977, 0, 3.73129)
 
 [node name="Tree_3" parent="more5/moretree" instance=ExtResource("1_7y31o")]
 transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, -1.62153, 0, -4.53096)
@@ -560,38 +257,11 @@ transform = Transform3D(0.766044, 0, 0.642788, 0, 1, 0, -0.642788, 0, 0.766044, 
 [node name="Tree_5" parent="more5/moretree" instance=ExtResource("1_7y31o")]
 transform = Transform3D(0.642788, 0, 0.766044, 0, 1, 0, -0.766044, 0, 0.642788, 2.64216, 0, -7.57602)
 
-[node name="Tree_6" parent="more5/moretree" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, 0.5, 4.01101, 0, 0.920482)
-
-[node name="Tree_7" parent="more5/moretree" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.34202, 0, 0.939693, 0, 1, 0, -0.939693, 0, 0.34202, 0.570691, 0, 3.54817)
-
-[node name="Tree_8" parent="more5/moretree" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.173648, 0, 0.984808, 0, 1, 0, -0.984808, 0, 0.173648, -6.7028, 0, 3.20482)
-
 [node name="Tree_9" parent="more5/moretree" instance=ExtResource("1_7y31o")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -6.03959, 0, -4.15552)
 
-[node name="Tree_10" parent="more5/moretree" instance=ExtResource("1_7y31o")]
-transform = Transform3D(-0.173648, 0, 0.984808, 0, 1, 0, -0.984808, 0, -0.173648, 6.15726, 0, 4.30117)
-
 [node name="moretree3" type="Node3D" parent="more5"]
 transform = Transform3D(-0.500302, 0, 0.865851, 0, 1, 0, -0.865851, 0, -0.500302, 0, 0, 0)
-
-[node name="Tree_1" parent="more5/moretree3" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.984808, 0, 0.173648, 0, 1, 0, -0.173648, 0, 0.984808, -3.18515, 0, 0)
-
-[node name="Tree_2" parent="more5/moretree3" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.939693, 0, 0.34202, 0, 1, 0, -0.34202, 0, 0.939693, -2.28977, 0, 3.73129)
-
-[node name="Tree_3" parent="more5/moretree3" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, -1.62153, 0, -4.53096)
-
-[node name="Tree_4" parent="more5/moretree3" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.766044, 0, 0.642788, 0, 1, 0, -0.642788, 0, 0.766044, 3.78285, 0, -3.1115)
-
-[node name="Tree_5" parent="more5/moretree3" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.642788, 0, 0.766044, 0, 1, 0, -0.766044, 0, 0.642788, 2.64216, 0, -7.57602)
 
 [node name="Tree_6" parent="more5/moretree3" instance=ExtResource("1_7y31o")]
 transform = Transform3D(0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, 0.5, 4.01101, 0, 0.920482)
@@ -599,32 +269,14 @@ transform = Transform3D(0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, 0.5, 4.01101, 0
 [node name="Tree_7" parent="more5/moretree3" instance=ExtResource("1_7y31o")]
 transform = Transform3D(0.34202, 0, 0.939693, 0, 1, 0, -0.939693, 0, 0.34202, 0.570691, 0, 3.54817)
 
-[node name="Tree_8" parent="more5/moretree3" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.173648, 0, 0.984808, 0, 1, 0, -0.984808, 0, 0.173648, -6.7028, 0, 3.20482)
-
-[node name="Tree_9" parent="more5/moretree3" instance=ExtResource("1_7y31o")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -6.03959, 0, -4.15552)
-
 [node name="Tree_10" parent="more5/moretree3" instance=ExtResource("1_7y31o")]
 transform = Transform3D(-0.173648, 0, 0.984808, 0, 1, 0, -0.984808, 0, -0.173648, 6.15726, 0, 4.30117)
 
 [node name="moretree4" type="Node3D" parent="more5"]
 transform = Transform3D(-0.928466, 0, 0.371416, 0, 1, 0, -0.371416, 0, -0.928466, 0, 0, 0)
 
-[node name="Tree_1" parent="more5/moretree4" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.984808, 0, 0.173648, 0, 1, 0, -0.173648, 0, 0.984808, -3.18515, 0, 0)
-
 [node name="Tree_2" parent="more5/moretree4" instance=ExtResource("1_7y31o")]
 transform = Transform3D(0.939693, 0, 0.34202, 0, 1, 0, -0.34202, 0, 0.939693, -2.28977, 0, 3.73129)
-
-[node name="Tree_3" parent="more5/moretree4" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, -1.62153, 0, -4.53096)
-
-[node name="Tree_4" parent="more5/moretree4" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.766044, 0, 0.642788, 0, 1, 0, -0.642788, 0, 0.766044, 3.78285, 0, -3.1115)
-
-[node name="Tree_5" parent="more5/moretree4" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.642788, 0, 0.766044, 0, 1, 0, -0.766044, 0, 0.642788, 2.64216, 0, -7.57602)
 
 [node name="Tree_6" parent="more5/moretree4" instance=ExtResource("1_7y31o")]
 transform = Transform3D(0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, 0.5, 4.01101, 0, 0.920482)
@@ -632,23 +284,11 @@ transform = Transform3D(0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, 0.5, 4.01101, 0
 [node name="Tree_7" parent="more5/moretree4" instance=ExtResource("1_7y31o")]
 transform = Transform3D(0.34202, 0, 0.939693, 0, 1, 0, -0.939693, 0, 0.34202, 0.570691, 0, 3.54817)
 
-[node name="Tree_8" parent="more5/moretree4" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.173648, 0, 0.984808, 0, 1, 0, -0.984808, 0, 0.173648, -6.7028, 0, 3.20482)
-
-[node name="Tree_9" parent="more5/moretree4" instance=ExtResource("1_7y31o")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -6.03959, 0, -4.15552)
-
 [node name="Tree_10" parent="more5/moretree4" instance=ExtResource("1_7y31o")]
 transform = Transform3D(-0.173648, 0, 0.984808, 0, 1, 0, -0.984808, 0, -0.173648, 6.15726, 0, 4.30117)
 
 [node name="moretree2" type="Node3D" parent="more5"]
 transform = Transform3D(0.574848, 0, 0.81826, 0, 1, 0, -0.81826, 0, 0.574848, 1.24387, 0, -1.09837)
-
-[node name="Tree_1" parent="more5/moretree2" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.984808, 0, 0.173648, 0, 1, 0, -0.173648, 0, 0.984808, -3.18515, 0, 0)
-
-[node name="Tree_2" parent="more5/moretree2" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.939693, 0, 0.34202, 0, 1, 0, -0.34202, 0, 0.939693, -2.28977, 0, 3.73129)
 
 [node name="Tree_3" parent="more5/moretree2" instance=ExtResource("1_7y31o")]
 transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, -1.62153, 0, -4.53096)
@@ -661,15 +301,6 @@ transform = Transform3D(0.642788, 0, 0.766044, 0, 1, 0, -0.766044, 0, 0.642788, 
 
 [node name="Tree_6" parent="more5/moretree2" instance=ExtResource("1_7y31o")]
 transform = Transform3D(0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, 0.5, 4.01101, 0, 0.920482)
-
-[node name="Tree_7" parent="more5/moretree2" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.34202, 0, 0.939693, 0, 1, 0, -0.939693, 0, 0.34202, 0.570691, 0, 3.54817)
-
-[node name="Tree_8" parent="more5/moretree2" instance=ExtResource("1_7y31o")]
-transform = Transform3D(0.173648, 0, 0.984808, 0, 1, 0, -0.984808, 0, 0.173648, -6.7028, 0, 3.20482)
-
-[node name="Tree_9" parent="more5/moretree2" instance=ExtResource("1_7y31o")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -6.03959, 0, -4.15552)
 
 [node name="Tree_10" parent="more5/moretree2" instance=ExtResource("1_7y31o")]
 transform = Transform3D(-0.173648, 0, 0.984808, 0, 1, 0, -0.984808, 0, -0.173648, 6.15726, 0, 4.30117)

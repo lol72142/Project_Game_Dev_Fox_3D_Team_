@@ -1,12 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://8donvon65h2o"]
+[gd_scene load_steps=4 format=3 uid="uid://8donvon65h2o"]
 
 [ext_resource type="PackedScene" uid="uid://dn1d545ntpdno" path="res://Forest/Tree/no_col/oak_tree_1.tscn" id="1_clxn0"]
+[ext_resource type="Script" uid="uid://71ojvcvb85kv" path="res://script/tree_tag.gd" id="1_l4css"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_l4css"]
 radius = 0.567903
 height = 3.17824
 
 [node name="Tree_1" type="StaticBody3D"]
+script = ExtResource("1_l4css")
 
 [node name="Oak_Tree_1" parent="." instance=ExtResource("1_clxn0")]
 
