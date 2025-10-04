@@ -1,93 +1,33 @@
-[gd_scene load_steps=29 format=3 uid="uid://btxvjhxs3wn1b"]
+[gd_scene load_steps=21 format=3 uid="uid://btxvjhxs3wn1b"]
 
-[ext_resource type="Script" uid="uid://dwfb2dnx0mxog" path="res://addons/proton_scatter/src/scatter.gd" id="1_tyvbe"]
-[ext_resource type="Script" uid="uid://blf254r51syi0" path="res://addons/proton_scatter/src/stack/modifier_stack.gd" id="2_ouyis"]
-[ext_resource type="Script" uid="uid://cdkjy6lrayqv2" path="res://addons/proton_scatter/src/modifiers/base_modifier.gd" id="3_m241k"]
-[ext_resource type="Script" uid="uid://dsyjmaoicn1cl" path="res://addons/proton_scatter/src/modifiers/create_inside_random.gd" id="4_dlcfm"]
-[ext_resource type="Script" uid="uid://cvi4bokds4h7l" path="res://addons/proton_scatter/src/modifiers/randomize_transforms.gd" id="5_dekya"]
-[ext_resource type="Script" uid="uid://c1iwn62gm7fvi" path="res://addons/proton_scatter/src/modifiers/relax.gd" id="6_4aca8"]
-[ext_resource type="Script" uid="uid://by5pxmlcjgjuh" path="res://addons/proton_scatter/src/modifiers/project_on_geometry.gd" id="7_ov0el"]
-[ext_resource type="Script" uid="uid://bhsfbxmxwtpu3" path="res://addons/proton_scatter/src/scatter_item.gd" id="8_7airv"]
-[ext_resource type="Script" uid="uid://b1lcv7h4pap4w" path="res://addons/proton_scatter/src/scatter_shape.gd" id="9_sntpg"]
-[ext_resource type="Script" uid="uid://cg70qg5k3fkcs" path="res://addons/proton_scatter/src/shapes/box_shape.gd" id="10_tyvbe"]
+[ext_resource type="Script" uid="uid://clhgpds7ta4bd" path="res://Forest/forest.gd" id="1_ouyis"]
+[ext_resource type="PackedScene" uid="uid://v6dfp3jtp4hi" path="res://Forest/Tree/with_col/moretree_1.tscn" id="3_851gr"]
+[ext_resource type="PackedScene" uid="uid://c6g1hyug1yf61" path="res://Forest/Tree/with_col/mmmoretree_1.tscn" id="4_gdb1i"]
+[ext_resource type="PackedScene" uid="uid://hl3hqs7ulecw" path="res://Forest/Building/Lantern.tscn" id="8_hlfit"]
+[ext_resource type="ArrayMesh" uid="uid://bxecf50pc56s0" path="res://farm_h/OBJ/BigBarn.obj" id="8_xqgi7"]
+[ext_resource type="PackedScene" uid="uid://e3u0uhb4kmol" path="res://Forest/Building/farmland.tscn" id="9_17w74"]
+[ext_resource type="ArrayMesh" uid="uid://j6k2gcxpdeao" path="res://farm_h/OBJ/Silo.obj" id="9_wovt4"]
+[ext_resource type="ArrayMesh" uid="uid://ch1xnu7f6bmga" path="res://farm_h/OBJ/ChickenCoop.obj" id="10_17w74"]
+[ext_resource type="PackedScene" uid="uid://duvokykwm5pl0" path="res://Forest/Building/fence.tscn" id="10_ouyis"]
 [ext_resource type="PackedScene" uid="uid://bbxop6nt0x0t1" path="res://sence/player.tscn" id="11_3q7rk"]
+[ext_resource type="PackedScene" uid="uid://d5kqx6m2q7xi" path="res://Forest/Building/floor_dirt_grave.tscn" id="11_ouyis"]
 [ext_resource type="Texture2D" uid="uid://bsfp64dod28al" path="res://Grass_Ground_Texture.jpg" id="12_5fhnv"]
+[ext_resource type="PackedScene" uid="uid://bxim8ftpl6g2w" path="res://Forest/Tree/with_col/walltree.tscn" id="14_dlcfm"]
+[ext_resource type="PackedScene" uid="uid://iwq1suv6oki0" path="res://Forest/Building/church.tscn" id="14_m241k"]
 
 [sub_resource type="Environment" id="Environment_tyvbe"]
 ambient_light_source = 2
-ambient_light_energy = 16.0
 tonemap_exposure = 0.1
 fog_enabled = true
-fog_density = 0.1
+fog_light_energy = 0.4
+fog_density = 0.04
 
-[sub_resource type="Resource" id="Resource_tyvbe"]
-script = ExtResource("4_dlcfm")
-amount = 250
-restrict_height = true
-reference_frame = 1
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tyvbe"]
+albedo_color = Color(0.0784934, 0.0239435, 1.50409e-09, 1)
 
-[sub_resource type="Resource" id="Resource_m241k"]
-script = ExtResource("5_dekya")
-position = Vector3(0.15, 0.15, 0.15)
-rotation = Vector3(0, 360, 0)
-scale = Vector3(0.1, 0.1, 0.1)
-reference_frame = 2
-
-[sub_resource type="Resource" id="Resource_dlcfm"]
-script = ExtResource("6_4aca8")
-iterations = 50
-offset_step = 2.0
-consecutive_step_multiplier = 0.75
-restrict_height = true
-
-[sub_resource type="Resource" id="Resource_dekya"]
-script = ExtResource("7_ov0el")
-ray_length = 5.0
-ray_offset = 5.0
-remove_points_on_miss = false
-
-[sub_resource type="Resource" id="Resource_4aca8"]
-script = ExtResource("2_ouyis")
-stack = Array[ExtResource("3_m241k")]([SubResource("Resource_tyvbe"), SubResource("Resource_m241k"), SubResource("Resource_dlcfm"), SubResource("Resource_dekya")])
-
-[sub_resource type="Resource" id="Resource_ouyis"]
-script = ExtResource("10_tyvbe")
-size = Vector3(40, 1, 40)
-metadata/_custom_type_script = "uid://cg70qg5k3fkcs"
-
-[sub_resource type="Resource" id="Resource_ov0el"]
-script = ExtResource("4_dlcfm")
-amount = 5
-restrict_height = true
-reference_frame = 1
-
-[sub_resource type="Resource" id="Resource_7airv"]
-script = ExtResource("5_dekya")
-position = Vector3(0.15, 0.15, 0.15)
-rotation = Vector3(0, 360, 0)
-scale = Vector3(0.1, 0.1, 0.1)
-reference_frame = 2
-
-[sub_resource type="Resource" id="Resource_sntpg"]
-script = ExtResource("6_4aca8")
-offset_step = 0.2
-consecutive_step_multiplier = 0.75
-restrict_height = true
-
-[sub_resource type="Resource" id="Resource_hmpne"]
-script = ExtResource("7_ov0el")
-ray_length = 5.0
-ray_offset = 5.0
-remove_points_on_miss = false
-
-[sub_resource type="Resource" id="Resource_3q7rk"]
-script = ExtResource("2_ouyis")
-stack = Array[ExtResource("3_m241k")]([SubResource("Resource_ov0el"), SubResource("Resource_7airv"), SubResource("Resource_sntpg"), SubResource("Resource_hmpne")])
-
-[sub_resource type="Resource" id="Resource_5fhnv"]
-script = ExtResource("10_tyvbe")
-size = Vector3(100, 1, 100)
-metadata/_custom_type_script = "uid://cg70qg5k3fkcs"
+[sub_resource type="PlaneMesh" id="PlaneMesh_gdb1i"]
+material = SubResource("StandardMaterial3D_tyvbe")
+size = Vector2(50, 5)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y8bc5"]
 albedo_color = Color(0.400698, 0.400698, 0.400698, 1)
@@ -96,19 +36,22 @@ uv1_triplanar = true
 
 [sub_resource type="BoxMesh" id="BoxMesh_uq144"]
 material = SubResource("StandardMaterial3D_y8bc5")
-size = Vector3(200, 0.04, 200)
+size = Vector3(800, 0.04, 800)
 
-[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_mvm06"]
-data = PackedVector3Array(-100, 0.02, 100, 100, 0.02, 100, -100, -0.02, 100, 100, 0.02, 100, 100, -0.02, 100, -100, -0.02, 100, 100, 0.02, -100, -100, 0.02, -100, 100, -0.02, -100, -100, 0.02, -100, -100, -0.02, -100, 100, -0.02, -100, 100, 0.02, 100, 100, 0.02, -100, 100, -0.02, 100, 100, 0.02, -100, 100, -0.02, -100, 100, -0.02, 100, -100, 0.02, -100, -100, 0.02, 100, -100, -0.02, -100, -100, 0.02, 100, -100, -0.02, 100, -100, -0.02, -100, 100, 0.02, 100, -100, 0.02, 100, 100, 0.02, -100, -100, 0.02, 100, -100, 0.02, -100, 100, 0.02, -100, -100, -0.02, 100, 100, -0.02, 100, -100, -0.02, -100, 100, -0.02, 100, 100, -0.02, -100, -100, -0.02, -100)
+[sub_resource type="BoxShape3D" id="BoxShape3D_ouyis"]
+size = Vector3(400, 1, 400)
 
 [node name="Forest" type="Node3D"]
+script = ExtResource("1_ouyis")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 60.8585, 0)
 light_energy = 3.0
 light_specular = 0.0
+light_bake_mode = 1
 shadow_enabled = true
 directional_shadow_pancake_size = 40.0
+metadata/_edit_lock_ = true
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_tyvbe")
@@ -118,65 +61,686 @@ environment = SubResource("Environment_tyvbe")
 [node name="env" type="Node3D" parent="ForPath"]
 
 [node name="Nature" type="Node3D" parent="ForPath/env"]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0)
 
-[node name="Tree" type="Node3D" parent="ForPath/env/Nature"]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
-script = ExtResource("1_tyvbe")
-keep_static_colliders = true
-modifier_stack = SubResource("Resource_4aca8")
-Performance/use_chunks = true
-Performance/chunk_dimensions = Vector3(15, 15, 15)
-metadata/_custom_type_script = "uid://dwfb2dnx0mxog"
+[node name="big_moretree_1" parent="ForPath/env/Nature" instance=ExtResource("4_gdb1i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.699, 0, -17.0454)
 
-[node name="ScatterItem" type="Node3D" parent="ForPath/env/Nature/Tree"]
-script = ExtResource("8_7airv")
-path = "uid://dv25tib5a5e1v"
+[node name="big_moretree_5" parent="ForPath/env/Nature" instance=ExtResource("4_gdb1i")]
+transform = Transform3D(0.198136, 0, -0.980174, 0, 1, 0, 0.980174, 0, 0.198136, 34.8414, 0, -17.0454)
 
-[node name="ScatterShape" type="Node3D" parent="ForPath/env/Nature/Tree"]
-transform = Transform3D(1, 0, -2.98023e-08, 0, 1, 0, 2.98023e-08, 0, 1, 0, 0, 0)
-script = ExtResource("9_sntpg")
-shape = SubResource("Resource_ouyis")
+[node name="big_moretree_2" parent="ForPath/env/Nature" instance=ExtResource("4_gdb1i")]
+transform = Transform3D(0.97455, 0, -0.224169, 0, 1, 0, 0.224169, 0, 0.97455, -14.6, 0, -16.002)
 
-[node name="ScatterItem2" type="Node3D" parent="ForPath/env/Nature/Tree"]
-script = ExtResource("8_7airv")
-path = "uid://ba1x65lq21ms4"
+[node name="moretree9" parent="ForPath/env/Nature" instance=ExtResource("3_851gr")]
+transform = Transform3D(0.91713, 0, -0.398589, 0, 1, 0, 0.398589, 0, 0.91713, -26.8814, 0, -31.8553)
 
-[node name="ScatterItem3" type="Node3D" parent="ForPath/env/Nature/Tree"]
-script = ExtResource("8_7airv")
-path = "uid://g04frrnyxwgm"
+[node name="big_moretree_3" parent="ForPath/env/Nature" instance=ExtResource("4_gdb1i")]
+transform = Transform3D(0.00411899, 0, 0.999992, 0, 1, 0, -0.999992, 0, 0.00411899, -15.4891, 0, 13.1804)
 
-[node name="ScatterItem4" type="Node3D" parent="ForPath/env/Nature/Tree"]
-script = ExtResource("8_7airv")
-path = "uid://y0fw704ilq1i"
-
-[node name="ScatterItem5" type="Node3D" parent="ForPath/env/Nature/Tree"]
-script = ExtResource("8_7airv")
-path = "uid://culrnvg0sxmk7"
+[node name="big_moretree_4" parent="ForPath/env/Nature" instance=ExtResource("4_gdb1i")]
+transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, -6.77037, 0, -16.6459)
 
 [node name="Building" type="Node3D" parent="ForPath/env"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
 
-[node name="Coops" type="Node3D" parent="ForPath/env/Building"]
-script = ExtResource("1_tyvbe")
-show_output_in_tree = true
-keep_static_colliders = true
-enable_updates_in_game = true
-modifier_stack = SubResource("Resource_3q7rk")
-Performance/use_chunks = true
-Performance/chunk_dimensions = Vector3(15, 15, 15)
-metadata/_custom_type_script = "uid://dwfb2dnx0mxog"
+[node name="Mom_Home" parent="ForPath/env/Building" instance=ExtResource("14_m241k")]
+transform = Transform3D(-0.833307, 0, 0.55281, 0, 1, 0, -0.55281, 0, -0.833307, -186.594, 0.5, 144.611)
 
-[node name="ScatterItem" type="Node3D" parent="ForPath/env/Building/Coops"]
-script = ExtResource("8_7airv")
-source_scale_multiplier = 2.0
-path = "uid://bjogcblfqiw8n"
+[node name="path_lamps" type="Node3D" parent="ForPath/env/Building"]
 
-[node name="ScatterShape" type="Node3D" parent="ForPath/env/Building/Coops"]
-transform = Transform3D(1, 0, -2.98023e-08, 0, 1, 0, 2.98023e-08, 0, 1, 0, 0, 0)
-script = ExtResource("9_sntpg")
-shape = SubResource("Resource_5fhnv")
+[node name="Lamp" parent="ForPath/env/Building/path_lamps" instance=ExtResource("8_hlfit")]
+transform = Transform3D(-0.161604, 0, 0.986856, 0, 1, 0, -0.986856, 0, -0.161604, -78.033, 0, -86.984)
+
+[node name="Lamp2" parent="ForPath/env/Building/path_lamps" instance=ExtResource("8_hlfit")]
+transform = Transform3D(-0.857167, 0, -0.515038, 0, 1, 0, 0.515038, 0, -0.857167, -89.7916, 0, -110.393)
+
+[node name="Lamp3" parent="ForPath/env/Building/path_lamps" instance=ExtResource("8_hlfit")]
+transform = Transform3D(-0.619779, 0, -0.784776, 0, 1, 0, 0.784776, 0, -0.619779, -120.082, 0, -151.463)
+
+[node name="Lamp4" parent="ForPath/env/Building/path_lamps" instance=ExtResource("8_hlfit")]
+transform = Transform3D(-0.5, 0, -0.866025, 0, 1, 0, 0.866025, 0, -0.5, -147.999, 0, -172.29)
+
+[node name="Lamp5" parent="ForPath/env/Building/path_lamps" instance=ExtResource("8_hlfit")]
+transform = Transform3D(-0.999848, 0, -0.0174525, 0, 1, 0, 0.0174525, 0, -0.999848, -74.4453, 0, -28.598)
+
+[node name="Lamp6" parent="ForPath/env/Building/path_lamps" instance=ExtResource("8_hlfit")]
+transform = Transform3D(0.403545, 0, 0.91496, 0, 1, 0, -0.91496, 0, 0.403545, -18.856, 0, -61.0486)
+
+[node name="Lamp7" parent="ForPath/env/Building/path_lamps" instance=ExtResource("8_hlfit")]
+transform = Transform3D(0.403545, 0, 0.91496, 0, 1, 0, -0.91496, 0, 0.403545, 31.5495, 0, -38.386)
+
+[node name="Lamp8" parent="ForPath/env/Building/path_lamps" instance=ExtResource("8_hlfit")]
+transform = Transform3D(-0.857167, 0, -0.515038, 0, 1, 0, 0.515038, 0, -0.857167, 59.396, 0, -8.01)
+
+[node name="Lamp9" parent="ForPath/env/Building/path_lamps" instance=ExtResource("8_hlfit")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -174.187, 0, 115.319)
+
+[node name="Lamp26" parent="ForPath/env/Building/path_lamps" instance=ExtResource("8_hlfit")]
+transform = Transform3D(0.950233, 0, -0.311539, 0, 1, 0, 0.311539, 0, 0.950233, -179.657, 0, 131.659)
+
+[node name="Lamp10" parent="ForPath/env/Building/path_lamps" instance=ExtResource("8_hlfit")]
+transform = Transform3D(-0.857167, 0, 0.515038, 0, 1, 0, -0.515038, 0, -0.857167, -168.617, 0, 34.1187)
+
+[node name="Lamp11" parent="ForPath/env/Building/path_lamps" instance=ExtResource("8_hlfit")]
+transform = Transform3D(-0.994151, 0, 0.107999, 0, 1, 0, -0.107999, 0, -0.994151, -162.574, 0, 80.834)
+
+[node name="Lamp12" parent="ForPath/env/Building/path_lamps" instance=ExtResource("8_hlfit")]
+transform = Transform3D(-0.560639, 0, 0.82806, 0, 1, 0, -0.82806, 0, -0.560639, -133.544, 0, 16.1786)
+
+[node name="Lamp13" parent="ForPath/env/Building/path_lamps" instance=ExtResource("8_hlfit")]
+transform = Transform3D(-0.30237, 0, 0.953191, 0, 1, 0, -0.953191, 0, -0.30237, -100.364, 0, 11.5373)
+
+[node name="Lamp14" parent="ForPath/env/Building/path_lamps" instance=ExtResource("8_hlfit")]
+transform = Transform3D(-0.0174524, 0, 0.999848, 0, 1, 0, -0.999848, 0, -0.0174524, -76.1012, 0, 9.43913)
+
+[node name="Lamp15" parent="ForPath/env/Building/path_lamps" instance=ExtResource("8_hlfit")]
+transform = Transform3D(-0.674302, 0, 0.738455, 0, 1, 0, -0.738455, 0, -0.674302, -47.1079, 0, 10.9431)
+
+[node name="Lamp16" parent="ForPath/env/Building/path_lamps" instance=ExtResource("8_hlfit")]
+transform = Transform3D(0.350207, 0, 0.936672, 0, 1, 0, -0.936672, 0, 0.350207, -1.915, 0, 18.2575)
+
+[node name="Lamp17" parent="ForPath/env/Building/path_lamps" instance=ExtResource("8_hlfit")]
+transform = Transform3D(-0.52101, 0, -0.853551, 0, 1, 0, 0.853551, 0, -0.52101, 57.991, 0.5, 30.3007)
+
+[node name="Lamp18" parent="ForPath/env/Building/path_lamps" instance=ExtResource("8_hlfit")]
+transform = Transform3D(-0.645458, 0, -0.763796, 0, 1, 0, 0.763796, 0, -0.645458, 85.453, 0.5, 31.7769)
+
+[node name="Lamp19" parent="ForPath/env/Building/path_lamps" instance=ExtResource("8_hlfit")]
+transform = Transform3D(-0.0191972, 0, -0.999816, 0, 1, 0, 0.999816, 0, -0.0191972, 122.472, 0.5, 32.0529)
+
+[node name="Lamp20" parent="ForPath/env/Building/path_lamps" instance=ExtResource("8_hlfit")]
+transform = Transform3D(0.132257, 0, -0.991216, 0, 1, 0, 0.991216, 0, 0.132257, 163.83, 0.5, 31.852)
+
+[node name="Lamp21" parent="ForPath/env/Building/path_lamps" instance=ExtResource("8_hlfit")]
+transform = Transform3D(0.132257, 0, -0.991216, 0, 1, 0, 0.991216, 0, 0.132257, 163.83, 0.5, 31.852)
+
+[node name="Lamp22" parent="ForPath/env/Building/path_lamps" instance=ExtResource("8_hlfit")]
+transform = Transform3D(-0.168489, 0, -0.985703, 0, 1, 0, 0.985703, 0, -0.168489, 190.925, 0.5, 31.852)
+
+[node name="Lamp23" parent="ForPath/env/Building/path_lamps" instance=ExtResource("8_hlfit")]
+transform = Transform3D(0.422618, 0, -0.906308, 0, 1, 0, 0.906308, 0, 0.422618, 213.606, 0.5, 31.852)
+
+[node name="Lamp24" parent="ForPath/env/Building/path_lamps" instance=ExtResource("8_hlfit")]
+transform = Transform3D(-0.453991, 0, -0.891006, 0, 1, 0, 0.891006, 0, -0.453991, 235.677, 0.5, 31.852)
+
+[node name="Lamp25" parent="ForPath/env/Building/path_lamps" instance=ExtResource("8_hlfit")]
+transform = Transform3D(0.554844, 0, -0.831954, 0, 1, 0, 0.831954, 0, 0.554844, 257.52, 0.5, 31.852)
+
+[node name="Lamp27" parent="ForPath/env/Building/path_lamps" instance=ExtResource("8_hlfit")]
+transform = Transform3D(0.247794, 0, 0.968813, 0, 1, 0, -0.968813, 0, 0.247794, -184.309, 0.5, -181.536)
+
+[node name="Lamp28" parent="ForPath/env/Building/path_lamps" instance=ExtResource("8_hlfit")]
+transform = Transform3D(-0.486442, 0, -0.873713, 0, 1, 0, 0.873713, 0, -0.486442, -165.812, 0.5, -178.82)
+
+[node name="farm_zone" type="Node3D" parent="ForPath/env/Building"]
+
+[node name="BigBarn" type="MeshInstance3D" parent="ForPath/env/Building/farm_zone"]
+transform = Transform3D(-1.31134e-07, 0, -3, 0, 3, 0, 3, 0, -1.31134e-07, 185.046, 0.504004, 97.2492)
+mesh = ExtResource("8_xqgi7")
+skeleton = NodePath("../../../../..")
+
+[node name="BigBarn2" type="MeshInstance3D" parent="ForPath/env/Building/farm_zone"]
+transform = Transform3D(-3, 0, -2.62268e-07, 0, 3, 0, 2.62268e-07, 0, -3, 127.89, 0.504004, 181.297)
+mesh = ExtResource("8_xqgi7")
+skeleton = NodePath("../../../../..")
+
+[node name="Silo" type="MeshInstance3D" parent="ForPath/env/Building/farm_zone"]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 188.476, 0.549446, 118.137)
+mesh = ExtResource("9_wovt4")
+skeleton = NodePath("../../../../..")
+
+[node name="Silo2" type="MeshInstance3D" parent="ForPath/env/Building/farm_zone"]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 188.476, 0.549446, 138.844)
+mesh = ExtResource("9_wovt4")
+skeleton = NodePath("../../../../..")
+
+[node name="ChickenCoop" type="MeshInstance3D" parent="ForPath/env/Building/farm_zone"]
+transform = Transform3D(-1.31134e-07, 0, -3, 0, 3, 0, 3, 0, -1.31134e-07, 186.142, 0.502965, 166.027)
+mesh = ExtResource("10_17w74")
+skeleton = NodePath("../../../../..")
+
+[node name="ChickenCoop2" type="MeshInstance3D" parent="ForPath/env/Building/farm_zone"]
+transform = Transform3D(-1.31134e-07, 0, -3, 0, 3, 0, 3, 0, -1.31134e-07, 153.299, 0.502965, 190.348)
+mesh = ExtResource("10_17w74")
+skeleton = NodePath("../../../../..")
+
+[node name="ChickenCoop5" type="MeshInstance3D" parent="ForPath/env/Building/farm_zone"]
+transform = Transform3D(-1.31134e-07, 0, -3, 0, 3, 0, 3, 0, -1.31134e-07, 161.306, 0.502965, 190.348)
+mesh = ExtResource("10_17w74")
+skeleton = NodePath("../../../../..")
+
+[node name="ChickenCoop6" type="MeshInstance3D" parent="ForPath/env/Building/farm_zone"]
+transform = Transform3D(-1.31134e-07, 0, -3, 0, 3, 0, 3, 0, -1.31134e-07, 168.763, 0.502965, 190.348)
+mesh = ExtResource("10_17w74")
+skeleton = NodePath("../../../../..")
+
+[node name="ChickenCoop7" type="MeshInstance3D" parent="ForPath/env/Building/farm_zone"]
+transform = Transform3D(-1.31134e-07, 0, -3, 0, 3, 0, 3, 0, -1.31134e-07, 186.142, 0.502965, 190.348)
+mesh = ExtResource("10_17w74")
+skeleton = NodePath("../../../../..")
+
+[node name="ChickenCoop8" type="MeshInstance3D" parent="ForPath/env/Building/farm_zone"]
+transform = Transform3D(-1.31134e-07, 0, -3, 0, 3, 0, 3, 0, -1.31134e-07, 176.531, 0.502965, 190.348)
+mesh = ExtResource("10_17w74")
+skeleton = NodePath("../../../../..")
+
+[node name="ChickenCoop3" type="MeshInstance3D" parent="ForPath/env/Building/farm_zone"]
+transform = Transform3D(-1.31134e-07, 0, -3, 0, 3, 0, 3, 0, -1.31134e-07, 186.142, 0.502965, 181.872)
+mesh = ExtResource("10_17w74")
+skeleton = NodePath("../../../../..")
+
+[node name="ChickenCoop4" type="MeshInstance3D" parent="ForPath/env/Building/farm_zone"]
+transform = Transform3D(-1.31134e-07, 0, -3, 0, 3, 0, 3, 0, -1.31134e-07, 186.142, 0.502965, 173.159)
+mesh = ExtResource("10_17w74")
+skeleton = NodePath("../../../../..")
+
+[node name="farmland_zone" type="Node3D" parent="ForPath/env/Building/farm_zone"]
+
+[node name="farmland" parent="ForPath/env/Building/farm_zone/farmland_zone" instance=ExtResource("9_17w74")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 120.29, 0.5, 111.346)
+
+[node name="farmland2" parent="ForPath/env/Building/farm_zone/farmland_zone" instance=ExtResource("9_17w74")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 120.29, 0.5, 123.736)
+
+[node name="farmland3" parent="ForPath/env/Building/farm_zone/farmland_zone" instance=ExtResource("9_17w74")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 120.29, 0.5, 136.208)
+
+[node name="farmland4" parent="ForPath/env/Building/farm_zone/farmland_zone" instance=ExtResource("9_17w74")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 120.29, 0.5, 148.71)
+
+[node name="farmland5" parent="ForPath/env/Building/farm_zone/farmland_zone" instance=ExtResource("9_17w74")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 120.29, 0.5, 98.9774)
+
+[node name="farmland6" parent="ForPath/env/Building/farm_zone/farmland_zone" instance=ExtResource("9_17w74")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 142.429, 0.5, 111.346)
+
+[node name="farmland7" parent="ForPath/env/Building/farm_zone/farmland_zone" instance=ExtResource("9_17w74")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 142.429, 0.5, 123.736)
+
+[node name="farmland8" parent="ForPath/env/Building/farm_zone/farmland_zone" instance=ExtResource("9_17w74")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 142.429, 0.5, 136.208)
+
+[node name="farmland9" parent="ForPath/env/Building/farm_zone/farmland_zone" instance=ExtResource("9_17w74")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 142.429, 0.5, 148.71)
+
+[node name="farmland10" parent="ForPath/env/Building/farm_zone/farmland_zone" instance=ExtResource("9_17w74")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 142.429, 0.5, 98.9774)
+
+[node name="farmland11" parent="ForPath/env/Building/farm_zone/farmland_zone" instance=ExtResource("9_17w74")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 98.6262, 0.5, 111.346)
+
+[node name="farmland12" parent="ForPath/env/Building/farm_zone/farmland_zone" instance=ExtResource("9_17w74")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 98.6262, 0.5, 123.736)
+
+[node name="farmland13" parent="ForPath/env/Building/farm_zone/farmland_zone" instance=ExtResource("9_17w74")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 98.6262, 0.5, 136.208)
+
+[node name="farmland14" parent="ForPath/env/Building/farm_zone/farmland_zone" instance=ExtResource("9_17w74")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 98.6262, 0.5, 148.71)
+
+[node name="farmland15" parent="ForPath/env/Building/farm_zone/farmland_zone" instance=ExtResource("9_17w74")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 98.6262, 0.5, 98.9774)
+
+[node name="farmland16" parent="ForPath/env/Building/farm_zone/farmland_zone" instance=ExtResource("9_17w74")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 77.6254, 0.5, 111.346)
+
+[node name="farmland17" parent="ForPath/env/Building/farm_zone/farmland_zone" instance=ExtResource("9_17w74")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 77.6254, 0.5, 123.736)
+
+[node name="farmland18" parent="ForPath/env/Building/farm_zone/farmland_zone" instance=ExtResource("9_17w74")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 77.6254, 0.5, 136.208)
+
+[node name="farmland19" parent="ForPath/env/Building/farm_zone/farmland_zone" instance=ExtResource("9_17w74")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 77.6254, 0.5, 148.71)
+
+[node name="farmland20" parent="ForPath/env/Building/farm_zone/farmland_zone" instance=ExtResource("9_17w74")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 77.6254, 0.5, 98.9774)
+
+[node name="farmland21" parent="ForPath/env/Building/farm_zone/farmland_zone" instance=ExtResource("9_17w74")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 55.4192, 0.5, 111.346)
+
+[node name="farmland22" parent="ForPath/env/Building/farm_zone/farmland_zone" instance=ExtResource("9_17w74")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 55.4192, 0.5, 123.736)
+
+[node name="farmland23" parent="ForPath/env/Building/farm_zone/farmland_zone" instance=ExtResource("9_17w74")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 55.4192, 0.5, 136.208)
+
+[node name="farmland24" parent="ForPath/env/Building/farm_zone/farmland_zone" instance=ExtResource("9_17w74")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 55.4192, 0.5, 148.71)
+
+[node name="farmland25" parent="ForPath/env/Building/farm_zone/farmland_zone" instance=ExtResource("9_17w74")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 55.4192, 0.5, 98.9774)
+
+[node name="farmland26" parent="ForPath/env/Building/farm_zone/farmland_zone" instance=ExtResource("9_17w74")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 34.1927, 0.5, 111.346)
+
+[node name="farmland27" parent="ForPath/env/Building/farm_zone/farmland_zone" instance=ExtResource("9_17w74")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 34.1927, 0.5, 123.736)
+
+[node name="farmland28" parent="ForPath/env/Building/farm_zone/farmland_zone" instance=ExtResource("9_17w74")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 34.1927, 0.5, 136.208)
+
+[node name="farmland29" parent="ForPath/env/Building/farm_zone/farmland_zone" instance=ExtResource("9_17w74")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 34.1927, 0.5, 148.71)
+
+[node name="farmland30" parent="ForPath/env/Building/farm_zone/farmland_zone" instance=ExtResource("9_17w74")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 34.1927, 0.5, 98.9774)
+
+[node name="farmland_zone2" type="Node3D" parent="ForPath/env/Building/farm_zone"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -62)
+
+[node name="farmland" parent="ForPath/env/Building/farm_zone/farmland_zone2" instance=ExtResource("9_17w74")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 120.29, 0.5, 111.346)
+
+[node name="farmland2" parent="ForPath/env/Building/farm_zone/farmland_zone2" instance=ExtResource("9_17w74")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 120.29, 0.5, 123.736)
+
+[node name="farmland3" parent="ForPath/env/Building/farm_zone/farmland_zone2" instance=ExtResource("9_17w74")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 120.29, 0.5, 136.208)
+
+[node name="farmland4" parent="ForPath/env/Building/farm_zone/farmland_zone2" instance=ExtResource("9_17w74")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 120.29, 0.5, 148.71)
+
+[node name="farmland5" parent="ForPath/env/Building/farm_zone/farmland_zone2" instance=ExtResource("9_17w74")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 120.29, 0.5, 98.9774)
+
+[node name="farmland6" parent="ForPath/env/Building/farm_zone/farmland_zone2" instance=ExtResource("9_17w74")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 142.429, 0.5, 111.346)
+
+[node name="farmland7" parent="ForPath/env/Building/farm_zone/farmland_zone2" instance=ExtResource("9_17w74")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 142.429, 0.5, 123.736)
+
+[node name="farmland8" parent="ForPath/env/Building/farm_zone/farmland_zone2" instance=ExtResource("9_17w74")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 142.429, 0.5, 136.208)
+
+[node name="farmland9" parent="ForPath/env/Building/farm_zone/farmland_zone2" instance=ExtResource("9_17w74")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 142.429, 0.5, 148.71)
+
+[node name="farmland10" parent="ForPath/env/Building/farm_zone/farmland_zone2" instance=ExtResource("9_17w74")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 142.429, 0.5, 98.9774)
+
+[node name="farmland11" parent="ForPath/env/Building/farm_zone/farmland_zone2" instance=ExtResource("9_17w74")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 98.6262, 0.5, 111.346)
+
+[node name="farmland12" parent="ForPath/env/Building/farm_zone/farmland_zone2" instance=ExtResource("9_17w74")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 98.6262, 0.5, 123.736)
+
+[node name="farmland13" parent="ForPath/env/Building/farm_zone/farmland_zone2" instance=ExtResource("9_17w74")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 98.6262, 0.5, 136.208)
+
+[node name="farmland14" parent="ForPath/env/Building/farm_zone/farmland_zone2" instance=ExtResource("9_17w74")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 98.6262, 0.5, 148.71)
+
+[node name="farmland15" parent="ForPath/env/Building/farm_zone/farmland_zone2" instance=ExtResource("9_17w74")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 98.6262, 0.5, 98.9774)
+
+[node name="farmland16" parent="ForPath/env/Building/farm_zone/farmland_zone2" instance=ExtResource("9_17w74")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 77.6254, 0.5, 111.346)
+
+[node name="farmland17" parent="ForPath/env/Building/farm_zone/farmland_zone2" instance=ExtResource("9_17w74")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 77.6254, 0.5, 123.736)
+
+[node name="farmland18" parent="ForPath/env/Building/farm_zone/farmland_zone2" instance=ExtResource("9_17w74")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 77.6254, 0.5, 136.208)
+
+[node name="farmland19" parent="ForPath/env/Building/farm_zone/farmland_zone2" instance=ExtResource("9_17w74")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 77.6254, 0.5, 148.71)
+
+[node name="farmland20" parent="ForPath/env/Building/farm_zone/farmland_zone2" instance=ExtResource("9_17w74")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 77.6254, 0.5, 98.9774)
+
+[node name="farmland21" parent="ForPath/env/Building/farm_zone/farmland_zone2" instance=ExtResource("9_17w74")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 55.4192, 0.5, 111.346)
+
+[node name="farmland22" parent="ForPath/env/Building/farm_zone/farmland_zone2" instance=ExtResource("9_17w74")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 55.4192, 0.5, 123.736)
+
+[node name="farmland23" parent="ForPath/env/Building/farm_zone/farmland_zone2" instance=ExtResource("9_17w74")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 55.4192, 0.5, 136.208)
+
+[node name="farmland24" parent="ForPath/env/Building/farm_zone/farmland_zone2" instance=ExtResource("9_17w74")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 55.4192, 0.5, 148.71)
+
+[node name="farmland25" parent="ForPath/env/Building/farm_zone/farmland_zone2" instance=ExtResource("9_17w74")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 55.4192, 0.5, 98.9774)
+
+[node name="farmland26" parent="ForPath/env/Building/farm_zone/farmland_zone2" instance=ExtResource("9_17w74")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 34.1927, 0.5, 111.346)
+
+[node name="farmland27" parent="ForPath/env/Building/farm_zone/farmland_zone2" instance=ExtResource("9_17w74")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 34.1927, 0.5, 123.736)
+
+[node name="farmland28" parent="ForPath/env/Building/farm_zone/farmland_zone2" instance=ExtResource("9_17w74")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 34.1927, 0.5, 136.208)
+
+[node name="farmland29" parent="ForPath/env/Building/farm_zone/farmland_zone2" instance=ExtResource("9_17w74")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 34.1927, 0.5, 148.71)
+
+[node name="farmland30" parent="ForPath/env/Building/farm_zone/farmland_zone2" instance=ExtResource("9_17w74")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 34.1927, 0.5, 98.9774)
+
+[node name="fences" type="Node3D" parent="ForPath/env/Building/farm_zone"]
+
+[node name="Fence" parent="ForPath/env/Building/farm_zone/fences" instance=ExtResource("10_ouyis")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 155.684, 0, 36.3236)
+
+[node name="Fence2" parent="ForPath/env/Building/farm_zone/fences" instance=ExtResource("10_ouyis")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 144.141, 0, 36.3236)
+
+[node name="Fence3" parent="ForPath/env/Building/farm_zone/fences" instance=ExtResource("10_ouyis")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 132.627, 0, 36.3236)
+
+[node name="Fence4" parent="ForPath/env/Building/farm_zone/fences" instance=ExtResource("10_ouyis")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 121.17, 0, 36.3236)
+
+[node name="Fence5" parent="ForPath/env/Building/farm_zone/fences" instance=ExtResource("10_ouyis")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 109.603, 0, 36.3236)
+
+[node name="Fence6" parent="ForPath/env/Building/farm_zone/fences" instance=ExtResource("10_ouyis")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 98.0542, 0, 36.3236)
+
+[node name="Fence7" parent="ForPath/env/Building/farm_zone/fences" instance=ExtResource("10_ouyis")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 86.616, 0, 36.3236)
+
+[node name="Fence8" parent="ForPath/env/Building/farm_zone/fences" instance=ExtResource("10_ouyis")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 75.186, 0, 36.3236)
+
+[node name="Fence12" parent="ForPath/env/Building/farm_zone/fences" instance=ExtResource("10_ouyis")]
+transform = Transform3D(-8.74228e-08, 0, 2, 0, 2, 0, -2, 0, -8.74228e-08, 22.9479, -0.000522137, 42.0179)
+
+[node name="Fence17" parent="ForPath/env/Building/farm_zone/fences" instance=ExtResource("10_ouyis")]
+transform = Transform3D(-8.74228e-08, 0, 2, 0, 2, 0, -2, 0, -8.74228e-08, 22.9485, 0, 133.847)
+
+[node name="Fence18" parent="ForPath/env/Building/farm_zone/fences" instance=ExtResource("10_ouyis")]
+transform = Transform3D(-8.74228e-08, 0, 2, 0, 2, 0, -2, 0, -8.74228e-08, 22.9485, 0, 156.739)
+
+[node name="Fence27" parent="ForPath/env/Building/farm_zone/fences" instance=ExtResource("10_ouyis")]
+transform = Transform3D(-8.74228e-08, 0, 2, 0, 2, 0, -2, 0, -8.74228e-08, 22.9485, 0, 202.424)
+
+[node name="Fence28" parent="ForPath/env/Building/farm_zone/fences" instance=ExtResource("10_ouyis")]
+transform = Transform3D(-8.74228e-08, 0, 2, 0, 2, 0, -2, 0, -8.74228e-08, 22.9485, 0, 191.088)
+
+[node name="Fence29" parent="ForPath/env/Building/farm_zone/fences" instance=ExtResource("10_ouyis")]
+transform = Transform3D(-8.74228e-08, 0, 2, 0, 2, 0, -2, 0, -8.74228e-08, 22.9485, 0, 179.747)
+
+[node name="Fence30" parent="ForPath/env/Building/farm_zone/fences" instance=ExtResource("10_ouyis")]
+transform = Transform3D(-8.74228e-08, 0, 2, 0, 2, 0, -2, 0, -8.74228e-08, 22.9485, 0, 168.232)
+
+[node name="Fence19" parent="ForPath/env/Building/farm_zone/fences" instance=ExtResource("10_ouyis")]
+transform = Transform3D(-8.74228e-08, 0, 2, 0, 2, 0, -2, 0, -8.74228e-08, 22.9485, 0, 145.333)
+
+[node name="Fence20" parent="ForPath/env/Building/farm_zone/fences" instance=ExtResource("10_ouyis")]
+transform = Transform3D(-8.74228e-08, 0, 2, 0, 2, 0, -2, 0, -8.74228e-08, 22.9485, 0, 122.397)
+
+[node name="Fence21" parent="ForPath/env/Building/farm_zone/fences" instance=ExtResource("10_ouyis")]
+transform = Transform3D(-8.74228e-08, 0, 2, 0, 2, 0, -2, 0, -8.74228e-08, 22.9485, 0, 99.4375)
+
+[node name="Fence22" parent="ForPath/env/Building/farm_zone/fences" instance=ExtResource("10_ouyis")]
+transform = Transform3D(-8.74228e-08, 0, 2, 0, 2, 0, -2, 0, -8.74228e-08, 22.9485, 0, 110.951)
+
+[node name="Fence23" parent="ForPath/env/Building/farm_zone/fences" instance=ExtResource("10_ouyis")]
+transform = Transform3D(-8.74228e-08, 0, 2, 0, 2, 0, -2, 0, -8.74228e-08, 22.9485, 0, 88.0003)
+
+[node name="Fence24" parent="ForPath/env/Building/farm_zone/fences" instance=ExtResource("10_ouyis")]
+transform = Transform3D(-8.74228e-08, 0, 2, 0, 2, 0, -2, 0, -8.74228e-08, 22.9485, 0, 76.4217)
+
+[node name="Fence25" parent="ForPath/env/Building/farm_zone/fences" instance=ExtResource("10_ouyis")]
+transform = Transform3D(-8.74228e-08, 0, 2, 0, 2, 0, -2, 0, -8.74228e-08, 22.9485, 0, 64.9628)
+
+[node name="Fence26" parent="ForPath/env/Building/farm_zone/fences" instance=ExtResource("10_ouyis")]
+transform = Transform3D(-8.74228e-08, 0, 2, 0, 2, 0, -2, 0, -8.74228e-08, 22.9485, 0, 53.4656)
+
+[node name="Fence13" parent="ForPath/env/Building/farm_zone/fences" instance=ExtResource("10_ouyis")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 28.6657, 0, 36.3236)
+
+[node name="Fence14" parent="ForPath/env/Building/farm_zone/fences" instance=ExtResource("10_ouyis")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 40.61, 0, 36.3236)
+
+[node name="Fence15" parent="ForPath/env/Building/farm_zone/fences" instance=ExtResource("10_ouyis")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 52.2144, 0, 36.3236)
+
+[node name="Fence16" parent="ForPath/env/Building/farm_zone/fences" instance=ExtResource("10_ouyis")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 63.7411, 0, 36.3236)
+
+[node name="Fence9" parent="ForPath/env/Building/farm_zone/fences" instance=ExtResource("10_ouyis")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 194.879, 0, 36.3236)
+
+[node name="Fence31" parent="ForPath/env/Building/farm_zone/fences" instance=ExtResource("10_ouyis")]
+transform = Transform3D(-8.74228e-08, 0, 2, 0, 2, 0, -2, 0, -8.74228e-08, 200.603, 0, 42.0206)
+
+[node name="Fence32" parent="ForPath/env/Building/farm_zone/fences" instance=ExtResource("10_ouyis")]
+transform = Transform3D(-8.74228e-08, 0, 2, 0, 2, 0, -2, 0, -8.74228e-08, 200.603, 0, 53.4956)
+
+[node name="Fence33" parent="ForPath/env/Building/farm_zone/fences" instance=ExtResource("10_ouyis")]
+transform = Transform3D(-8.74228e-08, 0, 2, 0, 2, 0, -2, 0, -8.74228e-08, 200.603, 0, 64.9148)
+
+[node name="Fence34" parent="ForPath/env/Building/farm_zone/fences" instance=ExtResource("10_ouyis")]
+transform = Transform3D(-8.74228e-08, 0, 2, 0, 2, 0, -2, 0, -8.74228e-08, 200.603, 0, 76.3098)
+
+[node name="Fence35" parent="ForPath/env/Building/farm_zone/fences" instance=ExtResource("10_ouyis")]
+transform = Transform3D(-8.74228e-08, 0, 2, 0, 2, 0, -2, 0, -8.74228e-08, 200.603, 0, 87.8916)
+
+[node name="Fence36" parent="ForPath/env/Building/farm_zone/fences" instance=ExtResource("10_ouyis")]
+transform = Transform3D(-8.74228e-08, 0, 2, 0, 2, 0, -2, 0, -8.74228e-08, 200.603, 0, 99.4921)
+
+[node name="Fence37" parent="ForPath/env/Building/farm_zone/fences" instance=ExtResource("10_ouyis")]
+transform = Transform3D(-8.74228e-08, 0, 2, 0, 2, 0, -2, 0, -8.74228e-08, 200.603, 0, 110.908)
+
+[node name="Fence38" parent="ForPath/env/Building/farm_zone/fences" instance=ExtResource("10_ouyis")]
+transform = Transform3D(-8.74228e-08, 0, 2, 0, 2, 0, -2, 0, -8.74228e-08, 200.603, 0, 122.402)
+
+[node name="Fence39" parent="ForPath/env/Building/farm_zone/fences" instance=ExtResource("10_ouyis")]
+transform = Transform3D(-8.74228e-08, 0, 2, 0, 2, 0, -2, 0, -8.74228e-08, 200.603, 0, 133.863)
+
+[node name="Fence40" parent="ForPath/env/Building/farm_zone/fences" instance=ExtResource("10_ouyis")]
+transform = Transform3D(-8.74228e-08, 0, 2, 0, 2, 0, -2, 0, -8.74228e-08, 200.603, 0, 145.433)
+
+[node name="Fence41" parent="ForPath/env/Building/farm_zone/fences" instance=ExtResource("10_ouyis")]
+transform = Transform3D(-8.74228e-08, 0, 2, 0, 2, 0, -2, 0, -8.74228e-08, 200.603, 0, 157.066)
+
+[node name="Fence42" parent="ForPath/env/Building/farm_zone/fences" instance=ExtResource("10_ouyis")]
+transform = Transform3D(-8.74228e-08, 0, 2, 0, 2, 0, -2, 0, -8.74228e-08, 200.603, 0, 168.568)
+
+[node name="Fence43" parent="ForPath/env/Building/farm_zone/fences" instance=ExtResource("10_ouyis")]
+transform = Transform3D(-8.74228e-08, 0, 2, 0, 2, 0, -2, 0, -8.74228e-08, 200.603, 0, 180.017)
+
+[node name="Fence44" parent="ForPath/env/Building/farm_zone/fences" instance=ExtResource("10_ouyis")]
+transform = Transform3D(-8.74228e-08, 0, 2, 0, 2, 0, -2, 0, -8.74228e-08, 200.603, 0, 191.545)
+
+[node name="Fence45" parent="ForPath/env/Building/farm_zone/fences" instance=ExtResource("10_ouyis")]
+transform = Transform3D(-8.74228e-08, 0, 2, 0, 2, 0, -2, 0, -8.74228e-08, 200.603, 0, 203.105)
+
+[node name="Fence46" parent="ForPath/env/Building/farm_zone/fences" instance=ExtResource("10_ouyis")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 194.95, 0, 208.908)
+
+[node name="Fence47" parent="ForPath/env/Building/farm_zone/fences" instance=ExtResource("10_ouyis")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 183.523, 0, 208.908)
+
+[node name="Fence48" parent="ForPath/env/Building/farm_zone/fences" instance=ExtResource("10_ouyis")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 172.053, 0, 208.908)
+
+[node name="Fence49" parent="ForPath/env/Building/farm_zone/fences" instance=ExtResource("10_ouyis")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 160.739, 0, 208.908)
+
+[node name="Fence50" parent="ForPath/env/Building/farm_zone/fences" instance=ExtResource("10_ouyis")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 149.266, 0, 208.908)
+
+[node name="Fence51" parent="ForPath/env/Building/farm_zone/fences" instance=ExtResource("10_ouyis")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 137.79, 0, 208.908)
+
+[node name="Fence52" parent="ForPath/env/Building/farm_zone/fences" instance=ExtResource("10_ouyis")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 126.317, 0, 208.908)
+
+[node name="Fence53" parent="ForPath/env/Building/farm_zone/fences" instance=ExtResource("10_ouyis")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 114.791, 0, 208.908)
+
+[node name="Fence54" parent="ForPath/env/Building/farm_zone/fences" instance=ExtResource("10_ouyis")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 103.293, 0, 208.908)
+
+[node name="Fence55" parent="ForPath/env/Building/farm_zone/fences" instance=ExtResource("10_ouyis")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 91.6577, 0, 208.908)
+
+[node name="Fence56" parent="ForPath/env/Building/farm_zone/fences" instance=ExtResource("10_ouyis")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 80.1932, 0, 208.908)
+
+[node name="Fence57" parent="ForPath/env/Building/farm_zone/fences" instance=ExtResource("10_ouyis")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 68.7342, 0, 208.908)
+
+[node name="Fence58" parent="ForPath/env/Building/farm_zone/fences" instance=ExtResource("10_ouyis")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 57.2433, 0, 208.908)
+
+[node name="Fence59" parent="ForPath/env/Building/farm_zone/fences" instance=ExtResource("10_ouyis")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 45.8454, 0, 208.908)
+
+[node name="Fence60" parent="ForPath/env/Building/farm_zone/fences" instance=ExtResource("10_ouyis")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 34.4967, 0, 208.908)
+
+[node name="Fence61" parent="ForPath/env/Building/farm_zone/fences" instance=ExtResource("10_ouyis")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 28.7152, 0, 208.908)
+
+[node name="Fence10" parent="ForPath/env/Building/farm_zone/fences" instance=ExtResource("10_ouyis")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 183.418, 0, 36.3236)
+
+[node name="Fence11" parent="ForPath/env/Building/farm_zone/fences" instance=ExtResource("10_ouyis")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 172.017, 0, 36.3236)
+
+[node name="Home" parent="ForPath/env" instance=ExtResource("11_ouyis")]
+transform = Transform3D(0.940229, 0, -0.340544, 0, 1, 0, 0.340544, 0, 0.940229, -185.742, 0.5, -184.334)
 
 [node name="CharacterBody3D" parent="." instance=ExtResource("11_3q7rk")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.86606, 0.0468016)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -181.356, 1.14404, -182.324)
+
+[node name="path" type="Node3D" parent="."]
+
+[node name="path" type="MeshInstance3D" parent="path"]
+transform = Transform3D(0.929339, 0, -0.369228, 0, 1, 0, 0.369228, 0, 0.929339, -160.568, 0.1, -174.273)
+mesh = SubResource("PlaneMesh_gdb1i")
+
+[node name="path2" type="MeshInstance3D" parent="path"]
+transform = Transform3D(0.727342, 0, -0.686275, 0, 1, 0, 0.686275, 0, 0.727342, -119.631, 0.1, -148.375)
+mesh = SubResource("PlaneMesh_gdb1i")
+skeleton = NodePath("../path")
+
+[node name="path3" type="MeshInstance3D" parent="path"]
+transform = Transform3D(0.422555, 0, -0.906337, 0, 1, 0, 0.906337, 0, 0.422555, -91.452, 0.1, -109.385)
+mesh = SubResource("PlaneMesh_gdb1i")
+skeleton = NodePath("../path2")
+
+[node name="path4" type="MeshInstance3D" parent="path"]
+transform = Transform3D(0.0580521, 0, -0.998313, 0, 1, 0, 0.998313, 0, 0.0580521, -79.877, 0.1, -62.792)
+mesh = SubResource("PlaneMesh_gdb1i")
+skeleton = NodePath("../path3")
+
+[node name="path5" type="MeshInstance3D" parent="path"]
+transform = Transform3D(0.446698, 0, -0.894686, 0, 1, 0, 0.894686, 0, 0.446698, 54.8247, 0.1, -12.0574)
+mesh = SubResource("PlaneMesh_gdb1i")
+skeleton = NodePath("../path2")
+
+[node name="path6" type="MeshInstance3D" parent="path"]
+transform = Transform3D(-0.824156, 0, 0.566363, 0, 1, 0, -0.566363, 0, -0.824156, 24.1967, 0.1, -47.6245)
+mesh = SubResource("PlaneMesh_gdb1i")
+skeleton = NodePath("../path2")
+
+[node name="path7" type="MeshInstance3D" parent="path"]
+transform = Transform3D(0.995352, 0, -0.0962974, 0, 1, 0, 0.0962974, 0, 0.995352, -20.4743, 0.1, -64.0824)
+mesh = SubResource("PlaneMesh_gdb1i")
+skeleton = NodePath("../path2")
+
+[node name="path8" type="MeshInstance3D" parent="path"]
+transform = Transform3D(-0.81649, 0, 0.577359, 0, 1, 0, -0.577359, 0, -0.81649, -64.0808, 0.1, -80.2692)
+mesh = SubResource("PlaneMesh_gdb1i")
+skeleton = NodePath("../path2")
+
+[node name="path9" type="MeshInstance3D" parent="path"]
+transform = Transform3D(0.0580521, 0, -0.998313, 0, 1, 0, 0.998313, 0, 0.0580521, -77.404, 0.1, -18.5428)
+mesh = SubResource("PlaneMesh_gdb1i")
+skeleton = NodePath("../path3")
+
+[node name="path10" type="MeshInstance3D" parent="path"]
+transform = Transform3D(-0.999412, 0, 0.0343583, 0, 1, 0, -0.0343583, 0, -0.999412, -54.6751, 0.1, 8.26196)
+mesh = SubResource("PlaneMesh_gdb1i")
+skeleton = NodePath("../path/path/path")
+
+[node name="path11" type="MeshInstance3D" parent="path"]
+transform = Transform3D(-0.122337, 0, 0.992489, 0, 1, 0, -0.992489, 0, -0.122337, -168.11, 0.1, 57.2203)
+mesh = SubResource("PlaneMesh_gdb1i")
+skeleton = NodePath("../path12")
+
+[node name="path12" type="MeshInstance3D" parent="path"]
+transform = Transform3D(-0.202753, 0, -0.97923, 0, 1, 0, 0.97923, 0, -0.202753, -170.168, 0.1, 105.646)
+mesh = SubResource("PlaneMesh_gdb1i")
+skeleton = NodePath("../path")
+
+[node name="path13" type="MeshInstance3D" parent="path"]
+transform = Transform3D(0.997199, 0, 0.0748226, 0, 1, 0, -0.0748226, 0, 0.997199, -104.233, 0.1, 9.35977)
+mesh = SubResource("PlaneMesh_gdb1i")
+skeleton = NodePath("../path14")
+
+[node name="path14" type="MeshInstance3D" parent="path"]
+transform = Transform3D(-0.890372, 0, -0.455235, 0, 1, 0, 0.455235, 0, -0.890372, -150.087, 0.1, 22.3621)
+mesh = SubResource("PlaneMesh_gdb1i")
+skeleton = NodePath("../path11")
+
+[node name="path15" type="MeshInstance3D" parent="path"]
+transform = Transform3D(0.974226, 0, -0.225597, 0, 1, 0, 0.225597, 0, 0.974226, -6.6489, 0.2, 14.5183)
+mesh = SubResource("PlaneMesh_gdb1i")
+skeleton = NodePath("../path/path/path")
+
+[node name="path16" type="MeshInstance3D" parent="path"]
+transform = Transform3D(0.956844, 0, -0.290619, 0, 1, 0, 0.290619, 0, 0.956844, 40.2054, 0.2, 26.8976)
+mesh = SubResource("PlaneMesh_gdb1i")
+skeleton = NodePath("../path/path/path")
+
+[node name="path18" type="MeshInstance3D" parent="path"]
+transform = Transform3D(1.00001, 0, 0, 0, 1, 0, 0, 0, 1.00001, 87.8206, 0.4, 33.8934)
+mesh = SubResource("PlaneMesh_gdb1i")
+skeleton = NodePath("../path/path/path")
+
+[node name="path20" type="MeshInstance3D" parent="path"]
+transform = Transform3D(1.00001, 0, 0, 0, 1, 0, 0, 0, 1.00001, 136.119, 0.4, 33.8934)
+mesh = SubResource("PlaneMesh_gdb1i")
+skeleton = NodePath("../path/path/path")
+
+[node name="path21" type="MeshInstance3D" parent="path"]
+transform = Transform3D(1.00001, 0, 0, 0, 1, 0, 0, 0, 1.00001, 176.097, 0.4, 33.8934)
+mesh = SubResource("PlaneMesh_gdb1i")
+skeleton = NodePath("../path/path/path")
+
+[node name="path24" type="MeshInstance3D" parent="path"]
+transform = Transform3D(-4.37119e-08, 0, -1.00001, 0, 1, 0, 1.00001, 0, -4.37119e-08, 164.219, 0.4, 59.0539)
+mesh = SubResource("PlaneMesh_gdb1i")
+skeleton = NodePath("../path/path/path")
+
+[node name="path25" type="MeshInstance3D" parent="path"]
+transform = Transform3D(-4.37119e-08, 0, -1.00001, 0, 1, 0, 1.00001, 0, -4.37119e-08, 164.219, 0.4, 107.147)
+mesh = SubResource("PlaneMesh_gdb1i")
+skeleton = NodePath("../path/path/path")
+
+[node name="path26" type="MeshInstance3D" parent="path"]
+transform = Transform3D(-4.37119e-08, 0, -1.00001, 0, 1, 0, 1.00001, 0, -4.37119e-08, 164.219, 0.4, 140.726)
+mesh = SubResource("PlaneMesh_gdb1i")
+skeleton = NodePath("../path/path/path")
+
+[node name="path27" type="MeshInstance3D" parent="path"]
+transform = Transform3D(1.00001, 0, 0, 0, 1, 0, 0, 0, 1.00001, 141.783, 0.4, 167.62)
+mesh = SubResource("PlaneMesh_gdb1i")
+skeleton = NodePath("../path/path/path")
+
+[node name="path22" type="MeshInstance3D" parent="path"]
+transform = Transform3D(1.00001, 0, 0, 0, 1, 0, 0, 0, 1.00001, 222.707, 0.4, 33.8934)
+mesh = SubResource("PlaneMesh_gdb1i")
+skeleton = NodePath("../path/path/path")
+
+[node name="path23" type="MeshInstance3D" parent="path"]
+transform = Transform3D(1.00001, 0, 0, 0, 1, 0, 0, 0, 1.00001, 253.928, 0.4, 33.8934)
+mesh = SubResource("PlaneMesh_gdb1i")
+skeleton = NodePath("../path/path/path")
+
+[node name="path19" type="MeshInstance3D" parent="path"]
+transform = Transform3D(0.613586, 0, -0.789656, 0, 1, 0, 0.789656, 0, 0.613586, 78.6533, 0.0419251, 26.4666)
+mesh = SubResource("PlaneMesh_gdb1i")
+skeleton = NodePath("../path/path/path")
 
 [node name="ground_ma" type="MeshInstance3D" parent="."]
 mesh = SubResource("BoxMesh_uq144")
@@ -185,4 +749,83 @@ metadata/_edit_lock_ = true
 [node name="StaticBody3D2" type="StaticBody3D" parent="ground_ma"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ground_ma/StaticBody3D2"]
-shape = SubResource("ConcavePolygonShape3D_mvm06")
+shape = SubResource("BoxShape3D_ouyis")
+
+[node name="wall" type="Node3D" parent="."]
+
+[node name="wall_ma" type="MeshInstance3D" parent="wall"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, -200)
+metadata/_edit_lock_ = true
+
+[node name="StaticBody3D2" type="StaticBody3D" parent="wall/wall_ma"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="wall/wall_ma/StaticBody3D2"]
+shape = SubResource("BoxShape3D_ouyis")
+
+[node name="wall_ma2" type="MeshInstance3D" parent="wall"]
+transform = Transform3D(-4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -4.37114e-08, 1.91069e-15, 200, 0, 0)
+metadata/_edit_lock_ = true
+
+[node name="StaticBody3D2" type="StaticBody3D" parent="wall/wall_ma2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="wall/wall_ma2/StaticBody3D2"]
+shape = SubResource("BoxShape3D_ouyis")
+
+[node name="wall_ma3" type="MeshInstance3D" parent="wall"]
+transform = Transform3D(-4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -4.37114e-08, 1.91069e-15, -200, 0, 0)
+metadata/_edit_lock_ = true
+
+[node name="StaticBody3D2" type="StaticBody3D" parent="wall/wall_ma3"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="wall/wall_ma3/StaticBody3D2"]
+shape = SubResource("BoxShape3D_ouyis")
+
+[node name="wall_ma4" type="MeshInstance3D" parent="wall"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 200)
+metadata/_edit_lock_ = true
+
+[node name="StaticBody3D2" type="StaticBody3D" parent="wall/wall_ma4"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="wall/wall_ma4/StaticBody3D2"]
+shape = SubResource("BoxShape3D_ouyis")
+
+[node name="cloud_ma" type="MeshInstance3D" parent="wall"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 200, 0)
+metadata/_edit_lock_ = true
+
+[node name="StaticBody3D2" type="StaticBody3D" parent="wall/cloud_ma"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="wall/cloud_ma/StaticBody3D2"]
+shape = SubResource("BoxShape3D_ouyis")
+
+[node name="OuterForest" type="Node3D" parent="."]
+
+[node name="wallttree" parent="OuterForest" instance=ExtResource("14_dlcfm")]
+transform = Transform3D(-2.18557e-07, 0, 5, 0, 5, 0, -5, 0, -2.18557e-07, -228.394, 0, -142.591)
+
+[node name="wallttree2" parent="OuterForest" instance=ExtResource("14_dlcfm")]
+transform = Transform3D(-2.18557e-07, 0, 5, 0, 5, 0, -5, 0, -2.18557e-07, -228.394, 0, -82.6731)
+
+[node name="wallttree3" parent="OuterForest" instance=ExtResource("14_dlcfm")]
+transform = Transform3D(-2.18557e-07, 0, 5, 0, 5, 0, -5, 0, -2.18557e-07, -228.394, 0, 48.6384)
+
+[node name="wallttree4" parent="OuterForest" instance=ExtResource("14_dlcfm")]
+transform = Transform3D(-2.18557e-07, 0, 5, 0, 5, 0, -5, 0, -2.18557e-07, -228.394, 0, 105.589)
+
+[node name="wallttree5" parent="OuterForest" instance=ExtResource("14_dlcfm")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -70.7196, 0, 240.773)
+
+[node name="wallttree6" parent="OuterForest" instance=ExtResource("14_dlcfm")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 51.6558, 0, 240.773)
+
+[node name="wallttree7" parent="OuterForest" instance=ExtResource("14_dlcfm")]
+transform = Transform3D(-2.18557e-07, 0, 5, 0, 5, 0, -5, 0, -2.18557e-07, 254.364, 0, 80.4402)
+
+[node name="wallttree8" parent="OuterForest" instance=ExtResource("14_dlcfm")]
+transform = Transform3D(-2.18557e-07, 0, 5, 0, 5, 0, -5, 0, -2.18557e-07, 254.364, 0, -97.6804)
+
+[node name="wallttree9" parent="OuterForest" instance=ExtResource("14_dlcfm")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 168.887, 0, -236.398)
+
+[node name="wallttree10" parent="OuterForest" instance=ExtResource("14_dlcfm")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -84.2577, 0, -231.111)

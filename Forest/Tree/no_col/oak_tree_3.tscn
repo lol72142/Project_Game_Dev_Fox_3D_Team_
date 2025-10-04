@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://cptp7bdflg5wg"]
+
+[ext_resource type="PackedScene" uid="uid://bunvu7rkxmbj" path="res://Forest/Asset/Free_Forest_Kit_AssetQuest/Meshes/Oak_Tree_3.fbx" id="1_2elbx"]
+
+[node name="Oak_Tree_3" instance=ExtResource("1_2elbx")]
