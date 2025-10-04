@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://bayg64a3uo2pm"]
+
+[ext_resource type="Script" uid="uid://densetbs0wfl" path="res://script/audio_manager.gd" id="1_78770"]
+[ext_resource type="AudioStream" uid="uid://b453ipetbd3ie" path="res://asset/audio/horror-background-atmosphere-06-199279.wav" id="1_x2f28"]
+[ext_resource type="AudioStream" uid="uid://cm2iqx3grku7d" path="res://asset/audio/running-in-grass-6237-[AudioTrimmer.com].wav" id="3_20upo"]
+
+[node name="AudioManager" type="Node"]
+process_mode = 3
+script = ExtResource("1_78770")
+
+[node name="forest_sfx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_x2f28")
+
+[node name="Run" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_20upo")

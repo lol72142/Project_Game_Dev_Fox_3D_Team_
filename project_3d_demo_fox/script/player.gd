@@ -20,6 +20,7 @@ var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 
 func _ready() -> void:
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+	AudioManager.forest_sfx.play()
 	
 func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventMouseMotion:
@@ -29,7 +30,7 @@ func _unhandled_input(event: InputEvent) -> void:
 
 
 func _physics_process(delta: float) -> void:
-	
+
 	if not is_on_floor():
 		velocity.y -= gravity * delta
 	
@@ -48,6 +49,8 @@ func _physics_process(delta: float) -> void:
 		if directionn:
 			velocity.x = directionn.x * speed
 			velocity.z = directionn.z * speed
+			if not AudioManager.run.playing:
+				AudioManager.run.play()
 		else:
 			velocity.x = lerp(velocity.x, directionn.x * speed, delta * 15.0)
 			velocity.z = lerp(velocity.x, directionn.x * speed, delta * 15.0)
