@@ -1,0 +1,32 @@
+[gd_scene load_steps=2 format=3 uid="uid://c6g1hyug1yf61"]
+
+[ext_resource type="PackedScene" uid="uid://v6dfp3jtp4hi" path="res://Forest/Tree/with_col/moretree_1.tscn" id="1_av2af"]
+
+[node name="mmmoretree_1" type="Node3D"]
+
+[node name="moretree2" parent="." instance=ExtResource("1_av2af")]
+transform = Transform3D(0.984808, 0, 0.173648, 0, 1, 0, -0.173648, 0, 0.984808, -0.718092, 0, -1.25658)
+
+[node name="moretree3" parent="." instance=ExtResource("1_av2af")]
+transform = Transform3D(0.939693, 0, 0.34202, 0, 1, 0, -0.34202, 0, 0.939693, -16.3511, 0, 13.5813)
+
+[node name="moretree4" parent="." instance=ExtResource("1_av2af")]
+transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, -15.81, 0, -1.25658)
+
+[node name="moretree5" parent="." instance=ExtResource("1_av2af")]
+transform = Transform3D(0.766044, 0, 0.642788, 0, 1, 0, -0.642788, 0, 0.766044, -16.5293, 0, -12.1065)
+
+[node name="moretree6" parent="." instance=ExtResource("1_av2af")]
+transform = Transform3D(0.642788, 0, 0.766044, 0, 1, 0, -0.766044, 0, 0.642788, -4.72649, 0, -14.6019)
+
+[node name="moretree7" parent="." instance=ExtResource("1_av2af")]
+transform = Transform3D(0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, 0.5, 7.23194, 0, -15.7278)
+
+[node name="moretree8" parent="." instance=ExtResource("1_av2af")]
+transform = Transform3D(0.34202, 0, 0.939693, 0, 1, 0, -0.939693, 0, 0.34202, 13.7485, 0, -4.17702)
+
+[node name="moretree9" parent="." instance=ExtResource("1_av2af")]
+transform = Transform3D(0.173648, 0, 0.984808, 0, 1, 0, -0.984808, 0, 0.173648, 12.4109, 0, 9.36143)
+
+[node name="moretree10" parent="." instance=ExtResource("1_av2af")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.718092, 0, 12.4207)

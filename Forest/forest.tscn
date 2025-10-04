@@ -1,84 +1,18 @@
-[gd_scene load_steps=26 format=3 uid="uid://btxvjhxs3wn1b"]
+[gd_scene load_steps=11 format=3 uid="uid://btxvjhxs3wn1b"]
 
 [ext_resource type="Script" uid="uid://clhgpds7ta4bd" path="res://Forest/forest.gd" id="1_ouyis"]
 [ext_resource type="PackedScene" uid="uid://bjogcblfqiw8n" path="res://Forest/Building/coop.tscn" id="2_jxydr"]
-[ext_resource type="PackedScene" uid="uid://8donvon65h2o" path="res://Forest/Tree/with_col/tree_1.tscn" id="2_svcej"]
-[ext_resource type="Script" uid="uid://dwfb2dnx0mxog" path="res://addons/proton_scatter/src/scatter.gd" id="3_dlcfm"]
-[ext_resource type="Script" uid="uid://blf254r51syi0" path="res://addons/proton_scatter/src/stack/modifier_stack.gd" id="4_dekya"]
-[ext_resource type="Script" uid="uid://cdkjy6lrayqv2" path="res://addons/proton_scatter/src/modifiers/base_modifier.gd" id="5_4aca8"]
-[ext_resource type="Script" uid="uid://dsyjmaoicn1cl" path="res://addons/proton_scatter/src/modifiers/create_inside_random.gd" id="6_ov0el"]
-[ext_resource type="Script" uid="uid://cvi4bokds4h7l" path="res://addons/proton_scatter/src/modifiers/randomize_transforms.gd" id="7_7airv"]
-[ext_resource type="Script" uid="uid://c1iwn62gm7fvi" path="res://addons/proton_scatter/src/modifiers/relax.gd" id="8_sntpg"]
-[ext_resource type="Script" uid="uid://by5pxmlcjgjuh" path="res://addons/proton_scatter/src/modifiers/project_on_geometry.gd" id="9_hmpne"]
-[ext_resource type="Script" uid="uid://bhsfbxmxwtpu3" path="res://addons/proton_scatter/src/scatter_item.gd" id="10_3q7rk"]
+[ext_resource type="PackedScene" uid="uid://v6dfp3jtp4hi" path="res://Forest/Tree/with_col/moretree_1.tscn" id="3_851gr"]
+[ext_resource type="PackedScene" uid="uid://c6g1hyug1yf61" path="res://Forest/Tree/with_col/mmmoretree_1.tscn" id="4_gdb1i"]
 [ext_resource type="PackedScene" uid="uid://bbxop6nt0x0t1" path="res://sence/player.tscn" id="11_3q7rk"]
-[ext_resource type="Script" uid="uid://b1lcv7h4pap4w" path="res://addons/proton_scatter/src/scatter_shape.gd" id="11_5fhnv"]
 [ext_resource type="Texture2D" uid="uid://bsfp64dod28al" path="res://Grass_Ground_Texture.jpg" id="12_5fhnv"]
-[ext_resource type="Script" uid="uid://cg70qg5k3fkcs" path="res://addons/proton_scatter/src/shapes/box_shape.gd" id="12_u0sfp"]
 
 [sub_resource type="Environment" id="Environment_tyvbe"]
 ambient_light_source = 2
 ambient_light_energy = 16.0
 tonemap_exposure = 0.1
-fog_enabled = true
-fog_density = 0.1
-
-[sub_resource type="Resource" id="Resource_dlcfm"]
-script = ExtResource("6_ov0el")
-amount = 1000
-enabled = true
-override_global_seed = false
-custom_seed = 0
-restrict_height = true
-reference_frame = 1
-
-[sub_resource type="Resource" id="Resource_dekya"]
-script = ExtResource("7_7airv")
-position = Vector3(0.15, 0.15, 0.15)
-rotation = Vector3(0, 360, 0)
-scale = Vector3(0.1, 0.1, 0.1)
-enabled = true
-override_global_seed = false
-custom_seed = 0
-restrict_height = false
-reference_frame = 2
-
-[sub_resource type="Resource" id="Resource_4aca8"]
-script = ExtResource("8_sntpg")
-iterations = 3
-offset_step = 0.2
-consecutive_step_multiplier = 0.75
-use_computeshader = true
-enabled = true
-override_global_seed = false
-custom_seed = 0
-restrict_height = true
-reference_frame = 0
-
-[sub_resource type="Resource" id="Resource_ov0el"]
-script = ExtResource("9_hmpne")
-ray_direction = Vector3(0, -1, 0)
-ray_length = 5.0
-ray_offset = 5.0
-remove_points_on_miss = false
-align_with_collision_normal = false
-max_slope = 90.0
-collision_mask = 1
-exclude_mask = 0
-enabled = true
-override_global_seed = false
-custom_seed = 0
-restrict_height = false
-reference_frame = 0
-
-[sub_resource type="Resource" id="Resource_7airv"]
-script = ExtResource("4_dekya")
-stack = Array[ExtResource("5_4aca8")]([SubResource("Resource_dlcfm"), SubResource("Resource_dekya"), SubResource("Resource_4aca8"), SubResource("Resource_ov0el")])
-
-[sub_resource type="Resource" id="Resource_x5te1"]
-script = ExtResource("12_u0sfp")
-size = Vector3(400, 1, 400)
-metadata/_custom_type_script = "uid://cg70qg5k3fkcs"
+fog_light_energy = 2.0
+fog_density = 0.04
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y8bc5"]
 albedo_color = Color(0.400698, 0.400698, 0.400698, 1)
@@ -111,30 +45,46 @@ environment = SubResource("Environment_tyvbe")
 [node name="env" type="Node3D" parent="ForPath"]
 
 [node name="Nature" type="Node3D" parent="ForPath/env"]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0)
 
-[node name="Tree_1" parent="ForPath/env/Nature" instance=ExtResource("2_svcej")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0, 0)
-visible = false
+[node name="moretree" parent="ForPath/env/Nature" instance=ExtResource("3_851gr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.073, 0, 22.554)
 
-[node name="ProtonScatter" type="Node3D" parent="ForPath/env/Nature"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.3602, 0, 0)
-script = ExtResource("3_dlcfm")
-keep_static_colliders = true
-modifier_stack = SubResource("Resource_7airv")
-Performance/use_chunks = true
-Performance/chunk_dimensions = Vector3(15, 15, 15)
-metadata/_custom_type_script = "uid://dwfb2dnx0mxog"
+[node name="big_moretree_1" parent="ForPath/env/Nature" instance=ExtResource("4_gdb1i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.699, 0, -17.0454)
 
-[node name="ScatterItem" type="Node3D" parent="ForPath/env/Nature/ProtonScatter"]
-script = ExtResource("10_3q7rk")
-source = 0
-source_scale_multiplier = 3.0
-path = "../../Tree_1"
+[node name="moretree2" parent="ForPath/env/Nature" instance=ExtResource("3_851gr")]
+transform = Transform3D(0.537668, 0, 0.843157, 0, 1, 0, -0.843157, 0, 0.537668, 0.065, 0, 15.159)
 
-[node name="ScatterShape" type="Node3D" parent="ForPath/env/Nature/ProtonScatter"]
-transform = Transform3D(1, 0, -2.98023e-08, 0, 1, 0, 2.98023e-08, 0, 1, 0, 0, 0)
-script = ExtResource("11_5fhnv")
-shape = SubResource("Resource_x5te1")
+[node name="moretree3" parent="ForPath/env/Nature" instance=ExtResource("3_851gr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.473, 0, 30.826)
+
+[node name="moretree4" parent="ForPath/env/Nature" instance=ExtResource("3_851gr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.682, 0, 19.155)
+
+[node name="moretree5" parent="ForPath/env/Nature" instance=ExtResource("3_851gr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.112, 0, 33.997)
+
+[node name="moretree6" parent="ForPath/env/Nature" instance=ExtResource("3_851gr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.643, 0, 35.415)
+
+[node name="big_moretree_2" parent="ForPath/env/Nature" instance=ExtResource("4_gdb1i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.6, 0, -16.002)
+
+[node name="big_moretree_3" parent="ForPath/env/Nature" instance=ExtResource("4_gdb1i")]
+transform = Transform3D(0.984808, 0, 0.173648, 0, 1, 0, -0.173648, 0, 0.984808, 18.4015, 0, -15.4386)
+
+[node name="big_moretree_4" parent="ForPath/env/Nature" instance=ExtResource("4_gdb1i")]
+transform = Transform3D(0.939693, 0, 0.34202, 0, 1, 0, -0.34202, 0, 0.939693, -11.6087, 0, -11.3874)
+
+[node name="moretree7" parent="ForPath/env/Nature" instance=ExtResource("3_851gr")]
+transform = Transform3D(0.83268, 0, -0.553755, 0, 1, 0, 0.553755, 0, 0.83268, -28.7656, 0, 16.7307)
+
+[node name="moretree8" parent="ForPath/env/Nature" instance=ExtResource("3_851gr")]
+transform = Transform3D(-0.978419, 0, -0.206631, 0, 1, 0, 0.206631, 0, -0.978419, -15.7072, 0, 12.7915)
+
+[node name="moretree9" parent="ForPath/env/Nature" instance=ExtResource("3_851gr")]
+transform = Transform3D(0.91713, 0, -0.398589, 0, 1, 0, 0.398589, 0, 0.91713, -26.8814, 0, -31.8553)
 
 [node name="Building" type="Node3D" parent="ForPath/env"]
 
@@ -142,7 +92,7 @@ shape = SubResource("Resource_x5te1")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -180.122, 0, -181.335)
 
 [node name="CharacterBody3D" parent="." instance=ExtResource("11_3q7rk")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7.04902, 0.0468016)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -165.229, 3.61535, -185.534)
 
 [node name="ground_ma" type="MeshInstance3D" parent="."]
 mesh = SubResource("BoxMesh_uq144")
@@ -151,4 +101,52 @@ metadata/_edit_lock_ = true
 [node name="StaticBody3D2" type="StaticBody3D" parent="ground_ma"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ground_ma/StaticBody3D2"]
+shape = SubResource("BoxShape3D_ouyis")
+
+[node name="wall" type="Node3D" parent="."]
+visible = false
+
+[node name="wall_ma" type="MeshInstance3D" parent="wall"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, -200)
+metadata/_edit_lock_ = true
+
+[node name="StaticBody3D2" type="StaticBody3D" parent="wall/wall_ma"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="wall/wall_ma/StaticBody3D2"]
+shape = SubResource("BoxShape3D_ouyis")
+
+[node name="wall_ma2" type="MeshInstance3D" parent="wall"]
+transform = Transform3D(-4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -4.37114e-08, 1.91069e-15, 200, 0, 0)
+metadata/_edit_lock_ = true
+
+[node name="StaticBody3D2" type="StaticBody3D" parent="wall/wall_ma2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="wall/wall_ma2/StaticBody3D2"]
+shape = SubResource("BoxShape3D_ouyis")
+
+[node name="wall_ma3" type="MeshInstance3D" parent="wall"]
+transform = Transform3D(-4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -4.37114e-08, 1.91069e-15, -200, 0, 0)
+metadata/_edit_lock_ = true
+
+[node name="StaticBody3D2" type="StaticBody3D" parent="wall/wall_ma3"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="wall/wall_ma3/StaticBody3D2"]
+shape = SubResource("BoxShape3D_ouyis")
+
+[node name="wall_ma4" type="MeshInstance3D" parent="wall"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 200)
+metadata/_edit_lock_ = true
+
+[node name="StaticBody3D2" type="StaticBody3D" parent="wall/wall_ma4"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="wall/wall_ma4/StaticBody3D2"]
+shape = SubResource("BoxShape3D_ouyis")
+
+[node name="cloud_ma" type="MeshInstance3D" parent="wall"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 200, 0)
+metadata/_edit_lock_ = true
+
+[node name="StaticBody3D2" type="StaticBody3D" parent="wall/cloud_ma"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="wall/cloud_ma/StaticBody3D2"]
 shape = SubResource("BoxShape3D_ouyis")
