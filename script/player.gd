@@ -22,13 +22,36 @@ func _ready() -> void:
 	#Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	pass
 	
+#func _input(event):
+	#if Input.is_action_just_pressed("capture_mouse") and !mouse_lock:
+		#Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+		#mouse_lock = true
+	#elif Input.is_action_just_pressed("capture_mouse") and mouse_lock:
+		#Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+		#mouse_lock = false
+		
 func _input(event):
-	if Input.is_action_just_pressed("capture_mouse") and !mouse_lock:
-		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-		mouse_lock = true
-	elif Input.is_action_just_pressed("capture_mouse") and mouse_lock:
-		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
-		mouse_lock = false
+	if Input.is_action_just_pressed("capture_mouse"):
+		mouse_lock = !mouse_lock
+
+		if mouse_lock:
+			# ล็อคผ่าน Godot
+			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+
+			# ล็อคผ่าน JS (เฉพาะ Web)
+			if Engine.has_singleton("JavaScript"):
+				var js = """
+					(function(){
+						var canvas = document.getElementById('canvas');
+						if(canvas && canvas.requestPointerLock){
+							canvas.requestPointerLock();
+						}
+					})();
+				"""
+				JavaScript.eval(js)
+		else:
+			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+
 	
 func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventMouseMotion and mouse_lock:
