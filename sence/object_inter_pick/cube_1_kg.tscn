@@ -1,0 +1,23 @@
+[gd_scene load_steps=6 format=3 uid="uid://cgm3krj2pjx7c"]
+
+[ext_resource type="Texture2D" uid="uid://bcm4voybe6qan" path="res://icon.svg" id="1_5h4in"]
+[ext_resource type="PackedScene" uid="uid://c4endkkv5qabi" path="res://sence/inter_component_obj.tscn" id="2_21a5s"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bdha5"]
+albedo_texture = ExtResource("1_5h4in")
+
+[sub_resource type="BoxMesh" id="BoxMesh_cqqpo"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m1fkc"]
+
+[node name="cube_1kg" type="RigidBody3D" groups=["item_deposit"]]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+material_override = SubResource("StandardMaterial3D_bdha5")
+mesh = SubResource("BoxMesh_cqqpo")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_m1fkc")
+
+[node name="inter_component_obj" parent="." node_paths=PackedStringArray("object_ref") instance=ExtResource("2_21a5s")]
+object_ref = NodePath("..")

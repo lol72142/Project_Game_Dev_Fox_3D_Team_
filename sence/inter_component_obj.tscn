@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://c4endkkv5qabi"]
+
+[ext_resource type="Script" uid="uid://brvqjv7vjkilp" path="res://script/inter_component_obj.gd" id="1_vvasy"]
+
+[node name="inter_component_obj" type="Node"]
+script = ExtResource("1_vvasy")

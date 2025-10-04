@@ -1,0 +1,154 @@
+[gd_scene load_steps=26 format=3 uid="uid://btxvjhxs3wn1b"]
+
+[ext_resource type="Script" uid="uid://clhgpds7ta4bd" path="res://Forest/forest.gd" id="1_ouyis"]
+[ext_resource type="PackedScene" uid="uid://bjogcblfqiw8n" path="res://Forest/Building/coop.tscn" id="2_jxydr"]
+[ext_resource type="PackedScene" uid="uid://8donvon65h2o" path="res://Forest/Tree/with_col/tree_1.tscn" id="2_svcej"]
+[ext_resource type="Script" uid="uid://dwfb2dnx0mxog" path="res://addons/proton_scatter/src/scatter.gd" id="3_dlcfm"]
+[ext_resource type="Script" uid="uid://blf254r51syi0" path="res://addons/proton_scatter/src/stack/modifier_stack.gd" id="4_dekya"]
+[ext_resource type="Script" uid="uid://cdkjy6lrayqv2" path="res://addons/proton_scatter/src/modifiers/base_modifier.gd" id="5_4aca8"]
+[ext_resource type="Script" uid="uid://dsyjmaoicn1cl" path="res://addons/proton_scatter/src/modifiers/create_inside_random.gd" id="6_ov0el"]
+[ext_resource type="Script" uid="uid://cvi4bokds4h7l" path="res://addons/proton_scatter/src/modifiers/randomize_transforms.gd" id="7_7airv"]
+[ext_resource type="Script" uid="uid://c1iwn62gm7fvi" path="res://addons/proton_scatter/src/modifiers/relax.gd" id="8_sntpg"]
+[ext_resource type="Script" uid="uid://by5pxmlcjgjuh" path="res://addons/proton_scatter/src/modifiers/project_on_geometry.gd" id="9_hmpne"]
+[ext_resource type="Script" uid="uid://bhsfbxmxwtpu3" path="res://addons/proton_scatter/src/scatter_item.gd" id="10_3q7rk"]
+[ext_resource type="PackedScene" uid="uid://bbxop6nt0x0t1" path="res://sence/player.tscn" id="11_3q7rk"]
+[ext_resource type="Script" uid="uid://b1lcv7h4pap4w" path="res://addons/proton_scatter/src/scatter_shape.gd" id="11_5fhnv"]
+[ext_resource type="Texture2D" uid="uid://bsfp64dod28al" path="res://Grass_Ground_Texture.jpg" id="12_5fhnv"]
+[ext_resource type="Script" uid="uid://cg70qg5k3fkcs" path="res://addons/proton_scatter/src/shapes/box_shape.gd" id="12_u0sfp"]
+
+[sub_resource type="Environment" id="Environment_tyvbe"]
+ambient_light_source = 2
+ambient_light_energy = 16.0
+tonemap_exposure = 0.1
+fog_enabled = true
+fog_density = 0.1
+
+[sub_resource type="Resource" id="Resource_dlcfm"]
+script = ExtResource("6_ov0el")
+amount = 1000
+enabled = true
+override_global_seed = false
+custom_seed = 0
+restrict_height = true
+reference_frame = 1
+
+[sub_resource type="Resource" id="Resource_dekya"]
+script = ExtResource("7_7airv")
+position = Vector3(0.15, 0.15, 0.15)
+rotation = Vector3(0, 360, 0)
+scale = Vector3(0.1, 0.1, 0.1)
+enabled = true
+override_global_seed = false
+custom_seed = 0
+restrict_height = false
+reference_frame = 2
+
+[sub_resource type="Resource" id="Resource_4aca8"]
+script = ExtResource("8_sntpg")
+iterations = 3
+offset_step = 0.2
+consecutive_step_multiplier = 0.75
+use_computeshader = true
+enabled = true
+override_global_seed = false
+custom_seed = 0
+restrict_height = true
+reference_frame = 0
+
+[sub_resource type="Resource" id="Resource_ov0el"]
+script = ExtResource("9_hmpne")
+ray_direction = Vector3(0, -1, 0)
+ray_length = 5.0
+ray_offset = 5.0
+remove_points_on_miss = false
+align_with_collision_normal = false
+max_slope = 90.0
+collision_mask = 1
+exclude_mask = 0
+enabled = true
+override_global_seed = false
+custom_seed = 0
+restrict_height = false
+reference_frame = 0
+
+[sub_resource type="Resource" id="Resource_7airv"]
+script = ExtResource("4_dekya")
+stack = Array[ExtResource("5_4aca8")]([SubResource("Resource_dlcfm"), SubResource("Resource_dekya"), SubResource("Resource_4aca8"), SubResource("Resource_ov0el")])
+
+[sub_resource type="Resource" id="Resource_x5te1"]
+script = ExtResource("12_u0sfp")
+size = Vector3(400, 1, 400)
+metadata/_custom_type_script = "uid://cg70qg5k3fkcs"
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y8bc5"]
+albedo_color = Color(0.400698, 0.400698, 0.400698, 1)
+albedo_texture = ExtResource("12_5fhnv")
+uv1_triplanar = true
+
+[sub_resource type="BoxMesh" id="BoxMesh_uq144"]
+material = SubResource("StandardMaterial3D_y8bc5")
+size = Vector3(400, 0.04, 400)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ouyis"]
+size = Vector3(400, 1, 400)
+
+[node name="Forest" type="Node3D"]
+script = ExtResource("1_ouyis")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 60.8585, 0)
+light_energy = 3.0
+light_specular = 0.0
+light_bake_mode = 1
+shadow_enabled = true
+directional_shadow_pancake_size = 40.0
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_tyvbe")
+
+[node name="ForPath" type="NavigationRegion3D" parent="."]
+
+[node name="env" type="Node3D" parent="ForPath"]
+
+[node name="Nature" type="Node3D" parent="ForPath/env"]
+
+[node name="Tree_1" parent="ForPath/env/Nature" instance=ExtResource("2_svcej")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0, 0)
+visible = false
+
+[node name="ProtonScatter" type="Node3D" parent="ForPath/env/Nature"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.3602, 0, 0)
+script = ExtResource("3_dlcfm")
+keep_static_colliders = true
+modifier_stack = SubResource("Resource_7airv")
+Performance/use_chunks = true
+Performance/chunk_dimensions = Vector3(15, 15, 15)
+metadata/_custom_type_script = "uid://dwfb2dnx0mxog"
+
+[node name="ScatterItem" type="Node3D" parent="ForPath/env/Nature/ProtonScatter"]
+script = ExtResource("10_3q7rk")
+source = 0
+source_scale_multiplier = 3.0
+path = "../../Tree_1"
+
+[node name="ScatterShape" type="Node3D" parent="ForPath/env/Nature/ProtonScatter"]
+transform = Transform3D(1, 0, -2.98023e-08, 0, 1, 0, 2.98023e-08, 0, 1, 0, 0, 0)
+script = ExtResource("11_5fhnv")
+shape = SubResource("Resource_x5te1")
+
+[node name="Building" type="Node3D" parent="ForPath/env"]
+
+[node name="Coop" parent="ForPath/env/Building" instance=ExtResource("2_jxydr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -180.122, 0, -181.335)
+
+[node name="CharacterBody3D" parent="." instance=ExtResource("11_3q7rk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7.04902, 0.0468016)
+
+[node name="ground_ma" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_uq144")
+metadata/_edit_lock_ = true
+
+[node name="StaticBody3D2" type="StaticBody3D" parent="ground_ma"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ground_ma/StaticBody3D2"]
+shape = SubResource("BoxShape3D_ouyis")
