@@ -11,7 +11,7 @@ const Base_FOV = 75.0
 const FOV_change = 1.5
 
 var t_bo = 0.0
-
+var is_lock = false
 
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 
@@ -22,11 +22,30 @@ func _ready() -> void:
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	AudioManager.forest_sfx.play()
 	
+func _input(event: InputEvent) -> void:
+	if event.is_action_pressed('mouse_lock'):
+		if is_lock == false:
+			Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+			is_lock = true
+			
+		elif is_lock == true:
+			Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
+			is_lock = false
+			
+		
+
 func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventMouseMotion:
 		head.rotate_y(-event.relative.x * Sensitivity)
 		camera.rotate_x(-event.relative.y * Sensitivity)
 		camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(-60), deg_to_rad(60))
+	if event.is_action_pressed("esc_menu"):
+		$pause_canva_layer.visible = true
+		get_tree().paused = not get_tree().paused
+		if get_tree().paused == true:
+			Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
+		else:
+			Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 
 
 func _physics_process(delta: float) -> void:

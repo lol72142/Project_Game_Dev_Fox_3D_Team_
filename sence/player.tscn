@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://bbxop6nt0x0t1"]
+[gd_scene load_steps=7 format=3 uid="uid://bbxop6nt0x0t1"]
 
 [ext_resource type="Script" uid="uid://cesk5iwx23rrm" path="res://script/player.gd" id="1_4flbx"]
 [ext_resource type="PackedScene" uid="uid://c5hikpudn2ony" path="res://sence/interact.tscn" id="2_onrkg"]
 [ext_resource type="Texture2D" uid="uid://bw0jlum74ng54" path="res://sence/aim_cursor.png" id="3_twwr1"]
+[ext_resource type="PackedScene" uid="uid://dve8inujkme06" path="res://sence/GUI.tscn" id="4_krrvm"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_fj7yv"]
 
@@ -40,3 +41,8 @@ unique_name_in_owner = true
 position = Vector2(576, 324)
 scale = Vector2(2, 2)
 texture = ExtResource("3_twwr1")
+
+[node name="pause_canva_layer" parent="." instance=ExtResource("4_krrvm")]
+unique_name_in_owner = true
+
+[editable path="pause_canva_layer"]

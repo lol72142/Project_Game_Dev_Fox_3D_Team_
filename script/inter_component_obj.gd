@@ -68,12 +68,12 @@ func default_interact():
 			
 			var force: Vector3 = (object_distance)*(5/rig_body_3d.mass)
 			rig_body_3d.linear_velocity = force
-			print("in if ",force, " ",rig_body_3d.mass)
+			
 		else:
 			var force: Vector3 = (object_distance)*(5/rig_body_3d.mass)
 			force.y -= 2 / (strenght * 0.5)
 			rig_body_3d.linear_velocity = force
-			print("in else ",force, " ",rig_body_3d.mass)
+			
 
 func default_throw():
 	var object_current_position: Vector3 = object_ref.global_transform.origin
