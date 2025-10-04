@@ -11,7 +11,7 @@ const Base_FOV = 75.0
 const FOV_change = 1.5
 
 var t_bo = 0.0
-
+var mouse_lock = false
 
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 
@@ -19,10 +19,19 @@ var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 @onready var camera = $head/Camera3D
 
 func _ready() -> void:
-	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+	#Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+	pass
+	
+func _input(event):
+	if Input.is_action_just_pressed("capture_mouse") and !mouse_lock:
+		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+		mouse_lock = true
+	elif Input.is_action_just_pressed("capture_mouse") and mouse_lock:
+		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+		mouse_lock = false
 	
 func _unhandled_input(event: InputEvent) -> void:
-	if event is InputEventMouseMotion:
+	if event is InputEventMouseMotion and mouse_lock:
 		head.rotate_y(-event.relative.x * Sensitivity)
 		camera.rotate_x(-event.relative.y * Sensitivity)
 		camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(-60), deg_to_rad(60))
