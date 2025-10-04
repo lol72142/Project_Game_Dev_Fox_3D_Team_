@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://bxdb1ylfys7m0"]
+
+[ext_resource type="PackedScene" uid="uid://hl3hqs7ulecw" path="res://Forest/Building/Lantern.tscn" id="1_133pt"]
+
+[node name="lamp_path" type="Node3D"]
+
+[node name="Lamp2" parent="." instance=ExtResource("1_133pt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 20)
+
+[node name="Lamp4" parent="." instance=ExtResource("1_133pt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 40)
+
+[node name="Lamp6" parent="." instance=ExtResource("1_133pt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -20)
+
+[node name="Lamp8" parent="." instance=ExtResource("1_133pt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -40)
+
+[node name="Lamp9" parent="." instance=ExtResource("1_133pt")]

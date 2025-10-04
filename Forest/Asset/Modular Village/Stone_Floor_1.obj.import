@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://haquids6t8ly"
+path="res://.godot/imported/Stone_Floor_1.obj-1e105d6c3db711cc11f920309ac13a48.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Stone_Floor_1.obj-1e105d6c3db711cc11f920309ac13a48.mesh"]
+
+source_file="res://Forest/Asset/Modular Village/Stone_Floor_1.obj"
+dest_files=["res://.godot/imported/Stone_Floor_1.obj-1e105d6c3db711cc11f920309ac13a48.mesh", "res://.godot/imported/Stone_Floor_1.obj-1e105d6c3db711cc11f920309ac13a48.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

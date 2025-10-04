@@ -1,18 +1,22 @@
-[gd_scene load_steps=11 format=3 uid="uid://btxvjhxs3wn1b"]
+[gd_scene load_steps=13 format=3 uid="uid://btxvjhxs3wn1b"]
 
 [ext_resource type="Script" uid="uid://clhgpds7ta4bd" path="res://Forest/forest.gd" id="1_ouyis"]
 [ext_resource type="PackedScene" uid="uid://bjogcblfqiw8n" path="res://Forest/Building/coop.tscn" id="2_jxydr"]
 [ext_resource type="PackedScene" uid="uid://v6dfp3jtp4hi" path="res://Forest/Tree/with_col/moretree_1.tscn" id="3_851gr"]
 [ext_resource type="PackedScene" uid="uid://c6g1hyug1yf61" path="res://Forest/Tree/with_col/mmmoretree_1.tscn" id="4_gdb1i"]
+[ext_resource type="PackedScene" uid="uid://hl3hqs7ulecw" path="res://Forest/Building/Lantern.tscn" id="8_hlfit"]
 [ext_resource type="PackedScene" uid="uid://bbxop6nt0x0t1" path="res://sence/player.tscn" id="11_3q7rk"]
 [ext_resource type="Texture2D" uid="uid://bsfp64dod28al" path="res://Grass_Ground_Texture.jpg" id="12_5fhnv"]
 
 [sub_resource type="Environment" id="Environment_tyvbe"]
 ambient_light_source = 2
-ambient_light_energy = 16.0
 tonemap_exposure = 0.1
-fog_light_energy = 2.0
+fog_enabled = true
+fog_light_energy = 0.4
 fog_density = 0.04
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_gdb1i"]
+size = Vector2(50, 5)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y8bc5"]
 albedo_color = Color(0.400698, 0.400698, 0.400698, 1)
@@ -31,11 +35,13 @@ script = ExtResource("1_ouyis")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 60.8585, 0)
+visible = false
 light_energy = 3.0
 light_specular = 0.0
 light_bake_mode = 1
 shadow_enabled = true
 directional_shadow_pancake_size = 40.0
+metadata/_edit_lock_ = true
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_tyvbe")
@@ -47,52 +53,174 @@ environment = SubResource("Environment_tyvbe")
 [node name="Nature" type="Node3D" parent="ForPath/env"]
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0)
 
-[node name="moretree" parent="ForPath/env/Nature" instance=ExtResource("3_851gr")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.073, 0, 22.554)
-
 [node name="big_moretree_1" parent="ForPath/env/Nature" instance=ExtResource("4_gdb1i")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.699, 0, -17.0454)
-
-[node name="moretree2" parent="ForPath/env/Nature" instance=ExtResource("3_851gr")]
-transform = Transform3D(0.537668, 0, 0.843157, 0, 1, 0, -0.843157, 0, 0.537668, 0.065, 0, 15.159)
-
-[node name="moretree3" parent="ForPath/env/Nature" instance=ExtResource("3_851gr")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.473, 0, 30.826)
-
-[node name="moretree4" parent="ForPath/env/Nature" instance=ExtResource("3_851gr")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.682, 0, 19.155)
-
-[node name="moretree5" parent="ForPath/env/Nature" instance=ExtResource("3_851gr")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.112, 0, 33.997)
-
-[node name="moretree6" parent="ForPath/env/Nature" instance=ExtResource("3_851gr")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.643, 0, 35.415)
 
 [node name="big_moretree_2" parent="ForPath/env/Nature" instance=ExtResource("4_gdb1i")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.6, 0, -16.002)
 
-[node name="big_moretree_3" parent="ForPath/env/Nature" instance=ExtResource("4_gdb1i")]
-transform = Transform3D(0.984808, 0, 0.173648, 0, 1, 0, -0.173648, 0, 0.984808, 18.4015, 0, -15.4386)
-
-[node name="big_moretree_4" parent="ForPath/env/Nature" instance=ExtResource("4_gdb1i")]
-transform = Transform3D(0.939693, 0, 0.34202, 0, 1, 0, -0.34202, 0, 0.939693, -11.6087, 0, -11.3874)
-
-[node name="moretree7" parent="ForPath/env/Nature" instance=ExtResource("3_851gr")]
-transform = Transform3D(0.83268, 0, -0.553755, 0, 1, 0, 0.553755, 0, 0.83268, -28.7656, 0, 16.7307)
-
-[node name="moretree8" parent="ForPath/env/Nature" instance=ExtResource("3_851gr")]
-transform = Transform3D(-0.978419, 0, -0.206631, 0, 1, 0, 0.206631, 0, -0.978419, -15.7072, 0, 12.7915)
-
 [node name="moretree9" parent="ForPath/env/Nature" instance=ExtResource("3_851gr")]
 transform = Transform3D(0.91713, 0, -0.398589, 0, 1, 0, 0.398589, 0, 0.91713, -26.8814, 0, -31.8553)
+
+[node name="big_moretree_3" parent="ForPath/env/Nature" instance=ExtResource("4_gdb1i")]
+transform = Transform3D(0.00411899, 0, 0.999992, 0, 1, 0, -0.999992, 0, 0.00411899, -15.4891, 0, 13.1804)
+
+[node name="big_moretree_4" parent="ForPath/env/Nature" instance=ExtResource("4_gdb1i")]
+transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, -6.77037, 0, -16.6459)
 
 [node name="Building" type="Node3D" parent="ForPath/env"]
 
 [node name="Coop" parent="ForPath/env/Building" instance=ExtResource("2_jxydr")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -180.122, 0, -181.335)
 
+[node name="path_lamps" type="Node3D" parent="ForPath/env/Building"]
+
+[node name="Lamp" parent="ForPath/env/Building/path_lamps" instance=ExtResource("8_hlfit")]
+transform = Transform3D(-0.161604, 0, 0.986856, 0, 1, 0, -0.986856, 0, -0.161604, -78.033, 0, -86.984)
+
+[node name="Lamp2" parent="ForPath/env/Building/path_lamps" instance=ExtResource("8_hlfit")]
+transform = Transform3D(-0.857167, 0, -0.515038, 0, 1, 0, 0.515038, 0, -0.857167, -89.7916, 0, -110.393)
+
+[node name="Lamp3" parent="ForPath/env/Building/path_lamps" instance=ExtResource("8_hlfit")]
+transform = Transform3D(-0.619779, 0, -0.784776, 0, 1, 0, 0.784776, 0, -0.619779, -120.082, 0, -151.463)
+
+[node name="Lamp4" parent="ForPath/env/Building/path_lamps" instance=ExtResource("8_hlfit")]
+transform = Transform3D(-0.5, 0, -0.866025, 0, 1, 0, 0.866025, 0, -0.5, -147.999, 0, -172.29)
+
+[node name="Lamp5" parent="ForPath/env/Building/path_lamps" instance=ExtResource("8_hlfit")]
+transform = Transform3D(-0.999848, 0, -0.0174525, 0, 1, 0, 0.0174525, 0, -0.999848, -74.4453, 0, -28.598)
+
+[node name="Lamp6" parent="ForPath/env/Building/path_lamps" instance=ExtResource("8_hlfit")]
+transform = Transform3D(0.403545, 0, 0.91496, 0, 1, 0, -0.91496, 0, 0.403545, -18.856, 0, -61.0486)
+
+[node name="Lamp7" parent="ForPath/env/Building/path_lamps" instance=ExtResource("8_hlfit")]
+transform = Transform3D(0.403545, 0, 0.91496, 0, 1, 0, -0.91496, 0, 0.403545, 31.5495, 0, -38.386)
+
+[node name="Lamp8" parent="ForPath/env/Building/path_lamps" instance=ExtResource("8_hlfit")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 61.3032, 2.18881, -8.01023)
+
+[node name="Lamp9" parent="ForPath/env/Building/path_lamps" instance=ExtResource("8_hlfit")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -174.187, 0, 115.319)
+
+[node name="Lamp10" parent="ForPath/env/Building/path_lamps" instance=ExtResource("8_hlfit")]
+transform = Transform3D(-0.857167, 0, 0.515038, 0, 1, 0, -0.515038, 0, -0.857167, -168.617, 0, 34.1187)
+
+[node name="Lamp11" parent="ForPath/env/Building/path_lamps" instance=ExtResource("8_hlfit")]
+transform = Transform3D(-0.994151, 0, 0.107999, 0, 1, 0, -0.107999, 0, -0.994151, -162.574, 0, 80.834)
+
+[node name="Lamp12" parent="ForPath/env/Building/path_lamps" instance=ExtResource("8_hlfit")]
+transform = Transform3D(-0.560639, 0, 0.82806, 0, 1, 0, -0.82806, 0, -0.560639, -133.544, 0, 16.1786)
+
+[node name="Lamp13" parent="ForPath/env/Building/path_lamps" instance=ExtResource("8_hlfit")]
+transform = Transform3D(-0.30237, 0, 0.953191, 0, 1, 0, -0.953191, 0, -0.30237, -100.364, 0, 11.5373)
+
+[node name="Lamp14" parent="ForPath/env/Building/path_lamps" instance=ExtResource("8_hlfit")]
+transform = Transform3D(-0.0174524, 0, 0.999848, 0, 1, 0, -0.999848, 0, -0.0174524, -76.1012, 0, 9.43913)
+
+[node name="Lamp15" parent="ForPath/env/Building/path_lamps" instance=ExtResource("8_hlfit")]
+transform = Transform3D(-0.674302, 0, 0.738455, 0, 1, 0, -0.738455, 0, -0.674302, -47.1079, 0, 10.9431)
+
+[node name="Lamp16" parent="ForPath/env/Building/path_lamps" instance=ExtResource("8_hlfit")]
+transform = Transform3D(0.350207, 0, 0.936672, 0, 1, 0, -0.936672, 0, 0.350207, -1.915, 0, 18.2575)
+
 [node name="CharacterBody3D" parent="." instance=ExtResource("11_3q7rk")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -165.229, 3.61535, -185.534)
+
+[node name="path" type="Node3D" parent="."]
+
+[node name="path" type="MeshInstance3D" parent="path"]
+transform = Transform3D(0.929339, 0, -0.369228, 0, 1, 0, 0.369228, 0, 0.929339, -160.568, 0.1, -174.273)
+mesh = SubResource("PlaneMesh_gdb1i")
+
+[node name="path2" type="MeshInstance3D" parent="path"]
+transform = Transform3D(0.727342, 0, -0.686275, 0, 1, 0, 0.686275, 0, 0.727342, -119.631, 0.1, -148.375)
+mesh = SubResource("PlaneMesh_gdb1i")
+skeleton = NodePath("../path")
+
+[node name="path3" type="MeshInstance3D" parent="path"]
+transform = Transform3D(0.422555, 0, -0.906337, 0, 1, 0, 0.906337, 0, 0.422555, -91.452, 0.1, -109.385)
+mesh = SubResource("PlaneMesh_gdb1i")
+skeleton = NodePath("../path2")
+
+[node name="path4" type="MeshInstance3D" parent="path"]
+transform = Transform3D(0.0580521, 0, -0.998313, 0, 1, 0, 0.998313, 0, 0.0580521, -79.877, 0.1, -62.792)
+mesh = SubResource("PlaneMesh_gdb1i")
+skeleton = NodePath("../path3")
+
+[node name="path5" type="MeshInstance3D" parent="path"]
+transform = Transform3D(0.446698, 0, -0.894686, 0, 1, 0, 0.894686, 0, 0.446698, 54.8247, 0.1, -12.0574)
+mesh = SubResource("PlaneMesh_gdb1i")
+skeleton = NodePath("../path2")
+
+[node name="path6" type="MeshInstance3D" parent="path"]
+transform = Transform3D(-0.824156, 0, 0.566363, 0, 1, 0, -0.566363, 0, -0.824156, 24.1967, 0.1, -47.6245)
+mesh = SubResource("PlaneMesh_gdb1i")
+skeleton = NodePath("../path2")
+
+[node name="path7" type="MeshInstance3D" parent="path"]
+transform = Transform3D(0.995352, 0, -0.0962974, 0, 1, 0, 0.0962974, 0, 0.995352, -20.4743, 0.1, -64.0824)
+mesh = SubResource("PlaneMesh_gdb1i")
+skeleton = NodePath("../path2")
+
+[node name="path8" type="MeshInstance3D" parent="path"]
+transform = Transform3D(-0.81649, 0, 0.577359, 0, 1, 0, -0.577359, 0, -0.81649, -64.0808, 0.1, -80.2692)
+mesh = SubResource("PlaneMesh_gdb1i")
+skeleton = NodePath("../path2")
+
+[node name="path9" type="MeshInstance3D" parent="path"]
+transform = Transform3D(0.0580521, 0, -0.998313, 0, 1, 0, 0.998313, 0, 0.0580521, -77.404, 0.1, -18.5428)
+mesh = SubResource("PlaneMesh_gdb1i")
+skeleton = NodePath("../path3")
+
+[node name="path10" type="MeshInstance3D" parent="path"]
+transform = Transform3D(-0.999412, 0, 0.0343583, 0, 1, 0, -0.0343583, 0, -0.999412, -54.6751, 0.1, 8.26196)
+mesh = SubResource("PlaneMesh_gdb1i")
+skeleton = NodePath("../path/path/path")
+
+[node name="path11" type="MeshInstance3D" parent="path"]
+transform = Transform3D(-0.122337, 0, 0.992489, 0, 1, 0, -0.992489, 0, -0.122337, -168.11, 0.1, 57.2203)
+mesh = SubResource("PlaneMesh_gdb1i")
+skeleton = NodePath("../path12")
+
+[node name="path12" type="MeshInstance3D" parent="path"]
+transform = Transform3D(-0.202753, 0, -0.97923, 0, 1, 0, 0.97923, 0, -0.202753, -170.168, 0.1, 105.646)
+mesh = SubResource("PlaneMesh_gdb1i")
+skeleton = NodePath("../path")
+
+[node name="path13" type="MeshInstance3D" parent="path"]
+transform = Transform3D(0.997199, 0, 0.0748226, 0, 1, 0, -0.0748226, 0, 0.997199, -104.233, 0.1, 9.35977)
+mesh = SubResource("PlaneMesh_gdb1i")
+skeleton = NodePath("../path14")
+
+[node name="path14" type="MeshInstance3D" parent="path"]
+transform = Transform3D(-0.890372, 0, -0.455235, 0, 1, 0, 0.455235, 0, -0.890372, -150.087, 0.1, 22.3621)
+mesh = SubResource("PlaneMesh_gdb1i")
+skeleton = NodePath("../path11")
+
+[node name="path15" type="MeshInstance3D" parent="path"]
+transform = Transform3D(0.974226, 0, -0.225597, 0, 1, 0, 0.225597, 0, 0.974226, -6.6489, 0.2, 14.5183)
+mesh = SubResource("PlaneMesh_gdb1i")
+skeleton = NodePath("../path/path/path")
+
+[node name="path16" type="MeshInstance3D" parent="path"]
+transform = Transform3D(0.974226, 0, -0.225597, 0, 1, 0, 0.225597, 0, 0.974226, 40.2054, 0.2, 25.5364)
+mesh = SubResource("PlaneMesh_gdb1i")
+skeleton = NodePath("../path/path/path")
+
+[node name="path17" type="MeshInstance3D" parent="path"]
+transform = Transform3D(0.775907, 0, -0.630873, 0, 1, 0, 0.630873, 0, 0.775907, 127.209, 0.6, 67.7686)
+mesh = SubResource("PlaneMesh_gdb1i")
+skeleton = NodePath("../path/path/path")
+
+[node name="path18" type="MeshInstance3D" parent="path"]
+transform = Transform3D(0.898223, 0, -0.439566, 0, 1, 0, 0.439566, 0, 0.898223, 86.12, 0.4, 41.6815)
+mesh = SubResource("PlaneMesh_gdb1i")
+skeleton = NodePath("../path/path/path")
+
+[node name="path19" type="MeshInstance3D" parent="path"]
+transform = Transform3D(0.613586, 0, -0.789656, 0, 1, 0, 0.789656, 0, 0.613586, 78.6533, 0.0419251, 26.4666)
+mesh = SubResource("PlaneMesh_gdb1i")
+skeleton = NodePath("../path/path/path")
 
 [node name="ground_ma" type="MeshInstance3D" parent="."]
 mesh = SubResource("BoxMesh_uq144")

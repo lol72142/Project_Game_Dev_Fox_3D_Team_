@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://yq21blcpcjt6"
+path="res://.godot/imported/Waterwheel_Flume_Support_Pillar.obj-2a1f45f26fdb75b76a96f8592c2b8bfd.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Waterwheel_Flume_Support_Pillar.obj-2a1f45f26fdb75b76a96f8592c2b8bfd.mesh"]
+
+source_file="res://Forest/Asset/Modular Village/Waterwheel_Flume_Support_Pillar.obj"
+dest_files=["res://.godot/imported/Waterwheel_Flume_Support_Pillar.obj-2a1f45f26fdb75b76a96f8592c2b8bfd.mesh", "res://.godot/imported/Waterwheel_Flume_Support_Pillar.obj-2a1f45f26fdb75b76a96f8592c2b8bfd.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false
