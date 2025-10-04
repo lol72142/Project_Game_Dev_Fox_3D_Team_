@@ -11,6 +11,10 @@ config_version=5
 [application]
 
 config/name="Project_3D_demo_fox"
+<<<<<<< Updated upstream:project_3d_demo_fox/project.godot
+=======
+run/main_scene="uid://btxvjhxs3wn1b"
+>>>>>>> Stashed changes:project.godot
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
 
