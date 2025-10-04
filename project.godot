@@ -13,7 +13,14 @@ config_version=5
 config/name="Project_3D_demo_fox"
 run/main_scene="uid://btxvjhxs3wn1b"
 config/features=PackedStringArray("4.4", "Forward Plus")
-config/icon="res://icon.svg"
+boot_splash/bg_color=Color(1, 1, 1, 1)
+boot_splash/image="uid://cfh0y1ark84yu"
+config/icon="uid://sdq21oid80ai"
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
 
 [editor_plugins]
 
