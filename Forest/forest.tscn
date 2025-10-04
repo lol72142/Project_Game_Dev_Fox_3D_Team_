@@ -1,5 +1,6 @@
-[gd_scene load_steps=29 format=3 uid="uid://btxvjhxs3wn1b"]
+[gd_scene load_steps=30 format=3 uid="uid://btxvjhxs3wn1b"]
 
+[ext_resource type="Script" uid="uid://clhgpds7ta4bd" path="res://Forest/forest.gd" id="1_ouyis"]
 [ext_resource type="Script" uid="uid://dwfb2dnx0mxog" path="res://addons/proton_scatter/src/scatter.gd" id="1_tyvbe"]
 [ext_resource type="Script" uid="uid://blf254r51syi0" path="res://addons/proton_scatter/src/stack/modifier_stack.gd" id="2_ouyis"]
 [ext_resource type="Script" uid="uid://cdkjy6lrayqv2" path="res://addons/proton_scatter/src/modifiers/base_modifier.gd" id="3_m241k"]
@@ -20,7 +21,7 @@ tonemap_exposure = 0.1
 fog_enabled = true
 fog_density = 0.1
 
-[sub_resource type="Resource" id="Resource_tyvbe"]
+[sub_resource type="Resource" id="Resource_m241k"]
 script = ExtResource("4_dlcfm")
 amount = 250
 enabled = true
@@ -29,7 +30,7 @@ custom_seed = 0
 restrict_height = true
 reference_frame = 1
 
-[sub_resource type="Resource" id="Resource_m241k"]
+[sub_resource type="Resource" id="Resource_dlcfm"]
 script = ExtResource("5_dekya")
 position = Vector3(0.15, 0.15, 0.15)
 rotation = Vector3(0, 360, 0)
@@ -40,7 +41,7 @@ custom_seed = 0
 restrict_height = false
 reference_frame = 2
 
-[sub_resource type="Resource" id="Resource_dlcfm"]
+[sub_resource type="Resource" id="Resource_dekya"]
 script = ExtResource("6_4aca8")
 iterations = 50
 offset_step = 2.0
@@ -52,7 +53,7 @@ custom_seed = 0
 restrict_height = true
 reference_frame = 0
 
-[sub_resource type="Resource" id="Resource_dekya"]
+[sub_resource type="Resource" id="Resource_4aca8"]
 script = ExtResource("7_ov0el")
 ray_direction = Vector3(0, -1, 0)
 ray_length = 5.0
@@ -68,16 +69,16 @@ custom_seed = 0
 restrict_height = false
 reference_frame = 0
 
-[sub_resource type="Resource" id="Resource_4aca8"]
+[sub_resource type="Resource" id="Resource_ov0el"]
 script = ExtResource("2_ouyis")
-stack = Array[ExtResource("3_m241k")]([SubResource("Resource_tyvbe"), SubResource("Resource_m241k"), SubResource("Resource_dlcfm"), SubResource("Resource_dekya")])
+stack = Array[ExtResource("3_m241k")]([SubResource("Resource_m241k"), SubResource("Resource_dlcfm"), SubResource("Resource_dekya"), SubResource("Resource_4aca8")])
 
 [sub_resource type="Resource" id="Resource_ouyis"]
 script = ExtResource("10_tyvbe")
 size = Vector3(40, 1, 40)
 metadata/_custom_type_script = "uid://cg70qg5k3fkcs"
 
-[sub_resource type="Resource" id="Resource_ov0el"]
+[sub_resource type="Resource" id="Resource_7airv"]
 script = ExtResource("4_dlcfm")
 amount = 5
 enabled = true
@@ -86,7 +87,7 @@ custom_seed = 0
 restrict_height = true
 reference_frame = 1
 
-[sub_resource type="Resource" id="Resource_7airv"]
+[sub_resource type="Resource" id="Resource_sntpg"]
 script = ExtResource("5_dekya")
 position = Vector3(0.15, 0.15, 0.15)
 rotation = Vector3(0, 360, 0)
@@ -97,7 +98,7 @@ custom_seed = 0
 restrict_height = false
 reference_frame = 2
 
-[sub_resource type="Resource" id="Resource_sntpg"]
+[sub_resource type="Resource" id="Resource_hmpne"]
 script = ExtResource("6_4aca8")
 iterations = 3
 offset_step = 0.2
@@ -109,7 +110,7 @@ custom_seed = 0
 restrict_height = true
 reference_frame = 0
 
-[sub_resource type="Resource" id="Resource_hmpne"]
+[sub_resource type="Resource" id="Resource_3q7rk"]
 script = ExtResource("7_ov0el")
 ray_direction = Vector3(0, -1, 0)
 ray_length = 5.0
@@ -125,9 +126,9 @@ custom_seed = 0
 restrict_height = false
 reference_frame = 0
 
-[sub_resource type="Resource" id="Resource_3q7rk"]
+[sub_resource type="Resource" id="Resource_u0sfp"]
 script = ExtResource("2_ouyis")
-stack = Array[ExtResource("3_m241k")]([SubResource("Resource_ov0el"), SubResource("Resource_7airv"), SubResource("Resource_sntpg"), SubResource("Resource_hmpne")])
+stack = Array[ExtResource("3_m241k")]([SubResource("Resource_7airv"), SubResource("Resource_sntpg"), SubResource("Resource_hmpne"), SubResource("Resource_3q7rk")])
 
 [sub_resource type="Resource" id="Resource_5fhnv"]
 script = ExtResource("10_tyvbe")
@@ -147,6 +148,7 @@ size = Vector3(200, 0.04, 200)
 data = PackedVector3Array(-100, 0.02, 100, 100, 0.02, 100, -100, -0.02, 100, 100, 0.02, 100, 100, -0.02, 100, -100, -0.02, 100, 100, 0.02, -100, -100, 0.02, -100, 100, -0.02, -100, -100, 0.02, -100, -100, -0.02, -100, 100, -0.02, -100, 100, 0.02, 100, 100, 0.02, -100, 100, -0.02, 100, 100, 0.02, -100, 100, -0.02, -100, 100, -0.02, 100, -100, 0.02, -100, -100, 0.02, 100, -100, -0.02, -100, -100, 0.02, 100, -100, -0.02, 100, -100, -0.02, -100, 100, 0.02, 100, -100, 0.02, 100, 100, 0.02, -100, -100, 0.02, 100, -100, 0.02, -100, 100, 0.02, -100, -100, -0.02, 100, 100, -0.02, 100, -100, -0.02, -100, 100, -0.02, 100, 100, -0.02, -100, -100, -0.02, -100)
 
 [node name="Forest" type="Node3D"]
+script = ExtResource("1_ouyis")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 60.8585, 0)
@@ -168,7 +170,7 @@ environment = SubResource("Environment_tyvbe")
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
 script = ExtResource("1_tyvbe")
 keep_static_colliders = true
-modifier_stack = SubResource("Resource_4aca8")
+modifier_stack = SubResource("Resource_ov0el")
 Performance/use_chunks = true
 Performance/chunk_dimensions = Vector3(15, 15, 15)
 metadata/_custom_type_script = "uid://dwfb2dnx0mxog"
@@ -205,7 +207,7 @@ script = ExtResource("1_tyvbe")
 show_output_in_tree = true
 keep_static_colliders = true
 enable_updates_in_game = true
-modifier_stack = SubResource("Resource_3q7rk")
+modifier_stack = SubResource("Resource_u0sfp")
 Performance/use_chunks = true
 Performance/chunk_dimensions = Vector3(15, 15, 15)
 metadata/_custom_type_script = "uid://dwfb2dnx0mxog"
