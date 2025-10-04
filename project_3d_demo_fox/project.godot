@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="Project_3D_demo_fox"
+run/main_scene="uid://btxvjhxs3wn1b"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
