@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://btxvjhxs3wn1b"]
+[gd_scene load_steps=23 format=3 uid="uid://btxvjhxs3wn1b"]
 
 [ext_resource type="Script" uid="uid://clhgpds7ta4bd" path="res://Forest/forest.gd" id="1_ouyis"]
 [ext_resource type="PackedScene" uid="uid://vg0146rwyhtg" path="res://Forest/nature_aaa.tscn" id="2_ouyis"]
@@ -9,18 +9,23 @@
 [ext_resource type="ArrayMesh" uid="uid://ch1xnu7f6bmga" path="res://farm_h/OBJ/ChickenCoop.obj" id="10_17w74"]
 [ext_resource type="PackedScene" uid="uid://duvokykwm5pl0" path="res://Forest/Building/fence.tscn" id="10_ouyis"]
 [ext_resource type="PackedScene" uid="uid://bbxop6nt0x0t1" path="res://sence/player.tscn" id="11_3q7rk"]
+[ext_resource type="PackedScene" uid="uid://cp7gtpj8m2mdg" path="res://sence/deposit.tscn" id="11_dlcfm"]
 [ext_resource type="PackedScene" uid="uid://d5kqx6m2q7xi" path="res://Forest/Building/floor_dirt_grave.tscn" id="11_ouyis"]
 [ext_resource type="Texture2D" uid="uid://bsfp64dod28al" path="res://Grass_Ground_Texture.jpg" id="12_5fhnv"]
 [ext_resource type="PackedScene" uid="uid://bxim8ftpl6g2w" path="res://Forest/Tree/with_col/walltree.tscn" id="14_dlcfm"]
 [ext_resource type="PackedScene" uid="uid://iwq1suv6oki0" path="res://Forest/Building/church.tscn" id="14_m241k"]
+[ext_resource type="PackedScene" uid="uid://crumkuh7mqpre" path="res://sence/object_inter_pick/chicken_3_kg.tscn" id="15_dekya"]
 
 [sub_resource type="Environment" id="Environment_tyvbe"]
 ambient_light_source = 2
 ambient_light_color = Color(1, 1, 1, 1)
 tonemap_exposure = 0.1
 fog_enabled = true
-fog_light_energy = 0.4
+fog_light_energy = 1.61
 fog_density = 0.04
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4aca8"]
+size = Vector3(2.2694092, 1, 2.9543457)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tyvbe"]
 albedo_color = Color(0.0784934, 0.0239435, 1.50409e-09, 1)
@@ -61,7 +66,8 @@ environment = SubResource("Environment_tyvbe")
 
 [node name="env" type="Node3D" parent="ForPath"]
 
-[node name="Nature" parent="ForPath/env" instance=ExtResource("2_ouyis")]
+[node name="Nature" parent="ForPath/env" node_paths=PackedStringArray("player_node") groups=["textures"] instance=ExtResource("2_ouyis")]
+player_node = NodePath("../../../CharacterBody3D")
 
 [node name="Building" type="Node3D" parent="ForPath/env"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
@@ -177,43 +183,28 @@ transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 188.476, 0.549446, 138.844)
 mesh = ExtResource("9_wovt4")
 skeleton = NodePath("../../../../..")
 
-[node name="ChickenCoop" type="MeshInstance3D" parent="ForPath/env/Building/farm_zone"]
-transform = Transform3D(-1.31134e-07, 0, -3, 0, 3, 0, 3, 0, -1.31134e-07, 186.142, 0.502965, 166.027)
-mesh = ExtResource("10_17w74")
-skeleton = NodePath("../../../../..")
-
 [node name="ChickenCoop2" type="MeshInstance3D" parent="ForPath/env/Building/farm_zone"]
-transform = Transform3D(-1.31134e-07, 0, -3, 0, 3, 0, 3, 0, -1.31134e-07, 153.299, 0.502965, 190.348)
+transform = Transform3D(-2.1855695e-07, 0, -5, 0, 5, 0, 5, 0, -2.1855695e-07, 153.299, 0.502965, 190.348)
 mesh = ExtResource("10_17w74")
 skeleton = NodePath("../../../../..")
 
 [node name="ChickenCoop5" type="MeshInstance3D" parent="ForPath/env/Building/farm_zone"]
-transform = Transform3D(-1.31134e-07, 0, -3, 0, 3, 0, 3, 0, -1.31134e-07, 161.306, 0.502965, 190.348)
+transform = Transform3D(-2.1855695e-07, 0, -5, 0, 5, 0, 5, 0, -2.1855695e-07, 161.306, 0.502965, 190.348)
 mesh = ExtResource("10_17w74")
 skeleton = NodePath("../../../../..")
 
 [node name="ChickenCoop6" type="MeshInstance3D" parent="ForPath/env/Building/farm_zone"]
-transform = Transform3D(-1.31134e-07, 0, -3, 0, 3, 0, 3, 0, -1.31134e-07, 168.763, 0.502965, 190.348)
+transform = Transform3D(-2.1855695e-07, 0, -5, 0, 5, 0, 5, 0, -2.1855695e-07, 168.763, 0.502965, 190.348)
 mesh = ExtResource("10_17w74")
 skeleton = NodePath("../../../../..")
 
 [node name="ChickenCoop7" type="MeshInstance3D" parent="ForPath/env/Building/farm_zone"]
-transform = Transform3D(-1.31134e-07, 0, -3, 0, 3, 0, 3, 0, -1.31134e-07, 186.142, 0.502965, 190.348)
+transform = Transform3D(-2.1855695e-07, 0, -5, 0, 5, 0, 5, 0, -2.1855695e-07, 186.142, 0.502965, 190.348)
 mesh = ExtResource("10_17w74")
 skeleton = NodePath("../../../../..")
 
 [node name="ChickenCoop8" type="MeshInstance3D" parent="ForPath/env/Building/farm_zone"]
-transform = Transform3D(-1.31134e-07, 0, -3, 0, 3, 0, 3, 0, -1.31134e-07, 176.531, 0.502965, 190.348)
-mesh = ExtResource("10_17w74")
-skeleton = NodePath("../../../../..")
-
-[node name="ChickenCoop3" type="MeshInstance3D" parent="ForPath/env/Building/farm_zone"]
-transform = Transform3D(-1.31134e-07, 0, -3, 0, 3, 0, 3, 0, -1.31134e-07, 186.142, 0.502965, 181.872)
-mesh = ExtResource("10_17w74")
-skeleton = NodePath("../../../../..")
-
-[node name="ChickenCoop4" type="MeshInstance3D" parent="ForPath/env/Building/farm_zone"]
-transform = Transform3D(-1.31134e-07, 0, -3, 0, 3, 0, 3, 0, -1.31134e-07, 186.142, 0.502965, 173.159)
+transform = Transform3D(-2.1855695e-07, 0, -5, 0, 5, 0, 5, 0, -2.1855695e-07, 176.531, 0.502965, 190.348)
 mesh = ExtResource("10_17w74")
 skeleton = NodePath("../../../../..")
 
@@ -590,10 +581,16 @@ transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 172.017, 0, 36.3236)
 [node name="Home" parent="ForPath/env" instance=ExtResource("11_ouyis")]
 transform = Transform3D(0.940229, 0, -0.340544, 0, 1, 0, 0.340544, 0, 0.940229, -185.742, 0.5, -184.334)
 
+[node name="Deposit" parent="ForPath/env/Home" instance=ExtResource("11_dlcfm")]
+
+[node name="CollisionShape3D" parent="ForPath/env/Home/Deposit/Area_activate" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.062438965, 0.5536585, 0.010864258)
+shape = SubResource("BoxShape3D_4aca8")
+
 [node name="test" type="Node3D" parent="ForPath/env"]
 
 [node name="CharacterBody3D" parent="." instance=ExtResource("11_3q7rk")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -181.356, 1.14404, -182.324)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -181.356, 9.548728, -182.324)
 
 [node name="path" type="Node3D" parent="."]
 
@@ -807,3 +804,32 @@ transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 168.887, 0, -217.6847)
 
 [node name="wallttree10" parent="OuterForest" instance=ExtResource("14_dlcfm")]
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -84.2577, 0, -213.31306)
+
+[node name="food_location" type="Node3D" parent="."]
+
+[node name="Farm" type="Node3D" parent="food_location"]
+
+[node name="chicken_1kg" parent="food_location/Farm" instance=ExtResource("15_dekya")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 175.05598, 0.996024, 179.96997)
+
+[node name="chicken_1kg2" parent="food_location/Farm" instance=ExtResource("15_dekya")]
+transform = Transform3D(0.81448025, 0, 0.5801913, 0, 1, 0, -0.5801913, 0, 0.81448025, 162.90483, 0.996024, 181.6884)
+
+[node name="chicken_1kg3" parent="food_location/Farm" instance=ExtResource("15_dekya")]
+transform = Transform3D(0.43951595, 0, -0.8982348, 0, 1, 0, 0.8982348, 0, 0.43951595, 171.31517, 0.996024, 174.05156)
+
+[node name="chicken_1kg4" parent="food_location/Farm" instance=ExtResource("15_dekya")]
+transform = Transform3D(1, 0, -2.9802322e-08, 0, 1, 0, 2.9802322e-08, 0, 1, 124.49344, 0.496024, 179.96999)
+
+[node name="Some_thing" type="Node3D" parent="food_location"]
+
+[node name="chicken_1kg" parent="food_location/Some_thing" instance=ExtResource("15_dekya")]
+transform = Transform3D(0.8111353, 0, -0.58485854, 0, 1, 0, 0.58485854, 0, 0.8111353, -165.15887, 0.6738739, 141.41023)
+
+[node name="chicken_1kg2" parent="food_location/Some_thing" instance=ExtResource("15_dekya")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -171.09512, 0.996024, 143.82935)
+
+[node name="chicken_1kg3" parent="food_location/Some_thing" instance=ExtResource("15_dekya")]
+transform = Transform3D(0.024955617, 0, 0.99968857, 0, 1, 0, -0.99968857, 0, 0.024955617, -187.6908, 0.996024, 135.11345)
+
+[editable path="ForPath/env/Home/Deposit"]
