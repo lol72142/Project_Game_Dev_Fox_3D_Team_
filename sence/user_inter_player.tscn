@@ -1,0 +1,28 @@
+[gd_scene load_steps=2 format=3 uid="uid://b0iy3e86m8682"]
+
+[ext_resource type="Script" uid="uid://0s5xsoqb8ifr" path="res://script/user_inter_player.gd" id="1_qn8co"]
+
+[node name="user_inter_player" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_qn8co")
+
+[node name="food_display_label" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="food_label" type="Label" parent="food_display_label"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="hp_display_label" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="hp_label" type="Label" parent="hp_display_label"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0

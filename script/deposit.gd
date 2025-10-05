@@ -8,3 +8,4 @@ func _on_area_activate_body_entered(body: Node3D) -> void:
 		if inter_com_obj:
 			if inter_com_obj.has_method('on_deposit_area'):
 				inter_com_obj.on_deposit_area()
+				GlobalValSignal.Current_Number_Food += 1

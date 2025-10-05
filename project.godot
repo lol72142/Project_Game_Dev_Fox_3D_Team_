@@ -21,6 +21,12 @@ boot_splash/icon="res://icon.svg"
 [autoload]
 
 AudioManager="*res://sence/audio_manager.tscn"
+GlobalValSignal="*res://script/Global_val_signal.gd"
+
+[display]
+
+window/size/mode=3
+window/stretch/mode="canvas_items"
 
 [filesystem]
 

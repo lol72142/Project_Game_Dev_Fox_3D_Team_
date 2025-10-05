@@ -1,6 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://dve8inujkme06"]
+[gd_scene load_steps=5 format=3 uid="uid://dve8inujkme06"]
 
 [ext_resource type="Script" uid="uid://boqasx6ufln6p" path="res://script/GUI.gd" id="1_oa2e1"]
+[ext_resource type="PackedScene" uid="uid://c52xa6d3clabn" path="res://sence/Setting_GUI.tscn" id="2_jgr1o"]
+[ext_resource type="Script" uid="uid://dswips6mngi5y" path="res://script/resume.gd" id="3_js8ow"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_oa2e1"]
 font_size = 40
@@ -71,5 +73,40 @@ custom_minimum_size = Vector2(0, 50)
 layout_mode = 2
 text = "Setting"
 
+[node name="setting_canva_layer" parent="." instance=ExtResource("2_jgr1o")]
+unique_name_in_owner = true
+process_mode = 0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+
+[node name="Label" type="Label" parent="setting_canva_layer/setting_menu/ColorRect/VBoxContainer" index="0"]
+layout_mode = 2
+text = "Volume"
+horizontal_alignment = 1
+
+[node name="resume" type="Button" parent="setting_canva_layer/setting_menu/ColorRect" index="2"]
+custom_minimum_size = Vector2(100, 50)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -4.0
+offset_top = -56.0
+offset_right = 4.0
+offset_bottom = -48.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Back"
+script = ExtResource("3_js8ow")
+
 [connection signal="pressed" from="pause_menu/ColorRect/VBoxContainer/Resume_button" to="." method="_on_resume_button_pressed"]
 [connection signal="pressed" from="pause_menu/ColorRect/VBoxContainer/setting_button" to="." method="_on_setting_button_pressed"]
+[connection signal="pressed" from="setting_canva_layer/setting_menu/ColorRect/resume" to="setting_canva_layer/setting_menu/ColorRect/resume" method="_on_pressed"]
+
+[editable path="setting_canva_layer"]

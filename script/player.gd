@@ -31,14 +31,6 @@ func _input(event: InputEvent) -> void:
 		elif is_lock == true:
 			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 			is_lock = false
-			
-		
-
-func _unhandled_input(event: InputEvent) -> void:
-	if event is InputEventMouseMotion:
-		head.rotate_y(-event.relative.x * Sensitivity)
-		camera.rotate_x(-event.relative.y * Sensitivity)
-		camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(-60), deg_to_rad(60))
 	if Input.is_action_just_pressed("esc_menu"):
 		$pause_canva_layer.visible = true
 		get_tree().paused = not get_tree().paused
@@ -48,6 +40,13 @@ func _unhandled_input(event: InputEvent) -> void:
 		else:
 			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 			is_lock = true
+
+
+func _unhandled_input(event: InputEvent) -> void:
+	if event is InputEventMouseMotion:
+		head.rotate_y(-event.relative.x * Sensitivity)
+		camera.rotate_x(-event.relative.y * Sensitivity)
+		camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(-60), deg_to_rad(60))
 
 
 func _physics_process(delta: float) -> void:

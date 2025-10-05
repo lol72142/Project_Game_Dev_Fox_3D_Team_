@@ -4,7 +4,8 @@ func _ready() -> void:
 	$".".visible = false
 
 func _on_setting_button_pressed() -> void:
-	pass # Replace with function body.
+	$setting_canva_layer.visible = true
+	%pause_menu.visible = false
 
 
 func _on_resume_button_pressed() -> void:

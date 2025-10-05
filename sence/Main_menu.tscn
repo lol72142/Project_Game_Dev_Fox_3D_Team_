@@ -1,4 +1,7 @@
-[gd_scene load_steps=13 format=4 uid="uid://b0u005tuqm1cc"]
+[gd_scene load_steps=15 format=4 uid="uid://b0u005tuqm1cc"]
+
+[ext_resource type="Script" uid="uid://eh5a728vjemd" path="res://script/main_menu.gd" id="1_22jwj"]
+[ext_resource type="PackedScene" uid="uid://c52xa6d3clabn" path="res://sence/Setting_GUI.tscn" id="2_sihkl"]
 
 [sub_resource type="Image" id="Image_p53qu"]
 data = {
@@ -1105,6 +1108,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_22jwj")
 
 [node name="ColorRect" type="ColorRect" parent="Main_menu"]
 custom_minimum_size = Vector2(500, 300)
@@ -1156,3 +1160,38 @@ custom_minimum_size = Vector2(200, 100)
 layout_mode = 2
 theme_override_font_sizes/font_size = 48
 text = "Setting"
+
+[node name="setting_canva_layer" parent="." instance=ExtResource("2_sihkl")]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="setting_canva_layer/setting_menu/ColorRect/VBoxContainer" index="0"]
+layout_mode = 2
+text = "Volume"
+horizontal_alignment = 1
+
+[node name="back" type="Button" parent="setting_canva_layer/setting_menu/ColorRect" index="2"]
+custom_minimum_size = Vector2(100, 50)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -4.0
+offset_top = -32.0
+offset_right = 4.0
+offset_bottom = -24.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Back"
+
+[connection signal="pressed" from="Main_menu/ColorRect/Panel/VBoxContainer/Play" to="Main_menu" method="_on_play_pressed"]
+[connection signal="pressed" from="Main_menu/ColorRect/Panel/VBoxContainer/Setting" to="Main_menu" method="_on_setting_pressed"]
+[connection signal="pressed" from="setting_canva_layer/setting_menu/ColorRect/back" to="Main_menu" method="_on_back_pressed"]
+
+[editable path="setting_canva_layer"]
