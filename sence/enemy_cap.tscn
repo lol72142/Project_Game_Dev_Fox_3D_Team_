@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://dy1tdw44h7q0y" path="res://Statemachine/state_machine.gd" id="2_iq6vw"]
 [ext_resource type="Script" uid="uid://d4ndiff0ngmlv" path="res://Statemachine/enemy_chesing.gd" id="3_gmvms"]
 [ext_resource type="Script" uid="uid://80enafrttakb" path="res://Statemachine/enemy_warding.gd" id="3_iq6vw"]
-[ext_resource type="PackedScene" uid="uid://bc37pox7unbcs" path="res://farm_h/animal/Untitled.glb" id="5_gjatf"]
+[ext_resource type="PackedScene" uid="uid://b5foa0sympgc4" path="res://asset/model/bacteria_backrooms.glb" id="5_gjatf"]
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_gjatf"]
 height = 0.71875
@@ -33,5 +33,5 @@ metadata/_custom_type_script = "uid://80enafrttakb"
 script = ExtResource("3_gmvms")
 metadata/_custom_type_script = "uid://d4ndiff0ngmlv"
 
-[node name="Untitled" parent="." instance=ExtResource("5_gjatf")]
-transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -0.000301562, 0, 0.3478431)
+[node name="Sketchfab_Scene" parent="." instance=ExtResource("5_gjatf")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)

@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://e8rt4ap6q7vk"]
+
+[node name="Bacteria"]
+
+[node name="Point" parent="." index="21"]
+visible = false
