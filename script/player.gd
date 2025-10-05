@@ -19,17 +19,17 @@ var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 @onready var camera = $head/Camera3D
 
 func _ready() -> void:
-	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+	#Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	AudioManager.forest_sfx.play()
 	
 func _input(event: InputEvent) -> void:
-	if event.is_action_pressed('mouse_lock'):
+	if Input.is_action_just_pressed('mouse_lock'):
 		if is_lock == false:
-			Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 			is_lock = true
 			
 		elif is_lock == true:
-			Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
+			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 			is_lock = false
 			
 		
@@ -39,13 +39,15 @@ func _unhandled_input(event: InputEvent) -> void:
 		head.rotate_y(-event.relative.x * Sensitivity)
 		camera.rotate_x(-event.relative.y * Sensitivity)
 		camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(-60), deg_to_rad(60))
-	if event.is_action_pressed("esc_menu"):
+	if Input.is_action_just_pressed("esc_menu"):
 		$pause_canva_layer.visible = true
 		get_tree().paused = not get_tree().paused
 		if get_tree().paused == true:
-			Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
+			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+			is_lock = false
 		else:
-			Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+			is_lock = true
 
 
 func _physics_process(delta: float) -> void:
@@ -69,6 +71,7 @@ func _physics_process(delta: float) -> void:
 			velocity.x = directionn.x * speed
 			velocity.z = directionn.z * speed
 			if not AudioManager.run.playing:
+				
 				AudioManager.run.play()
 		else:
 			velocity.x = lerp(velocity.x, directionn.x * speed, delta * 15.0)
@@ -76,6 +79,9 @@ func _physics_process(delta: float) -> void:
 	else:
 		velocity.x = lerp(velocity.x, directionn.x * speed, delta * 2.0)
 		velocity.z = lerp(velocity.z, directionn.z * speed, delta * 2.0)
+		
+	if velocity.y > 0.0 or velocity.x >= -0.5 and velocity.x <= 0.5 and velocity.z >= -0.5 and velocity.z <= 0.5 and AudioManager.run.playing:
+		AudioManager.run.stop()
 	
 	t_bo += delta * velocity.length() * float(is_on_floor())
 	camera.transform.origin = head_bob(t_bo)
