@@ -1,0 +1,193 @@
+[gd_scene load_steps=3 format=3 uid="uid://dqi1ibfy4fv77"]
+
+[ext_resource type="PackedScene" uid="uid://e3u0uhb4kmol" path="res://Forest/Building/farmland.tscn" id="1_o4xch"]
+[ext_resource type="PackedScene" uid="uid://ejt4hgjn17bj" path="res://Forest/cabbage.tscn" id="2_ohjrd"]
+
+[node name="farmzone" type="Node3D"]
+
+[node name="part1" type="Node3D" parent="."]
+
+[node name="farmland" parent="part1" instance=ExtResource("1_o4xch")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 120.29, 0.5, 111.346)
+
+[node name="farmland2" parent="part1" instance=ExtResource("1_o4xch")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 120.29, 0.5, 123.736)
+
+[node name="farmland3" parent="part1" instance=ExtResource("1_o4xch")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 120.29, 0.5, 136.208)
+
+[node name="farmland4" parent="part1" instance=ExtResource("1_o4xch")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 120.29, 0.5, 148.71)
+
+[node name="farmland5" parent="part1" instance=ExtResource("1_o4xch")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 120.29, 0.5, 98.9774)
+
+[node name="farmland6" parent="part1" instance=ExtResource("1_o4xch")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 142.429, 0.5, 111.346)
+
+[node name="farmland7" parent="part1" instance=ExtResource("1_o4xch")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 142.429, 0.5, 123.736)
+
+[node name="farmland8" parent="part1" instance=ExtResource("1_o4xch")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 142.429, 0.5, 136.208)
+
+[node name="farmland9" parent="part1" instance=ExtResource("1_o4xch")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 142.429, 0.5, 148.71)
+
+[node name="farmland10" parent="part1" instance=ExtResource("1_o4xch")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 142.429, 0.5, 98.9774)
+
+[node name="farmland11" parent="part1" instance=ExtResource("1_o4xch")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 98.6262, 0.5, 111.346)
+
+[node name="farmland12" parent="part1" instance=ExtResource("1_o4xch")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 98.6262, 0.5, 123.736)
+
+[node name="farmland13" parent="part1" instance=ExtResource("1_o4xch")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 98.6262, 0.5, 136.208)
+
+[node name="farmland14" parent="part1" instance=ExtResource("1_o4xch")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 98.6262, 0.5, 148.71)
+
+[node name="farmland15" parent="part1" instance=ExtResource("1_o4xch")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 98.6262, 0.5, 98.9774)
+
+[node name="farmland16" parent="part1" instance=ExtResource("1_o4xch")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 77.6254, 0.5, 111.346)
+
+[node name="farmland17" parent="part1" instance=ExtResource("1_o4xch")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 77.6254, 0.5, 123.736)
+
+[node name="farmland18" parent="part1" instance=ExtResource("1_o4xch")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 77.6254, 0.5, 136.208)
+
+[node name="farmland19" parent="part1" instance=ExtResource("1_o4xch")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 77.6254, 0.5, 148.71)
+
+[node name="farmland20" parent="part1" instance=ExtResource("1_o4xch")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 77.6254, 0.5, 98.9774)
+
+[node name="farmland21" parent="part1" instance=ExtResource("1_o4xch")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 55.4192, 0.5, 111.346)
+
+[node name="farmland22" parent="part1" instance=ExtResource("1_o4xch")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 55.4192, 0.5, 123.736)
+
+[node name="farmland23" parent="part1" instance=ExtResource("1_o4xch")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 55.4192, 0.5, 136.208)
+
+[node name="farmland24" parent="part1" instance=ExtResource("1_o4xch")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 55.4192, 0.5, 148.71)
+
+[node name="farmland25" parent="part1" instance=ExtResource("1_o4xch")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 55.4192, 0.5, 98.9774)
+
+[node name="farmland26" parent="part1" instance=ExtResource("1_o4xch")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 34.1927, 0.5, 111.346)
+
+[node name="farmland27" parent="part1" instance=ExtResource("1_o4xch")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 34.1927, 0.5, 123.736)
+
+[node name="farmland28" parent="part1" instance=ExtResource("1_o4xch")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 34.1927, 0.5, 136.208)
+
+[node name="farmland29" parent="part1" instance=ExtResource("1_o4xch")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 34.1927, 0.5, 148.71)
+
+[node name="farmland30" parent="part1" instance=ExtResource("1_o4xch")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 34.1927, 0.5, 98.9774)
+
+[node name="part2" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -62)
+
+[node name="farmland" parent="part2" instance=ExtResource("1_o4xch")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 120.29, 0.5, 111.346)
+
+[node name="farmland2" parent="part2" instance=ExtResource("1_o4xch")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 120.29, 0.5, 123.736)
+
+[node name="farmland3" parent="part2" instance=ExtResource("1_o4xch")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 120.29, 0.5, 136.208)
+
+[node name="farmland4" parent="part2" instance=ExtResource("1_o4xch")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 120.29, 0.5, 148.71)
+
+[node name="farmland5" parent="part2" instance=ExtResource("1_o4xch")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 120.29, 0.5, 98.9774)
+
+[node name="farmland6" parent="part2" instance=ExtResource("1_o4xch")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 142.429, 0.5, 111.346)
+
+[node name="farmland7" parent="part2" instance=ExtResource("1_o4xch")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 142.429, 0.5, 123.736)
+
+[node name="farmland8" parent="part2" instance=ExtResource("1_o4xch")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 142.429, 0.5, 136.208)
+
+[node name="farmland9" parent="part2" instance=ExtResource("1_o4xch")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 142.429, 0.5, 148.71)
+
+[node name="farmland10" parent="part2" instance=ExtResource("1_o4xch")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 142.429, 0.5, 98.9774)
+
+[node name="farmland11" parent="part2" instance=ExtResource("1_o4xch")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 98.6262, 0.5, 111.346)
+
+[node name="farmland12" parent="part2" instance=ExtResource("1_o4xch")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 98.6262, 0.5, 123.736)
+
+[node name="farmland13" parent="part2" instance=ExtResource("1_o4xch")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 98.6262, 0.5, 136.208)
+
+[node name="farmland14" parent="part2" instance=ExtResource("1_o4xch")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 98.6262, 0.5, 148.71)
+
+[node name="farmland15" parent="part2" instance=ExtResource("1_o4xch")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 98.6262, 0.5, 98.9774)
+
+[node name="farmland16" parent="part2" instance=ExtResource("1_o4xch")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 77.6254, 0.5, 111.346)
+
+[node name="farmland17" parent="part2" instance=ExtResource("1_o4xch")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 77.6254, 0.5, 123.736)
+
+[node name="farmland18" parent="part2" instance=ExtResource("1_o4xch")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 77.6254, 0.5, 136.208)
+
+[node name="farmland19" parent="part2" instance=ExtResource("1_o4xch")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 77.6254, 0.5, 148.71)
+
+[node name="farmland20" parent="part2" instance=ExtResource("1_o4xch")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 77.6254, 0.5, 98.9774)
+
+[node name="farmland21" parent="part2" instance=ExtResource("1_o4xch")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 55.4192, 0.5, 111.346)
+
+[node name="farmland22" parent="part2" instance=ExtResource("1_o4xch")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 55.4192, 0.5, 123.736)
+
+[node name="farmland23" parent="part2" instance=ExtResource("1_o4xch")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 55.4192, 0.5, 136.208)
+
+[node name="farmland24" parent="part2" instance=ExtResource("1_o4xch")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 55.4192, 0.5, 148.71)
+
+[node name="farmland25" parent="part2" instance=ExtResource("1_o4xch")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 55.4192, 0.5, 98.9774)
+
+[node name="farmland26" parent="part2" instance=ExtResource("1_o4xch")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 34.1927, 0.5, 111.346)
+
+[node name="farmland27" parent="part2" instance=ExtResource("1_o4xch")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 34.1927, 0.5, 123.736)
+
+[node name="farmland28" parent="part2" instance=ExtResource("1_o4xch")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 34.1927, 0.5, 136.208)
+
+[node name="farmland29" parent="part2" instance=ExtResource("1_o4xch")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 34.1927, 0.5, 148.71)
+
+[node name="farmland30" parent="part2" instance=ExtResource("1_o4xch")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 34.1927, 0.5, 98.9774)
+
+[node name="cabbage" parent="." instance=ExtResource("2_ohjrd")]

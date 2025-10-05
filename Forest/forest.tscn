@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://vg0146rwyhtg" path="res://Forest/nature_aaa.tscn" id="2_ouyis"]
 [ext_resource type="PackedScene" uid="uid://hl3hqs7ulecw" path="res://Forest/Building/Lantern.tscn" id="8_hlfit"]
 [ext_resource type="ArrayMesh" uid="uid://bxecf50pc56s0" path="res://farm_h/OBJ/BigBarn.obj" id="8_xqgi7"]
-[ext_resource type="PackedScene" uid="uid://e3u0uhb4kmol" path="res://Forest/Building/farmland.tscn" id="9_17w74"]
+[ext_resource type="PackedScene" uid="uid://dqi1ibfy4fv77" path="res://Forest/farmzone.tscn" id="9_dlcfm"]
 [ext_resource type="ArrayMesh" uid="uid://j6k2gcxpdeao" path="res://farm_h/OBJ/Silo.obj" id="9_wovt4"]
 [ext_resource type="ArrayMesh" uid="uid://ch1xnu7f6bmga" path="res://farm_h/OBJ/ChickenCoop.obj" id="10_17w74"]
 [ext_resource type="PackedScene" uid="uid://duvokykwm5pl0" path="res://Forest/Building/fence.tscn" id="10_ouyis"]
@@ -18,10 +18,8 @@
 
 [sub_resource type="Environment" id="Environment_tyvbe"]
 ambient_light_source = 2
-ambient_light_color = Color(1, 1, 1, 1)
 tonemap_exposure = 0.1
 fog_enabled = true
-fog_light_energy = 1.61
 fog_density = 0.04
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_4aca8"]
@@ -51,7 +49,6 @@ script = ExtResource("1_ouyis")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 60.8585, 0)
-light_color = Color(0, 0, 0, 1)
 light_energy = 3.0
 light_specular = 0.0
 light_bake_mode = 1
@@ -207,191 +204,6 @@ skeleton = NodePath("../../../../..")
 transform = Transform3D(-2.1855695e-07, 0, -5, 0, 5, 0, 5, 0, -2.1855695e-07, 176.531, 0.502965, 190.348)
 mesh = ExtResource("10_17w74")
 skeleton = NodePath("../../../../..")
-
-[node name="farmland_zone" type="Node3D" parent="ForPath/env/Building/farm_zone"]
-
-[node name="farmland" parent="ForPath/env/Building/farm_zone/farmland_zone" instance=ExtResource("9_17w74")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 120.29, 0.5, 111.346)
-
-[node name="farmland2" parent="ForPath/env/Building/farm_zone/farmland_zone" instance=ExtResource("9_17w74")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 120.29, 0.5, 123.736)
-
-[node name="farmland3" parent="ForPath/env/Building/farm_zone/farmland_zone" instance=ExtResource("9_17w74")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 120.29, 0.5, 136.208)
-
-[node name="farmland4" parent="ForPath/env/Building/farm_zone/farmland_zone" instance=ExtResource("9_17w74")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 120.29, 0.5, 148.71)
-
-[node name="farmland5" parent="ForPath/env/Building/farm_zone/farmland_zone" instance=ExtResource("9_17w74")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 120.29, 0.5, 98.9774)
-
-[node name="farmland6" parent="ForPath/env/Building/farm_zone/farmland_zone" instance=ExtResource("9_17w74")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 142.429, 0.5, 111.346)
-
-[node name="farmland7" parent="ForPath/env/Building/farm_zone/farmland_zone" instance=ExtResource("9_17w74")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 142.429, 0.5, 123.736)
-
-[node name="farmland8" parent="ForPath/env/Building/farm_zone/farmland_zone" instance=ExtResource("9_17w74")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 142.429, 0.5, 136.208)
-
-[node name="farmland9" parent="ForPath/env/Building/farm_zone/farmland_zone" instance=ExtResource("9_17w74")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 142.429, 0.5, 148.71)
-
-[node name="farmland10" parent="ForPath/env/Building/farm_zone/farmland_zone" instance=ExtResource("9_17w74")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 142.429, 0.5, 98.9774)
-
-[node name="farmland11" parent="ForPath/env/Building/farm_zone/farmland_zone" instance=ExtResource("9_17w74")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 98.6262, 0.5, 111.346)
-
-[node name="farmland12" parent="ForPath/env/Building/farm_zone/farmland_zone" instance=ExtResource("9_17w74")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 98.6262, 0.5, 123.736)
-
-[node name="farmland13" parent="ForPath/env/Building/farm_zone/farmland_zone" instance=ExtResource("9_17w74")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 98.6262, 0.5, 136.208)
-
-[node name="farmland14" parent="ForPath/env/Building/farm_zone/farmland_zone" instance=ExtResource("9_17w74")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 98.6262, 0.5, 148.71)
-
-[node name="farmland15" parent="ForPath/env/Building/farm_zone/farmland_zone" instance=ExtResource("9_17w74")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 98.6262, 0.5, 98.9774)
-
-[node name="farmland16" parent="ForPath/env/Building/farm_zone/farmland_zone" instance=ExtResource("9_17w74")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 77.6254, 0.5, 111.346)
-
-[node name="farmland17" parent="ForPath/env/Building/farm_zone/farmland_zone" instance=ExtResource("9_17w74")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 77.6254, 0.5, 123.736)
-
-[node name="farmland18" parent="ForPath/env/Building/farm_zone/farmland_zone" instance=ExtResource("9_17w74")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 77.6254, 0.5, 136.208)
-
-[node name="farmland19" parent="ForPath/env/Building/farm_zone/farmland_zone" instance=ExtResource("9_17w74")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 77.6254, 0.5, 148.71)
-
-[node name="farmland20" parent="ForPath/env/Building/farm_zone/farmland_zone" instance=ExtResource("9_17w74")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 77.6254, 0.5, 98.9774)
-
-[node name="farmland21" parent="ForPath/env/Building/farm_zone/farmland_zone" instance=ExtResource("9_17w74")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 55.4192, 0.5, 111.346)
-
-[node name="farmland22" parent="ForPath/env/Building/farm_zone/farmland_zone" instance=ExtResource("9_17w74")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 55.4192, 0.5, 123.736)
-
-[node name="farmland23" parent="ForPath/env/Building/farm_zone/farmland_zone" instance=ExtResource("9_17w74")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 55.4192, 0.5, 136.208)
-
-[node name="farmland24" parent="ForPath/env/Building/farm_zone/farmland_zone" instance=ExtResource("9_17w74")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 55.4192, 0.5, 148.71)
-
-[node name="farmland25" parent="ForPath/env/Building/farm_zone/farmland_zone" instance=ExtResource("9_17w74")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 55.4192, 0.5, 98.9774)
-
-[node name="farmland26" parent="ForPath/env/Building/farm_zone/farmland_zone" instance=ExtResource("9_17w74")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 34.1927, 0.5, 111.346)
-
-[node name="farmland27" parent="ForPath/env/Building/farm_zone/farmland_zone" instance=ExtResource("9_17w74")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 34.1927, 0.5, 123.736)
-
-[node name="farmland28" parent="ForPath/env/Building/farm_zone/farmland_zone" instance=ExtResource("9_17w74")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 34.1927, 0.5, 136.208)
-
-[node name="farmland29" parent="ForPath/env/Building/farm_zone/farmland_zone" instance=ExtResource("9_17w74")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 34.1927, 0.5, 148.71)
-
-[node name="farmland30" parent="ForPath/env/Building/farm_zone/farmland_zone" instance=ExtResource("9_17w74")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 34.1927, 0.5, 98.9774)
-
-[node name="farmland_zone2" type="Node3D" parent="ForPath/env/Building/farm_zone"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -62)
-
-[node name="farmland" parent="ForPath/env/Building/farm_zone/farmland_zone2" instance=ExtResource("9_17w74")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 120.29, 0.5, 111.346)
-
-[node name="farmland2" parent="ForPath/env/Building/farm_zone/farmland_zone2" instance=ExtResource("9_17w74")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 120.29, 0.5, 123.736)
-
-[node name="farmland3" parent="ForPath/env/Building/farm_zone/farmland_zone2" instance=ExtResource("9_17w74")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 120.29, 0.5, 136.208)
-
-[node name="farmland4" parent="ForPath/env/Building/farm_zone/farmland_zone2" instance=ExtResource("9_17w74")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 120.29, 0.5, 148.71)
-
-[node name="farmland5" parent="ForPath/env/Building/farm_zone/farmland_zone2" instance=ExtResource("9_17w74")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 120.29, 0.5, 98.9774)
-
-[node name="farmland6" parent="ForPath/env/Building/farm_zone/farmland_zone2" instance=ExtResource("9_17w74")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 142.429, 0.5, 111.346)
-
-[node name="farmland7" parent="ForPath/env/Building/farm_zone/farmland_zone2" instance=ExtResource("9_17w74")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 142.429, 0.5, 123.736)
-
-[node name="farmland8" parent="ForPath/env/Building/farm_zone/farmland_zone2" instance=ExtResource("9_17w74")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 142.429, 0.5, 136.208)
-
-[node name="farmland9" parent="ForPath/env/Building/farm_zone/farmland_zone2" instance=ExtResource("9_17w74")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 142.429, 0.5, 148.71)
-
-[node name="farmland10" parent="ForPath/env/Building/farm_zone/farmland_zone2" instance=ExtResource("9_17w74")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 142.429, 0.5, 98.9774)
-
-[node name="farmland11" parent="ForPath/env/Building/farm_zone/farmland_zone2" instance=ExtResource("9_17w74")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 98.6262, 0.5, 111.346)
-
-[node name="farmland12" parent="ForPath/env/Building/farm_zone/farmland_zone2" instance=ExtResource("9_17w74")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 98.6262, 0.5, 123.736)
-
-[node name="farmland13" parent="ForPath/env/Building/farm_zone/farmland_zone2" instance=ExtResource("9_17w74")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 98.6262, 0.5, 136.208)
-
-[node name="farmland14" parent="ForPath/env/Building/farm_zone/farmland_zone2" instance=ExtResource("9_17w74")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 98.6262, 0.5, 148.71)
-
-[node name="farmland15" parent="ForPath/env/Building/farm_zone/farmland_zone2" instance=ExtResource("9_17w74")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 98.6262, 0.5, 98.9774)
-
-[node name="farmland16" parent="ForPath/env/Building/farm_zone/farmland_zone2" instance=ExtResource("9_17w74")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 77.6254, 0.5, 111.346)
-
-[node name="farmland17" parent="ForPath/env/Building/farm_zone/farmland_zone2" instance=ExtResource("9_17w74")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 77.6254, 0.5, 123.736)
-
-[node name="farmland18" parent="ForPath/env/Building/farm_zone/farmland_zone2" instance=ExtResource("9_17w74")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 77.6254, 0.5, 136.208)
-
-[node name="farmland19" parent="ForPath/env/Building/farm_zone/farmland_zone2" instance=ExtResource("9_17w74")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 77.6254, 0.5, 148.71)
-
-[node name="farmland20" parent="ForPath/env/Building/farm_zone/farmland_zone2" instance=ExtResource("9_17w74")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 77.6254, 0.5, 98.9774)
-
-[node name="farmland21" parent="ForPath/env/Building/farm_zone/farmland_zone2" instance=ExtResource("9_17w74")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 55.4192, 0.5, 111.346)
-
-[node name="farmland22" parent="ForPath/env/Building/farm_zone/farmland_zone2" instance=ExtResource("9_17w74")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 55.4192, 0.5, 123.736)
-
-[node name="farmland23" parent="ForPath/env/Building/farm_zone/farmland_zone2" instance=ExtResource("9_17w74")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 55.4192, 0.5, 136.208)
-
-[node name="farmland24" parent="ForPath/env/Building/farm_zone/farmland_zone2" instance=ExtResource("9_17w74")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 55.4192, 0.5, 148.71)
-
-[node name="farmland25" parent="ForPath/env/Building/farm_zone/farmland_zone2" instance=ExtResource("9_17w74")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 55.4192, 0.5, 98.9774)
-
-[node name="farmland26" parent="ForPath/env/Building/farm_zone/farmland_zone2" instance=ExtResource("9_17w74")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 34.1927, 0.5, 111.346)
-
-[node name="farmland27" parent="ForPath/env/Building/farm_zone/farmland_zone2" instance=ExtResource("9_17w74")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 34.1927, 0.5, 123.736)
-
-[node name="farmland28" parent="ForPath/env/Building/farm_zone/farmland_zone2" instance=ExtResource("9_17w74")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 34.1927, 0.5, 136.208)
-
-[node name="farmland29" parent="ForPath/env/Building/farm_zone/farmland_zone2" instance=ExtResource("9_17w74")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 34.1927, 0.5, 148.71)
-
-[node name="farmland30" parent="ForPath/env/Building/farm_zone/farmland_zone2" instance=ExtResource("9_17w74")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 34.1927, 0.5, 98.9774)
 
 [node name="fences" type="Node3D" parent="ForPath/env/Building/farm_zone"]
 
@@ -577,6 +389,8 @@ transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 183.418, 0, 36.3236)
 
 [node name="Fence11" parent="ForPath/env/Building/farm_zone/fences" instance=ExtResource("10_ouyis")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 172.017, 0, 36.3236)
+
+[node name="farmzone" parent="ForPath/env/Building/farm_zone" instance=ExtResource("9_dlcfm")]
 
 [node name="Home" parent="ForPath/env" instance=ExtResource("11_ouyis")]
 transform = Transform3D(0.940229, 0, -0.340544, 0, 1, 0, 0.340544, 0, 0.940229, -185.742, 0.5, -184.334)
