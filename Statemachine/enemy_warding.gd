@@ -1,8 +1,9 @@
 extends State
 class_name Enemy_warding
-
+@onready var animation_player: AnimationPlayer = $"../../bacteria/AnimationPlayer"
 var warder_direction: Vector3
 var wander_time: float = 0.0
+var warder_wait: float = 0.0
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 var player: CharacterBody3D = null
 
@@ -14,16 +15,23 @@ func _ready() -> void:
 
 func randomize_stetus():
 	warder_direction = Vector3(randf_range(-1.0, 1.0), 0.0, randf_range(-1.0, 1.0))
-	wander_time = randf_range(1.5,4)
+	wander_time = randf_range(1.5,6)
+	warder_wait = randf_range(1.5,4)
 	
 func enter():
 	randomize_stetus()
 
 func process(delta: float) -> void:
 	if wander_time < 0.0:
-		randomize_stetus()
+		warder_wait -= delta
+		warder_direction = Vector3(0,0,0)
+		animation_player.stop()
+		if warder_wait < 0.0:
+			randomize_stetus()
 	
 	wander_time -= delta
+	animation_player.get_animation("mixamo_com").loop = true
+	animation_player.play("mixamo_com")
 	if enemy.global_position.distance_to(player.global_position) < enemy.chace_distance:
 		emit_signal('Transition', self, "EnemyChase")
 	

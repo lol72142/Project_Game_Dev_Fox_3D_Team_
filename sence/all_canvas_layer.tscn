@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://btikj3wijcv8l"]
+
+[ext_resource type="PackedScene" uid="uid://b0iy3e86m8682" path="res://sence/user_inter_player.tscn" id="1_6gvk1"]
+[ext_resource type="PackedScene" uid="uid://dve8inujkme06" path="res://sence/GUI.tscn" id="2_6gvk1"]
+
+[node name="All_canvas_layer" type="CanvasLayer"]
+
+[node name="user_inter_player" parent="." instance=ExtResource("1_6gvk1")]
+
+[node name="pause_canva_layer" parent="." instance=ExtResource("2_6gvk1")]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="setting_canva_layer" parent="pause_canva_layer" index="1"]
+visible = false
+
+[editable path="user_inter_player"]
+[editable path="pause_canva_layer"]
+[editable path="pause_canva_layer/setting_canva_layer"]

@@ -1,6 +1,6 @@
 extends State
 class_name EnemyChase
-
+@onready var animation_player: AnimationPlayer = $"../../bacteria/AnimationPlayer"
 @onready var enemy: CharacterBody3D = get_parent().get_parent()
 var player: CharacterBody3D = null
 
@@ -13,7 +13,8 @@ func process(delta):
 	
 	if enemy.global_position.distance_to(player.global_position) > enemy.chace_distance:
 		emit_signal('Transition', self, "Enemy_warding")
-
+		
+		
 func physics_process(delta: float) -> void:
 	if not enemy.is_on_floor():
 		enemy.velocity.y = enemy.gravity * delta
@@ -22,4 +23,5 @@ func physics_process(delta: float) -> void:
 	
 	var next_position: Vector3 = enemy.navigate_agent.get_next_path_position()
 	enemy.velocity = enemy.global_position.direction_to(next_position) * enemy.run_speed
-	
+	animation_player.get_animation("mixamo_com").loop = true
+	animation_player.play("mixamo_com")

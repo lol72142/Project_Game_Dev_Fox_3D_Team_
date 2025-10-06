@@ -22,13 +22,17 @@ offset_right = 20.0
 offset_bottom = 40.0
 grow_horizontal = 2
 
-[node name="food_label" type="Label" parent="food_display_label"]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
-
 [node name="Sprite2D" type="Sprite2D" parent="food_display_label"]
 texture = ExtResource("2_maoml")
+
+[node name="food_label" type="Label" parent="food_display_label"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 0
+offset_left = 73.0
+offset_right = 113.0
+offset_bottom = 23.0
+text = "fff"
+horizontal_alignment = 1
 
 [node name="hp_display_label" type="Control" parent="."]
 layout_mode = 1
@@ -36,10 +40,10 @@ anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
+[node name="Sprite2D" type="Sprite2D" parent="hp_display_label"]
+texture = ExtResource("2_maoml")
+
 [node name="hp_label" type="Label" parent="hp_display_label"]
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 23.0
-
-[node name="Sprite2D" type="Sprite2D" parent="hp_display_label"]
-texture = ExtResource("2_maoml")
