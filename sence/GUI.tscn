@@ -75,9 +75,16 @@ custom_minimum_size = Vector2(0, 50)
 layout_mode = 2
 text = "Setting"
 
+[node name="quit_button" type="Button" parent="pause_menu/ColorRect/VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme_override_font_sizes/font_size = 16
+text = "Quit"
+
 [node name="setting_canva_layer" parent="." instance=ExtResource("2_jgr1o")]
 unique_name_in_owner = true
 process_mode = 0
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -110,6 +117,7 @@ script = ExtResource("3_js8ow")
 
 [connection signal="pressed" from="pause_menu/ColorRect/VBoxContainer/Resume_button" to="." method="_on_resume_button_pressed"]
 [connection signal="pressed" from="pause_menu/ColorRect/VBoxContainer/setting_button" to="." method="_on_setting_button_pressed"]
+[connection signal="pressed" from="pause_menu/ColorRect/VBoxContainer/quit_button" to="." method="_on_quit_button_pressed"]
 [connection signal="pressed" from="setting_canva_layer/setting_menu/ColorRect/resume" to="setting_canva_layer/setting_menu/ColorRect/resume" method="_on_pressed"]
 
 [editable path="setting_canva_layer"]

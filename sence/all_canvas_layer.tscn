@@ -8,18 +8,6 @@
 
 [node name="All_canvas_layer" type="CanvasLayer"]
 
-[node name="user_inter_player" parent="." instance=ExtResource("1_6gvk1")]
-
-[node name="pause_canva_layer" parent="." instance=ExtResource("2_6gvk1")]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="setting_canva_layer" parent="pause_canva_layer" index="1"]
-visible = false
-
 [node name="map" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 15
@@ -46,6 +34,18 @@ texture = ExtResource("5_vu4ir")
 
 [node name="player_point" type="Sprite2D" parent="map/Panel"]
 texture = ExtResource("4_vu4ir")
+
+[node name="user_inter_player" parent="." instance=ExtResource("1_6gvk1")]
+
+[node name="pause_canva_layer" parent="." instance=ExtResource("2_6gvk1")]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="setting_canva_layer" parent="pause_canva_layer" index="1"]
+visible = false
 
 [editable path="user_inter_player"]
 [editable path="pause_canva_layer"]

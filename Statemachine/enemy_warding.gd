@@ -6,12 +6,15 @@ var wander_time: float = 0.0
 var warder_wait: float = 0.0
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 var player: CharacterBody3D = null
+var marker: Marker3D
 
 @onready var enemy: CharacterBody3D = get_parent().get_parent()
 
 
 func _ready() -> void:
 	player = get_tree().get_first_node_in_group("player")
+	marker = enemy.marker
+	print(marker)
 
 func randomize_stetus():
 	warder_direction = Vector3(randf_range(-1.0, 1.0), 0.0, randf_range(-1.0, 1.0))
@@ -34,7 +37,8 @@ func process(delta: float) -> void:
 	animation_player.play("mixamo_com")
 	if enemy.global_position.distance_to(player.global_position) < enemy.chace_distance:
 		emit_signal('Transition', self, "EnemyChase")
-	
+	if enemy.global_position.distance_to(marker.global_position) > 20:
+		emit_signal('Transition', self, "EnemyFallBack")
 #func physics_process(delta: float) -> void:
 	#enemy.velocity = warder_direction * enemy.walk_speed
 	#

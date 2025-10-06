@@ -8,3 +8,4 @@ var Current_Enemy_speed: float = 10.0
 
 signal Get_Hit()
 signal Deposit_food()
+signal Sta_dis(num_sta)

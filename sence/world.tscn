@@ -430,8 +430,12 @@ skeleton = NodePath("../../..")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="env_obj-node/structure/ChickenCoop2/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_i4cde")
 
-[node name="enemy_cap" parent="." instance=ExtResource("4_036b0")]
+[node name="enemy_cap" parent="." node_paths=PackedStringArray("marker") instance=ExtResource("4_036b0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.19775, -31)
+marker = NodePath("../spawn_enemy/Marker3D")
+
+[node name="CollisionShape3D" parent="enemy_cap" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2947074, 0)
 
 [node name="inter_com_pick_able" type="Node3D" parent="."]
 
@@ -467,6 +471,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.109978, 7.47434, 1.022996)
 
 [node name="cube_1kg2" parent="inter_com_pick_able" instance=ExtResource("33_haiqs")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.455551, 0.0430002, 0.7534094)
+
+[node name="spawn_enemy" type="Node3D" parent="."]
+
+[node name="Marker3D" type="Marker3D" parent="spawn_enemy"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 94.2908, 0, -76.181366)
 
 [editable path="env_obj-node/depost_layer/Deposit"]
 [editable path="enemy_cap"]

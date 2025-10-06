@@ -1,15 +1,23 @@
 extends CharacterBody3D
 
-var speed = 0
 const Max_Walk_Speed = 5.0
-const Max_Run_Speed = 10.0
+const Max_Run_Speed = 12.0
 const Jump_velo = 5.0
-const Sensitivity = 0.003
+
 const Walk_bo_freq = 2.0
 const  Walk_bo_amp = 0.08
-const Base_FOV = 75.0
 const FOV_change = 1.5
+const  stamina_cool_down = 3
 
+var cur_stamina = 100
+var max_stamina = 100
+var cur_wait_time = 0
+var last_sta = 0
+
+
+var speed = 0
+var Base_FOV = 75.0
+var Sensitivity = 0.003
 var t_bo = 0.0
 var is_lock = false
 
@@ -50,21 +58,37 @@ func _unhandled_input(event: InputEvent) -> void:
 
 
 func _physics_process(delta: float) -> void:
-
-	if not is_on_floor():
-		velocity.y -= gravity * delta
 	
-	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
-		velocity.y = Jump_velo
-	
-	if Input.is_action_pressed('sprint') and is_on_floor():
-		speed = Max_Run_Speed
-	else:
-		speed = Max_Walk_Speed
-		
 	var input_vec = Input.get_vector("left","right","forward","backward")
 	var directionn = (head.transform.basis * Vector3(input_vec.x, 0 ,input_vec.y)).normalized()
 	
+	if not is_on_floor():
+		velocity.y -= gravity * delta
+	
+	if Input.is_action_just_pressed("ui_accept") and is_on_floor() and cur_stamina >= 10:
+		cur_stamina -= 10
+		velocity.y = Jump_velo
+		cur_wait_time = 0
+	
+	if Input.is_action_pressed('sprint') and is_on_floor() and cur_stamina >= 10 and directionn != Vector3.ZERO:
+		cur_stamina -= 20 * delta
+		speed = Max_Run_Speed
+		cur_wait_time = 0
+	else:
+		
+		if cur_wait_time >= stamina_cool_down and cur_stamina <= 100:
+			cur_stamina += delta * 10
+			if cur_stamina > 100:
+				cur_stamina = 100
+			if cur_stamina < 0:
+				cur_stamina = 0
+		cur_wait_time += delta 
+		speed = Max_Walk_Speed
+		
+	if last_sta != cur_stamina:
+		GlobalValSignal.emit_signal("Sta_dis",int(cur_stamina))
+		last_sta = cur_stamina
+
 	if is_on_floor():
 		if directionn:
 			velocity.x = directionn.x * speed

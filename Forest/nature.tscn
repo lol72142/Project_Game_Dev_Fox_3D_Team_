@@ -3052,9 +3052,6 @@ transform = Transform3D(1.3140612, 0, -4.824235, 0, 4.999998, 0, 4.824235, 0, 1.
 [node name="Tree_729" parent="." instance=ExtResource("1_s42pi")]
 transform = Transform3D(-1.8350223, 0, 4.6510963, 0, 4.9999995, 0, -4.6510963, 0, -1.8350223, 75.34216, 0.88188, -60.655922)
 
-[node name="Tree_829" parent="." instance=ExtResource("1_s42pi")]
-transform = Transform3D(1.7814887, 0, 4.6718626, 0, 4.9999995, 0, -4.6718626, 0, 1.7814887, 73.29527, 0.88188, 18.217758)
-
 [node name="Tree_830" parent="." instance=ExtResource("1_s42pi")]
 transform = Transform3D(4.9942036, 0, -0.24067545, 0, 4.999999, 0, 0.24067545, 0, 4.9942036, 79.18897, 0.88188, -9.209955)
 

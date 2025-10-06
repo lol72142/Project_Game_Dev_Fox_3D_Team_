@@ -1,11 +1,13 @@
 extends CharacterBody3D
 
+@export var marker: Marker3D = null
 @export var walk_speed: float = 1.5
 @export var run_speed: float = 4
 @export var chace_distance: float = 15.0
 var player: CharacterBody3D = null
 
 @onready var navigate_agent: NavigationAgent3D = $NavigationAgent3D
+
 var gravity: float
 
 func _ready() -> void:

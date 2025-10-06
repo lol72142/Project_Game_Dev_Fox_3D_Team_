@@ -1,10 +1,9 @@
-[gd_scene load_steps=9 format=3 uid="uid://bbxop6nt0x0t1"]
+[gd_scene load_steps=8 format=3 uid="uid://bbxop6nt0x0t1"]
 
 [ext_resource type="Script" uid="uid://cesk5iwx23rrm" path="res://script/player.gd" id="1_4flbx"]
 [ext_resource type="PackedScene" uid="uid://c5hikpudn2ony" path="res://sence/interact.tscn" id="2_onrkg"]
 [ext_resource type="Texture2D" uid="uid://bw0jlum74ng54" path="res://sence/aim_cursor.png" id="3_twwr1"]
 [ext_resource type="PackedScene" uid="uid://btikj3wijcv8l" path="res://sence/all_canvas_layer.tscn" id="4_krrvm"]
-[ext_resource type="Texture2D" uid="uid://b6k0h1i7rqi0s" path="res://Forest/Asset/Chicken.png" id="5_v5f68"]
 [ext_resource type="Texture2D" uid="uid://ce2ngnpvucgsr" path="res://Forest/Asset/Heart.png" id="6_ixbj0"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_fj7yv"]
@@ -47,12 +46,43 @@ texture = ExtResource("3_twwr1")
 [node name="All_canvas_layer" parent="." instance=ExtResource("4_krrvm")]
 
 [node name="Sprite2D" parent="All_canvas_layer/user_inter_player/food_display_label" index="0"]
-position = Vector2(-0.99999994, 35.999996)
+position = Vector2(-1, 39.999996)
 scale = Vector2(0.1, 0.1)
-texture = ExtResource("5_v5f68")
+
+[node name="food_label" parent="All_canvas_layer/user_inter_player/food_display_label" index="1"]
+offset_left = 4.0
+offset_top = 25.0
+offset_right = 104.0
+offset_bottom = 53.0
+theme_override_font_sizes/font_size = 20
+text = "0 / 7"
 
 [node name="Sprite2D" parent="All_canvas_layer/user_inter_player/hp_display_label" index="0"]
 position = Vector2(35.999996, 40.999996)
+scale = Vector2(0.05, 0.05)
+
+[node name="hp_label" parent="All_canvas_layer/user_inter_player/hp_display_label" index="1"]
+custom_minimum_size = Vector2(100, 0)
+offset_left = 23.0
+offset_top = 32.0
+offset_right = 123.0
+offset_bottom = 60.0
+theme_override_font_sizes/font_size = 20
+text = " 3/3"
+horizontal_alignment = 1
+
+[node name="sta_label" parent="All_canvas_layer/user_inter_player/Stamina_display_label" index="0"]
+custom_minimum_size = Vector2(100, 0)
+offset_left = 61.0
+offset_top = 108.0
+offset_right = 161.0
+offset_bottom = 136.0
+theme_override_font_sizes/font_size = 20
+text = "100 / 100"
+
+[node name="Sprite2D" parent="All_canvas_layer/user_inter_player/Stamina_display_label" index="1"]
+self_modulate = Color(1.4164544, 1.4164544, 0, 0.79607844)
+position = Vector2(33.999996, 116.99999)
 scale = Vector2(0.05, 0.05)
 texture = ExtResource("6_ixbj0")
 
