@@ -43,7 +43,7 @@ func _input(event: InputEvent) -> void:
 
 
 func _unhandled_input(event: InputEvent) -> void:
-	if event is InputEventMouseMotion:
+	if event is InputEventMouseMotion and is_lock:
 		head.rotate_y(-event.relative.x * Sensitivity)
 		camera.rotate_x(-event.relative.y * Sensitivity)
 		camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(-60), deg_to_rad(60))
