@@ -5,7 +5,7 @@ var big_forest
 var find = false
 
 func _ready() -> void:
-	var group_check = get_parent().get_parent().get_parent()
+	var group_check = get_parent()
 	if not group_check.get_groups().is_empty():
 		if group_check.get_groups()[0] == 'textures':
 			big_forest = group_check
@@ -21,7 +21,7 @@ func _process(delta: float) -> void:
 			player = big_forest.player_node
 			var distance_tree_player_texture = global_position.distance_to(player.global_position) 
 		
-			visible = distance_tree_player_texture <= 60.0
+			visible = distance_tree_player_texture <= 50.0
 			if distance_tree_player_texture <= 5:
 				$CollisionShape3D.disabled = false
 				$CollisionShape3D.debug_fill = false
