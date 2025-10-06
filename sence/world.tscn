@@ -1,4 +1,4 @@
-[gd_scene load_steps=49 format=3 uid="uid://b05vi2tlnpcfv"]
+[gd_scene load_steps=50 format=3 uid="uid://b05vi2tlnpcfv"]
 
 [ext_resource type="PackedScene" uid="uid://bbxop6nt0x0t1" path="res://sence/player.tscn" id="1_f3sb7"]
 [ext_resource type="Texture2D" uid="uid://bsfp64dod28al" path="res://Grass_Ground_Texture.jpg" id="2_2rab3"]
@@ -30,6 +30,7 @@
 [ext_resource type="ArrayMesh" uid="uid://d0klhs1na7w4p" path="res://farm_h/OBJ/SmallBarn.obj" id="30_lt5b1"]
 [ext_resource type="ArrayMesh" uid="uid://crc4xt5dcegar" path="res://farm_h/OBJ/TowerWindmill.obj" id="31_s1t77"]
 [ext_resource type="PackedScene" uid="uid://crumkuh7mqpre" path="res://sence/object_inter_pick/chicken_3_kg.tscn" id="32_haiqs"]
+[ext_resource type="PackedScene" uid="uid://b0iy3e86m8682" path="res://sence/user_inter_player.tscn" id="32_hm5k2"]
 [ext_resource type="PackedScene" uid="uid://du1fd074vg7b1" path="res://sence/object_inter_pick/car_vehi.tscn" id="33_haiqs"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_f3sb7"]
@@ -142,32 +143,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.3331, 6.1824)
 [node name="nature" type="Node3D" parent="env_obj-node/env"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 48.3099)
 
-[node name="commontree_1" parent="env_obj-node/env/nature"]
-_import_path = NodePath("")
-unique_name_in_owner = false
-process_mode = 0
-process_priority = 0
-process_physics_priority = 0
-process_thread_group = 0
-physics_interpolation_mode = 0
-auto_translate_mode = 0
-editor_description = ""
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.3075, 0, 0)
-script = null
-
-[node name="commontree_2" parent="env_obj-node/env/nature"]
-_import_path = NodePath("")
-unique_name_in_owner = false
-process_mode = 0
-process_priority = 0
-process_physics_priority = 0
-process_thread_group = 0
-physics_interpolation_mode = 0
-auto_translate_mode = 0
-editor_description = ""
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.6794, -0.210862, 4.03556)
-script = null
-
 [node name="commontree_3" parent="env_obj-node/env/nature" instance=ExtResource("5_eaa7k")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.4322, -0.210862, -0.114021)
 
@@ -176,32 +151,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.0492, -0.210864, 5.96211)
 
 [node name="commontree_5" parent="env_obj-node/env/nature" instance=ExtResource("7_cwjja")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.6324, -0.210862, 8.59694)
-
-[node name="commontree_6" parent="env_obj-node/env/nature"]
-_import_path = NodePath("")
-unique_name_in_owner = false
-process_mode = 0
-process_priority = 0
-process_physics_priority = 0
-process_thread_group = 0
-physics_interpolation_mode = 0
-auto_translate_mode = 0
-editor_description = ""
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.0181, -0.210864, -23.621)
-script = null
-
-[node name="commontree_7" parent="env_obj-node/env/nature"]
-_import_path = NodePath("")
-unique_name_in_owner = false
-process_mode = 0
-process_priority = 0
-process_physics_priority = 0
-process_thread_group = 0
-physics_interpolation_mode = 0
-auto_translate_mode = 0
-editor_description = ""
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.1238, -0.210864, -13.0149)
-script = null
 
 [node name="commontree_8" parent="env_obj-node/env/nature" instance=ExtResource("5_eaa7k")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.1417, -0.210864, -11.6239)
@@ -214,45 +163,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.286, -0.210864, -18.9394)
 
 [node name="commontree_11" parent="env_obj-node/env/nature" instance=ExtResource("5_eaa7k")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.4977, -0.210862, -11.0744)
-
-[node name="commontree_12" parent="env_obj-node/env/nature"]
-_import_path = NodePath("")
-unique_name_in_owner = false
-process_mode = 0
-process_priority = 0
-process_physics_priority = 0
-process_thread_group = 0
-physics_interpolation_mode = 0
-auto_translate_mode = 0
-editor_description = ""
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.9113, -0.210862, -29.5018)
-script = null
-
-[node name="commontree_13" parent="env_obj-node/env/nature"]
-_import_path = NodePath("")
-unique_name_in_owner = false
-process_mode = 0
-process_priority = 0
-process_physics_priority = 0
-process_thread_group = 0
-physics_interpolation_mode = 0
-auto_translate_mode = 0
-editor_description = ""
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.7484, -0.210864, -22.5826)
-script = null
-
-[node name="commontree_14" parent="env_obj-node/env/nature"]
-_import_path = NodePath("")
-unique_name_in_owner = false
-process_mode = 0
-process_priority = 0
-process_physics_priority = 0
-process_thread_group = 0
-physics_interpolation_mode = 0
-auto_translate_mode = 0
-editor_description = ""
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.9479, -0.210862, -5.05078)
-script = null
 
 [node name="commontree_15" parent="env_obj-node/env/nature" instance=ExtResource("7_cwjja")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.9975, -0.210862, -8.21658)
@@ -275,60 +185,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.9831, -0.118082, -2.05716
 [node name="commontree_21" parent="env_obj-node/env/nature" instance=ExtResource("6_equwr")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.8083, -0.21086, 9.18389)
 
-[node name="commontree_22" parent="env_obj-node/env/nature"]
-_import_path = NodePath("")
-unique_name_in_owner = false
-process_mode = 0
-process_priority = 0
-process_physics_priority = 0
-process_thread_group = 0
-physics_interpolation_mode = 0
-auto_translate_mode = 0
-editor_description = ""
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.9782, -0.210864, 2.44442)
-script = null
-
-[node name="commontree_23" parent="env_obj-node/env/nature"]
-_import_path = NodePath("")
-unique_name_in_owner = false
-process_mode = 0
-process_priority = 0
-process_physics_priority = 0
-process_thread_group = 0
-physics_interpolation_mode = 0
-auto_translate_mode = 0
-editor_description = ""
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.9928, -0.21086, -2.92779)
-script = null
-
 [node name="commontree_24" parent="env_obj-node/env/nature" instance=ExtResource("5_eaa7k")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36.3232, -0.210864, -9.34602)
-
-[node name="commontree_25" parent="env_obj-node/env/nature"]
-_import_path = NodePath("")
-unique_name_in_owner = false
-process_mode = 0
-process_priority = 0
-process_physics_priority = 0
-process_thread_group = 0
-physics_interpolation_mode = 0
-auto_translate_mode = 0
-editor_description = ""
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.0065, -0.21086, 2.84679)
-script = null
-
-[node name="commontree_26" parent="env_obj-node/env/nature"]
-_import_path = NodePath("")
-unique_name_in_owner = false
-process_mode = 0
-process_priority = 0
-process_physics_priority = 0
-process_thread_group = 0
-physics_interpolation_mode = 0
-auto_translate_mode = 0
-editor_description = ""
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.9734, -0.210864, -5.69836)
-script = null
 
 [node name="pine_1" parent="env_obj-node/env/nature" instance=ExtResource("14_y4nn7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.5601, -0.218544, -18.8333)
@@ -366,19 +224,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.1394, -0.218544, 13.2126)
 [node name="commontree_27" parent="env_obj-node/env/nature" instance=ExtResource("6_equwr")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42.1526, -0.21086, -8.60026)
 
-[node name="commontree_28" parent="env_obj-node/env/nature"]
-_import_path = NodePath("")
-unique_name_in_owner = false
-process_mode = 0
-process_priority = 0
-process_physics_priority = 0
-process_thread_group = 0
-physics_interpolation_mode = 0
-auto_translate_mode = 0
-editor_description = ""
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.3364, -0.21086, 7.26864)
-script = null
-
 [node name="commontree_29" parent="env_obj-node/env/nature" instance=ExtResource("5_eaa7k")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40.2896, -0.21086, -27.613)
 
@@ -399,32 +244,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37.9614, -0.252162, 14.0282)
 
 [node name="twistedtree_6" parent="env_obj-node/env/nature" instance=ExtResource("19_hm5k2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.863, -0.252158, -7.30569)
-
-[node name="commontree_31" parent="env_obj-node/env/nature"]
-_import_path = NodePath("")
-unique_name_in_owner = false
-process_mode = 0
-process_priority = 0
-process_physics_priority = 0
-process_thread_group = 0
-physics_interpolation_mode = 0
-auto_translate_mode = 0
-editor_description = ""
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.63858, -0.210864, 21.3558)
-script = null
-
-[node name="commontree_32" parent="env_obj-node/env/nature"]
-_import_path = NodePath("")
-unique_name_in_owner = false
-process_mode = 0
-process_priority = 0
-process_physics_priority = 0
-process_thread_group = 0
-physics_interpolation_mode = 0
-auto_translate_mode = 0
-editor_description = ""
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.3199, -0.210862, 22.6051)
-script = null
 
 [node name="commontree_33" parent="env_obj-node/env/nature" instance=ExtResource("13_j1nky")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.0909, -0.118078, 19.2209)
@@ -468,32 +287,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.7625, -0.21086, 26.6363)
 [node name="commontree_40" parent="env_obj-node/env/nature" instance=ExtResource("6_equwr")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.5323, -0.210864, 16.3085)
 
-[node name="commontree_41" parent="env_obj-node/env/nature"]
-_import_path = NodePath("")
-unique_name_in_owner = false
-process_mode = 0
-process_priority = 0
-process_physics_priority = 0
-process_thread_group = 0
-physics_interpolation_mode = 0
-auto_translate_mode = 0
-editor_description = ""
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.45024, -0.21086, 22.6337)
-script = null
-
-[node name="commontree_42" parent="env_obj-node/env/nature"]
-_import_path = NodePath("")
-unique_name_in_owner = false
-process_mode = 0
-process_priority = 0
-process_physics_priority = 0
-process_thread_group = 0
-physics_interpolation_mode = 0
-auto_translate_mode = 0
-editor_description = ""
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.73291, -0.21086, 13.4818)
-script = null
-
 [node name="commontree_43" parent="env_obj-node/env/nature" instance=ExtResource("7_cwjja")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.4536, -0.210853, 25.3734)
 
@@ -502,19 +295,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -44.4649, -0.118078, 26.6218)
 
 [node name="commontree_45" parent="env_obj-node/env/nature" instance=ExtResource("13_j1nky")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -43.725, -0.118082, -50.8515)
-
-[node name="commontree_46" parent="env_obj-node/env/nature"]
-_import_path = NodePath("")
-unique_name_in_owner = false
-process_mode = 0
-process_priority = 0
-process_physics_priority = 0
-process_thread_group = 0
-physics_interpolation_mode = 0
-auto_translate_mode = 0
-editor_description = ""
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42.8048, -0.21086, 21.6269)
-script = null
 
 [node name="pine_18" parent="env_obj-node/env/nature" instance=ExtResource("16_ngk74")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.6268, -0.218544, 19.8052)
@@ -654,9 +434,6 @@ shape = SubResource("ConcavePolygonShape3D_i4cde")
 [node name="enemy_cap" parent="." instance=ExtResource("4_036b0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.19775, -31)
 
-[node name="Point" parent="enemy_cap/Bacteria" index="21"]
-visible = false
-
 [node name="inter_com_pick_able" type="Node3D" parent="."]
 
 [node name="cube_1kg" parent="inter_com_pick_able" instance=ExtResource("3_aqk2v")]
@@ -692,6 +469,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 80.4723, 7.47434, -11.9491)
 [node name="cube_1kg2" parent="inter_com_pick_able" instance=ExtResource("33_haiqs")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.28917, 0.0430002, -0.146071)
 
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="user_inter_player" parent="CanvasLayer" instance=ExtResource("32_hm5k2")]
+
 [editable path="env_obj-node/depost_layer/Deposit"]
 [editable path="enemy_cap"]
-[editable path="enemy_cap/Bacteria"]
+[editable path="enemy_cap/bacteria"]

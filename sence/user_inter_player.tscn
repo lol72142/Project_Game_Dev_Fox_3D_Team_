@@ -1,23 +1,37 @@
-[gd_scene load_steps=2 format=3 uid="uid://b0iy3e86m8682"]
+[gd_scene load_steps=3 format=3 uid="uid://b0iy3e86m8682"]
 
 [ext_resource type="Script" uid="uid://0s5xsoqb8ifr" path="res://script/user_inter_player.gd" id="1_qn8co"]
+[ext_resource type="Texture2D" uid="uid://bcm4voybe6qan" path="res://icon.svg" id="2_maoml"]
 
 [node name="user_inter_player" type="Control"]
 layout_mode = 3
-anchors_preset = 0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 script = ExtResource("1_qn8co")
 
 [node name="food_display_label" type="Control" parent="."]
-anchors_preset = 0
-offset_right = 40.0
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
 offset_bottom = 40.0
+grow_horizontal = 2
 
 [node name="food_label" type="Label" parent="food_display_label"]
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 23.0
 
+[node name="Sprite2D" type="Sprite2D" parent="food_display_label"]
+texture = ExtResource("2_maoml")
+
 [node name="hp_display_label" type="Control" parent="."]
+layout_mode = 1
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
@@ -26,3 +40,6 @@ offset_bottom = 40.0
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 23.0
+
+[node name="Sprite2D" type="Sprite2D" parent="hp_display_label"]
+texture = ExtResource("2_maoml")
