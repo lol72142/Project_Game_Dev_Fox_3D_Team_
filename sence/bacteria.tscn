@@ -1,6 +1,5 @@
-[gd_scene format=3 uid="uid://e8rt4ap6q7vk"]
+[gd_scene load_steps=2 format=3 uid="uid://e8rt4ap6q7vk"]
 
-[node name="Bacteria"]
+[ext_resource type="PackedScene" uid="uid://beew7w0qdmjo7" path="res://asset/model/Running.fbx" id="1_1lbfj"]
 
-[node name="Point" parent="." index="21"]
-visible = false
+[node name="Running" instance=ExtResource("1_1lbfj")]

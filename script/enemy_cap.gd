@@ -1,17 +1,18 @@
 extends CharacterBody3D
 
 @export var walk_speed: float = 1.5
-@export var run_speed: float = 4.0
-@export var chace_distance: float = 15.0
+@export var run_speed: float = 7.0
+@export var chace_distance: float = 25.0
 var player: CharacterBody3D = null
-
+@onready var animation_player: AnimationPlayer = $bacteria/AnimationPlayer
 @onready var navigate_agent: NavigationAgent3D = $NavigationAgent3D
 var gravity: float
 
 func _ready() -> void:
 	player = get_tree().get_first_node_in_group("player")
 	gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
-
+	animation_player.get_animation("mixamo_com").loop = true
+	animation_player.play("mixamo_com")
 #func _physics_process(delta: float) -> void:
 	#if player != null and global_position.distance_to(player.global_position) < chace_distance:
 		#var target_pos = player.global_position
