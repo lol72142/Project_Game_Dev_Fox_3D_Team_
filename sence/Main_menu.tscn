@@ -1,6 +1,7 @@
-[gd_scene load_steps=15 format=4 uid="uid://b0u005tuqm1cc"]
+[gd_scene load_steps=16 format=4 uid="uid://b0u005tuqm1cc"]
 
 [ext_resource type="Script" uid="uid://eh5a728vjemd" path="res://script/main_menu.gd" id="1_22jwj"]
+[ext_resource type="Texture2D" uid="uid://ctrk00e3ddgep" path="res://Logo_Loading/image.png" id="2_doyc0"]
 [ext_resource type="PackedScene" uid="uid://c52xa6d3clabn" path="res://sence/Setting_GUI.tscn" id="2_sihkl"]
 
 [sub_resource type="Image" id="Image_p53qu"]
@@ -1110,7 +1111,13 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_22jwj")
 
+[node name="Image" type="Sprite2D" parent="Main_menu"]
+position = Vector2(576, 324)
+scale = Vector2(1.3747017, 0.8459529)
+texture = ExtResource("2_doyc0")
+
 [node name="ColorRect" type="ColorRect" parent="Main_menu"]
+self_modulate = Color(1, 1, 1, 0)
 custom_minimum_size = Vector2(500, 300)
 layout_mode = 1
 anchors_preset = 8
@@ -1118,18 +1125,21 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -20.0
-offset_top = -20.0
-offset_right = 20.0
-offset_bottom = 20.0
+offset_left = -246.0
+offset_top = -247.0
+offset_right = 254.0
+offset_bottom = 53.0
 grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Panel" type="Panel" parent="Main_menu/ColorRect"]
+self_modulate = Color(0.012617188, 0.012617188, 0.012617188, 0)
 custom_minimum_size = Vector2(500, 300)
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = 25.0
+offset_top = 64.0
+offset_right = 525.0
+offset_bottom = 364.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Main_menu/ColorRect/Panel"]
 custom_minimum_size = Vector2(400, 300)
@@ -1160,6 +1170,15 @@ custom_minimum_size = Vector2(200, 100)
 layout_mode = 2
 theme_override_font_sizes/font_size = 48
 text = "Setting"
+
+[node name="GameTitle" type="Label" parent="Main_menu"]
+layout_mode = 0
+offset_left = 313.0
+offset_top = 38.0
+offset_right = 908.0
+offset_bottom = 146.0
+theme_override_font_sizes/font_size = 62
+text = "WHAT IS THIS GAME"
 
 [node name="setting_canva_layer" parent="." instance=ExtResource("2_sihkl")]
 visible = false

@@ -751,4 +751,3 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -182.31815, 0.6062368, -136.4
 
 [editable path="ForPath/Home/Deposit"]
 [editable path="ForPath/Home2/Deposit"]
-[editable path="env/Nature"]
