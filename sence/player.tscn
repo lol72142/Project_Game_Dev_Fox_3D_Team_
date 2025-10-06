@@ -45,6 +45,6 @@ texture = ExtResource("3_twwr1")
 [node name="All_canvas_layer" parent="." instance=ExtResource("4_krrvm")]
 
 [editable path="All_canvas_layer"]
+[editable path="All_canvas_layer/user_inter_player"]
 [editable path="All_canvas_layer/pause_canva_layer"]
 [editable path="All_canvas_layer/pause_canva_layer/setting_canva_layer"]
-[editable path="All_canvas_layer/user_inter_player"]

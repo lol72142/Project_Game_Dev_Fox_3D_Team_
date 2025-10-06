@@ -12,7 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://d5kqx6m2q7xi" path="res://Forest/Building/floor_dirt_grave.tscn" id="11_ouyis"]
 [ext_resource type="Texture2D" uid="uid://bsfp64dod28al" path="res://Grass_Ground_Texture.jpg" id="12_5fhnv"]
 [ext_resource type="PackedScene" uid="uid://cxqebdx286lfj" path="res://Forest/nature.tscn" id="13_dekya"]
-[ext_resource type="Script" uid="uid://dxhm7m338dmjr" path="res://script/nature_parent.gd" id="14_4aca8"]
+[ext_resource type="Script" path="res://script/nature_parent.gd" id="14_4aca8"]
 [ext_resource type="PackedScene" uid="uid://bxim8ftpl6g2w" path="res://Forest/Tree/with_col/walltree.tscn" id="14_dlcfm"]
 [ext_resource type="PackedScene" uid="uid://iwq1suv6oki0" path="res://Forest/Building/church.tscn" id="14_m241k"]
 [ext_resource type="PackedScene" uid="uid://crumkuh7mqpre" path="res://sence/object_inter_pick/chicken_3_kg.tscn" id="15_dekya"]

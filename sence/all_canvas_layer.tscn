@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://btikj3wijcv8l"]
+[gd_scene load_steps=6 format=3 uid="uid://btikj3wijcv8l"]
 
 [ext_resource type="PackedScene" uid="uid://b0iy3e86m8682" path="res://sence/user_inter_player.tscn" id="1_6gvk1"]
 [ext_resource type="PackedScene" uid="uid://dve8inujkme06" path="res://sence/GUI.tscn" id="2_6gvk1"]
+[ext_resource type="Script" uid="uid://tbmxvymfqa1s" path="res://sence/map.gd" id="3_ys78g"]
+[ext_resource type="Texture2D" uid="uid://bw0jlum74ng54" path="res://sence/aim_cursor.png" id="4_vu4ir"]
+[ext_resource type="Texture2D" uid="uid://htaf0ey41wjt" path="res://mappingnggg.png" id="5_vu4ir"]
 
 [node name="All_canvas_layer" type="CanvasLayer"]
 
@@ -16,6 +19,33 @@ grow_vertical = 2
 
 [node name="setting_canva_layer" parent="pause_canva_layer" index="1"]
 visible = false
+
+[node name="map" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("3_ys78g")
+
+[node name="Panel" type="Panel" parent="map"]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_bottom = 40.0
+grow_horizontal = 0
+
+[node name="Mappingnggg" type="Sprite2D" parent="map/Panel"]
+position = Vector2(99.5, 99.999985)
+scale = Vector2(0.49749994, 0.49499997)
+texture = ExtResource("5_vu4ir")
+
+[node name="player_point" type="Sprite2D" parent="map/Panel"]
+texture = ExtResource("4_vu4ir")
 
 [editable path="user_inter_player"]
 [editable path="pause_canva_layer"]
