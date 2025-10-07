@@ -14,7 +14,6 @@ func process(delta):
 	if enemy.global_position.distance_to(player.global_position) > enemy.chace_distance:
 		emit_signal('Transition', self, "Enemy_warding")
 		
-		
 func physics_process(delta: float) -> void:
 	if not enemy.is_on_floor():
 		enemy.velocity.y = enemy.gravity * delta
