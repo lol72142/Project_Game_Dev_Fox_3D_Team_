@@ -2,8 +2,7 @@ extends Node
 
 @onready var forest_sfx: AudioStreamPlayer = $forest_sfx
 @onready var run: AudioStreamPlayer = $Run
-@onready var fox: AudioStreamPlayer = $Fox
-@onready var scream: AudioStreamPlayer = $Scream
+@onready var miao: AudioStreamPlayer = $miao
 @onready var chasing_1: AudioStreamPlayer = $Chasing_1
 @onready var chasing_2: AudioStreamPlayer = $Chasing_2
 @onready var chasing_3: AudioStreamPlayer = $Chasing_3
