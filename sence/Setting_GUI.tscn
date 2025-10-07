@@ -64,25 +64,11 @@ grow_vertical = 2
 theme_override_constants/separation = 21
 alignment = 1
 
-[node name="volume_label" type="Label" parent="setting_menu/ColorRect/VBoxContainer"]
+[node name="SFX" type="Label" parent="setting_menu/ColorRect/VBoxContainer"]
 layout_mode = 2
-text = "Music Volume"
-horizontal_alignment = 1
+text = "Volume SFX"
 
-[node name="master" type="HSlider" parent="setting_menu/ColorRect/VBoxContainer"]
-layout_mode = 2
-max_value = 1.0
-step = 0.05
-value = 0.5
-script = ExtResource("2_l4ls4")
-bus_name = "Music"
-
-[node name="sfx_label" type="Label" parent="setting_menu/ColorRect/VBoxContainer"]
-layout_mode = 2
-text = "SFX Volume"
-horizontal_alignment = 1
-
-[node name="sfx" type="HSlider" parent="setting_menu/ColorRect/VBoxContainer"]
+[node name="HSlider" type="HSlider" parent="setting_menu/ColorRect/VBoxContainer"]
 layout_mode = 2
 max_value = 1.0
 step = 0.05
@@ -90,5 +76,17 @@ value = 0.5
 script = ExtResource("2_l4ls4")
 bus_name = "SFX"
 
-[connection signal="value_changed" from="setting_menu/ColorRect/VBoxContainer/master" to="setting_menu/ColorRect/VBoxContainer/master" method="_on_value_changed"]
-[connection signal="value_changed" from="setting_menu/ColorRect/VBoxContainer/sfx" to="setting_menu/ColorRect/VBoxContainer/sfx" method="_on_value_changed"]
+[node name="Music" type="Label" parent="setting_menu/ColorRect/VBoxContainer"]
+layout_mode = 2
+text = "Volume Music"
+
+[node name="HSlider2" type="HSlider" parent="setting_menu/ColorRect/VBoxContainer"]
+layout_mode = 2
+max_value = 1.0
+step = 0.05
+value = 0.5
+script = ExtResource("2_l4ls4")
+bus_name = "Music"
+
+[connection signal="value_changed" from="setting_menu/ColorRect/VBoxContainer/HSlider" to="setting_menu/ColorRect/VBoxContainer/HSlider" method="_on_value_changed"]
+[connection signal="value_changed" from="setting_menu/ColorRect/VBoxContainer/HSlider2" to="setting_menu/ColorRect/VBoxContainer/HSlider2" method="_on_value_changed"]
