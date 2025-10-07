@@ -2,7 +2,7 @@ extends Control
 
 
 func _on_play_pressed() -> void:
-	get_tree().change_scene_to_file("res://Forest/forest.tscn")
+	get_tree().change_scene_to_file("res://Forest/cutscreen2.tscn")
 
 
 func _on_setting_pressed() -> void:

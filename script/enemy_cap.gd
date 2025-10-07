@@ -42,7 +42,7 @@ func Multiple_by_chicken():
 	var mul = GlobalValSignal.Current_Number_Food
 	walk_speed += (mul * 2 * 0.15) / mul
 	run_speed += (mul * 2 * 0.1) / mul
-	if mul <= 6:
+	if mul >= 5:
 		mul += 4 
 	chace_distance += mul + 2
 	print(walk_speed, " ",run_speed, " ",chace_distance)

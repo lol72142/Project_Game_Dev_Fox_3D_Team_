@@ -15,6 +15,9 @@ func hit_and_wait():
 	wait_time = randf_range(2, 3)
 	is_acttack = true
 
+func enter():
+	AudioManager.start_chasing_loop()
+
 func process(delta):
 	enemy.navigate_agent.target_position = player.global_transform.origin
 	
@@ -27,7 +30,7 @@ func process(delta):
 		
 	if distance_enemy_player > enemy.chace_distance:
 		emit_signal('Transition', self, "Enemy_warding")
-		AudioManager.start_chasing_loop()
+		AudioManager.stop_chasing_loop()
 		
 func physics_process(delta: float) -> void:
 	
