@@ -1,0 +1,888 @@
+[gd_scene load_steps=2 format=3 uid="uid://ejt4hgjn17bj"]
+
+[ext_resource type="ArrayMesh" uid="uid://dipmly8d368n0" path="res://Forest/Asset/FarmingPack/Models/planted_cabbage_large.obj" id="1_00ihl"]
+
+[node name="cabbage" type="Node3D"]
+
+[node name="part_1" type="Node3D" parent="."]
+
+[node name="PlantedCabbageLarge" type="MeshInstance3D" parent="part_1"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 28.158283, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge2" type="MeshInstance3D" parent="part_1"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 38.137936, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge3" type="MeshInstance3D" parent="part_1"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 48.209988, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge4" type="MeshInstance3D" parent="part_1"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 58.369186, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge5" type="MeshInstance3D" parent="part_1"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 68.23064, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge6" type="MeshInstance3D" parent="part_1"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 78.29471, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge7" type="MeshInstance3D" parent="part_1"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 88.27435, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge8" type="MeshInstance3D" parent="part_1"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 98.346405, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge9" type="MeshInstance3D" parent="part_1"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 108.50561, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge10" type="MeshInstance3D" parent="part_1"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 118.36706, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge11" type="MeshInstance3D" parent="part_1"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 128.39798, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge12" type="MeshInstance3D" parent="part_1"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 138.55719, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge13" type="MeshInstance3D" parent="part_1"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 148.41864, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="part_2" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10.03434)
+
+[node name="PlantedCabbageLarge" type="MeshInstance3D" parent="part_2"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 28.158283, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge2" type="MeshInstance3D" parent="part_2"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 38.137936, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge3" type="MeshInstance3D" parent="part_2"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 48.209988, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge4" type="MeshInstance3D" parent="part_2"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 58.369186, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge5" type="MeshInstance3D" parent="part_2"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 68.23064, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge6" type="MeshInstance3D" parent="part_2"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 78.29471, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge7" type="MeshInstance3D" parent="part_2"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 88.27435, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge8" type="MeshInstance3D" parent="part_2"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 98.346405, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge9" type="MeshInstance3D" parent="part_2"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 108.50561, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge10" type="MeshInstance3D" parent="part_2"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 118.36706, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge11" type="MeshInstance3D" parent="part_2"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 128.39798, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge12" type="MeshInstance3D" parent="part_2"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 138.55719, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge13" type="MeshInstance3D" parent="part_2"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 148.41864, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="part_3" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -19.892189)
+
+[node name="PlantedCabbageLarge" type="MeshInstance3D" parent="part_3"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 28.158283, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge2" type="MeshInstance3D" parent="part_3"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 38.137936, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge3" type="MeshInstance3D" parent="part_3"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 48.209988, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge4" type="MeshInstance3D" parent="part_3"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 58.369186, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge5" type="MeshInstance3D" parent="part_3"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 68.23064, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge6" type="MeshInstance3D" parent="part_3"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 78.29471, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge7" type="MeshInstance3D" parent="part_3"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 88.27435, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge8" type="MeshInstance3D" parent="part_3"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 98.346405, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge9" type="MeshInstance3D" parent="part_3"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 108.50561, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge10" type="MeshInstance3D" parent="part_3"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 118.36706, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge11" type="MeshInstance3D" parent="part_3"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 128.39798, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge12" type="MeshInstance3D" parent="part_3"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 138.55719, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge13" type="MeshInstance3D" parent="part_3"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 148.41864, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="part_4" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -29.926529)
+
+[node name="PlantedCabbageLarge" type="MeshInstance3D" parent="part_4"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 28.158283, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge2" type="MeshInstance3D" parent="part_4"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 38.137936, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge3" type="MeshInstance3D" parent="part_4"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 48.209988, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge4" type="MeshInstance3D" parent="part_4"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 58.369186, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge5" type="MeshInstance3D" parent="part_4"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 68.23064, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge6" type="MeshInstance3D" parent="part_4"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 78.29471, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge7" type="MeshInstance3D" parent="part_4"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 88.27435, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge8" type="MeshInstance3D" parent="part_4"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 98.346405, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge9" type="MeshInstance3D" parent="part_4"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 108.50561, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge10" type="MeshInstance3D" parent="part_4"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 118.36706, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge11" type="MeshInstance3D" parent="part_4"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 128.39798, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge12" type="MeshInstance3D" parent="part_4"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 138.55719, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge13" type="MeshInstance3D" parent="part_4"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 148.41864, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="part_5" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -39.987465)
+
+[node name="PlantedCabbageLarge" type="MeshInstance3D" parent="part_5"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 28.158283, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge2" type="MeshInstance3D" parent="part_5"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 38.137936, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge3" type="MeshInstance3D" parent="part_5"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 48.209988, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge4" type="MeshInstance3D" parent="part_5"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 58.369186, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge5" type="MeshInstance3D" parent="part_5"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 68.23064, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge6" type="MeshInstance3D" parent="part_5"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 78.29471, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge7" type="MeshInstance3D" parent="part_5"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 88.27435, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge8" type="MeshInstance3D" parent="part_5"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 98.346405, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge9" type="MeshInstance3D" parent="part_5"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 108.50561, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge10" type="MeshInstance3D" parent="part_5"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 118.36706, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge11" type="MeshInstance3D" parent="part_5"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 128.39798, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge12" type="MeshInstance3D" parent="part_5"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 138.55719, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge13" type="MeshInstance3D" parent="part_5"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 148.41864, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="part_6" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -50.021805)
+
+[node name="PlantedCabbageLarge" type="MeshInstance3D" parent="part_6"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 28.158283, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge2" type="MeshInstance3D" parent="part_6"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 38.137936, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge3" type="MeshInstance3D" parent="part_6"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 48.209988, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge4" type="MeshInstance3D" parent="part_6"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 58.369186, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge5" type="MeshInstance3D" parent="part_6"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 68.23064, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge6" type="MeshInstance3D" parent="part_6"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 78.29471, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge7" type="MeshInstance3D" parent="part_6"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 88.27435, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge8" type="MeshInstance3D" parent="part_6"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 98.346405, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge9" type="MeshInstance3D" parent="part_6"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 108.50561, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge10" type="MeshInstance3D" parent="part_6"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 118.36706, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge11" type="MeshInstance3D" parent="part_6"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 128.39798, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge12" type="MeshInstance3D" parent="part_6"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 138.55719, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge13" type="MeshInstance3D" parent="part_6"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 148.41864, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="part_7" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -59.879654)
+
+[node name="PlantedCabbageLarge" type="MeshInstance3D" parent="part_7"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 28.158283, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge2" type="MeshInstance3D" parent="part_7"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 38.137936, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge3" type="MeshInstance3D" parent="part_7"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 48.209988, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge4" type="MeshInstance3D" parent="part_7"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 58.369186, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge5" type="MeshInstance3D" parent="part_7"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 68.23064, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge6" type="MeshInstance3D" parent="part_7"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 78.29471, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge7" type="MeshInstance3D" parent="part_7"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 88.27435, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge8" type="MeshInstance3D" parent="part_7"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 98.346405, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge9" type="MeshInstance3D" parent="part_7"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 108.50561, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge10" type="MeshInstance3D" parent="part_7"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 118.36706, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge11" type="MeshInstance3D" parent="part_7"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 128.39798, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge12" type="MeshInstance3D" parent="part_7"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 138.55719, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge13" type="MeshInstance3D" parent="part_7"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 148.41864, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="part_8" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -69.913994)
+
+[node name="PlantedCabbageLarge" type="MeshInstance3D" parent="part_8"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 28.158283, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge2" type="MeshInstance3D" parent="part_8"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 38.137936, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge3" type="MeshInstance3D" parent="part_8"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 48.209988, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge4" type="MeshInstance3D" parent="part_8"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 58.369186, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge5" type="MeshInstance3D" parent="part_8"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 68.23064, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge6" type="MeshInstance3D" parent="part_8"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 78.29471, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge7" type="MeshInstance3D" parent="part_8"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 88.27435, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge8" type="MeshInstance3D" parent="part_8"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 98.346405, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge9" type="MeshInstance3D" parent="part_8"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 108.50561, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge10" type="MeshInstance3D" parent="part_8"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 118.36706, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge11" type="MeshInstance3D" parent="part_8"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 128.39798, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge12" type="MeshInstance3D" parent="part_8"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 138.55719, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge13" type="MeshInstance3D" parent="part_8"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 148.41864, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="part_9" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -78.992676)
+
+[node name="PlantedCabbageLarge" type="MeshInstance3D" parent="part_9"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 28.158283, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge2" type="MeshInstance3D" parent="part_9"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 38.137936, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge3" type="MeshInstance3D" parent="part_9"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 48.209988, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge4" type="MeshInstance3D" parent="part_9"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 58.369186, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge5" type="MeshInstance3D" parent="part_9"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 68.23064, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge6" type="MeshInstance3D" parent="part_9"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 78.29471, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge7" type="MeshInstance3D" parent="part_9"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 88.27435, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge8" type="MeshInstance3D" parent="part_9"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 98.346405, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge9" type="MeshInstance3D" parent="part_9"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 108.50561, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge10" type="MeshInstance3D" parent="part_9"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 118.36706, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge11" type="MeshInstance3D" parent="part_9"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 128.39798, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge12" type="MeshInstance3D" parent="part_9"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 138.55719, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge13" type="MeshInstance3D" parent="part_9"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 148.41864, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="part_10" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -89.027016)
+
+[node name="PlantedCabbageLarge" type="MeshInstance3D" parent="part_10"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 28.158283, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge2" type="MeshInstance3D" parent="part_10"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 38.137936, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge3" type="MeshInstance3D" parent="part_10"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 48.209988, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge4" type="MeshInstance3D" parent="part_10"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 58.369186, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge5" type="MeshInstance3D" parent="part_10"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 68.23064, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge6" type="MeshInstance3D" parent="part_10"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 78.29471, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge7" type="MeshInstance3D" parent="part_10"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 88.27435, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge8" type="MeshInstance3D" parent="part_10"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 98.346405, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge9" type="MeshInstance3D" parent="part_10"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 108.50561, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge10" type="MeshInstance3D" parent="part_10"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 118.36706, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge11" type="MeshInstance3D" parent="part_10"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 128.39798, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge12" type="MeshInstance3D" parent="part_10"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 138.55719, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge13" type="MeshInstance3D" parent="part_10"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 148.41864, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="part_11" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -98.884865)
+
+[node name="PlantedCabbageLarge" type="MeshInstance3D" parent="part_11"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 28.158283, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge2" type="MeshInstance3D" parent="part_11"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 38.137936, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge3" type="MeshInstance3D" parent="part_11"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 48.209988, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge4" type="MeshInstance3D" parent="part_11"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 58.369186, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge5" type="MeshInstance3D" parent="part_11"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 68.23064, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge6" type="MeshInstance3D" parent="part_11"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 78.29471, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge7" type="MeshInstance3D" parent="part_11"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 88.27435, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge8" type="MeshInstance3D" parent="part_11"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 98.346405, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge9" type="MeshInstance3D" parent="part_11"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 108.50561, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge10" type="MeshInstance3D" parent="part_11"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 118.36706, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge11" type="MeshInstance3D" parent="part_11"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 128.39798, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge12" type="MeshInstance3D" parent="part_11"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 138.55719, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge13" type="MeshInstance3D" parent="part_11"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 148.41864, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="part_12" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -108.919205)
+
+[node name="PlantedCabbageLarge" type="MeshInstance3D" parent="part_12"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 28.158283, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge2" type="MeshInstance3D" parent="part_12"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 38.137936, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge3" type="MeshInstance3D" parent="part_12"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 48.209988, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge4" type="MeshInstance3D" parent="part_12"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 58.369186, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge5" type="MeshInstance3D" parent="part_12"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 68.23064, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge6" type="MeshInstance3D" parent="part_12"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 78.29471, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge7" type="MeshInstance3D" parent="part_12"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 88.27435, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge8" type="MeshInstance3D" parent="part_12"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 98.346405, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge9" type="MeshInstance3D" parent="part_12"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 108.50561, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge10" type="MeshInstance3D" parent="part_12"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 118.36706, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge11" type="MeshInstance3D" parent="part_12"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 128.39798, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge12" type="MeshInstance3D" parent="part_12"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 138.55719, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge13" type="MeshInstance3D" parent="part_12"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 148.41864, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="part_13" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -113.94992)
+
+[node name="PlantedCabbageLarge" type="MeshInstance3D" parent="part_13"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 28.158283, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge2" type="MeshInstance3D" parent="part_13"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 38.137936, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge3" type="MeshInstance3D" parent="part_13"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 48.209988, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge4" type="MeshInstance3D" parent="part_13"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 58.369186, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge5" type="MeshInstance3D" parent="part_13"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 68.23064, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge6" type="MeshInstance3D" parent="part_13"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 78.29471, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge7" type="MeshInstance3D" parent="part_13"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 88.27435, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge8" type="MeshInstance3D" parent="part_13"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 98.346405, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge9" type="MeshInstance3D" parent="part_13"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 108.50561, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge10" type="MeshInstance3D" parent="part_13"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 118.36706, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge11" type="MeshInstance3D" parent="part_13"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 128.39798, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge12" type="MeshInstance3D" parent="part_13"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 138.55719, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")
+
+[node name="PlantedCabbageLarge13" type="MeshInstance3D" parent="part_13"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 148.41864, 0.4, 155.70544)
+mesh = ExtResource("1_00ihl")
+skeleton = NodePath("../../..")

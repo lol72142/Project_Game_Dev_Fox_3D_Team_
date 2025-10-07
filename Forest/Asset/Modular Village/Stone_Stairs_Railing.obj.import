@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dx3ba2xxv2jca"
+path="res://.godot/imported/Stone_Stairs_Railing.obj-0df5cd3caf639f5b546814e1c5d84494.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Stone_Stairs_Railing.obj-0df5cd3caf639f5b546814e1c5d84494.mesh"]
+
+source_file="res://Forest/Asset/Modular Village/Stone_Stairs_Railing.obj"
+dest_files=["res://.godot/imported/Stone_Stairs_Railing.obj-0df5cd3caf639f5b546814e1c5d84494.mesh", "res://.godot/imported/Stone_Stairs_Railing.obj-0df5cd3caf639f5b546814e1c5d84494.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://duvokykwm5pl0"]
+
+[ext_resource type="ArrayMesh" uid="uid://twnsht85hylo" path="res://farm_h/OBJ/Fence2.obj" id="1_extvg"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_nxk5r"]
+size = Vector3(5.90417, 1.19376, 0.259827)
+
+[node name="Fence" type="StaticBody3D"]
+
+[node name="Fence2" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_extvg")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00311279, 0.613052, 0.00497437)
+shape = SubResource("BoxShape3D_nxk5r")

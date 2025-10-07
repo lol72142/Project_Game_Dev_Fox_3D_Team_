@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://d5kqx6m2q7xi"]
+
+[ext_resource type="PackedScene" uid="uid://i68m7wjcljiv" path="res://Forest/Asset/Grave/floor_dirt_grave.fbx" id="1_ll7qn"]
+
+[node name="floor_dirt_grave" instance=ExtResource("1_ll7qn")]

@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cjipfcn0k511n"
+path="res://.godot/imported/Waterwheel_Flume_Straight.obj-8f829066bd1876685901f77cc9d9c29a.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Waterwheel_Flume_Straight.obj-8f829066bd1876685901f77cc9d9c29a.mesh"]
+
+source_file="res://Forest/Asset/Modular Village/Waterwheel_Flume_Straight.obj"
+dest_files=["res://.godot/imported/Waterwheel_Flume_Straight.obj-8f829066bd1876685901f77cc9d9c29a.mesh", "res://.godot/imported/Waterwheel_Flume_Straight.obj-8f829066bd1876685901f77cc9d9c29a.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

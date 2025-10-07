@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://drqqqruypuy7d"]
+
+[ext_resource type="ArrayMesh" uid="uid://bxecf50pc56s0" path="res://farm_h/OBJ/BigBarn.obj" id="1_kbu61"]
+[ext_resource type="ArrayMesh" uid="uid://j6k2gcxpdeao" path="res://farm_h/OBJ/Silo.obj" id="2_08xwf"]
+[ext_resource type="ArrayMesh" uid="uid://bgc30ou0kx14w" path="res://farm_h/OBJ/Well.obj" id="3_stiku"]
+
+[node name="Farm_pack" type="Node3D"]
+
+[node name="BigBarn" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.13248, 0, -0.961385)
+mesh = ExtResource("1_kbu61")
+
+[node name="Silo" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.81844, 0, -3.4505)
+mesh = ExtResource("2_08xwf")
+
+[node name="Silo2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.28377, 0, -3.42572)
+mesh = ExtResource("2_08xwf")
+skeleton = NodePath("../Silo")
+
+[node name="Well" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.14212, 0, 10.4324)
+mesh = ExtResource("3_stiku")

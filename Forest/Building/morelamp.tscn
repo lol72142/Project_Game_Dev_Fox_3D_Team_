@@ -1,0 +1,29 @@
+[gd_scene load_steps=2 format=3 uid="uid://bid5n7m1ogx3k"]
+
+[ext_resource type="PackedScene" uid="uid://hl3hqs7ulecw" path="res://Forest/Building/Lantern.tscn" id="1_msvfn"]
+
+[node name="morelamp" type="Node3D"]
+
+[node name="Lamp" parent="." instance=ExtResource("1_msvfn")]
+transform = Transform3D(0.766044, 0, 0.642788, 0, 1, 0, -0.642788, 0, 0.766044, 40, 0, 40)
+
+[node name="Lamp2" parent="." instance=ExtResource("1_msvfn")]
+transform = Transform3D(-0.25038, 0, 0.968148, 0, 1, 0, -0.968148, 0, -0.25038, -40, 0, -40)
+
+[node name="Lamp3" parent="." instance=ExtResource("1_msvfn")]
+transform = Transform3D(-0.854459, 0, 0.519519, 0, 1, 0, -0.519519, 0, -0.854459, -40, 0, 40)
+
+[node name="Lamp4" parent="." instance=ExtResource("1_msvfn")]
+transform = Transform3D(0.62388, 0, 0.78152, 0, 1, 0, -0.78152, 0, 0.62388, 40, 0, -40)
+
+[node name="Lamp5" parent="." instance=ExtResource("1_msvfn")]
+transform = Transform3D(-0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, -0.5, 25, 0, 0)
+
+[node name="Lamp6" parent="." instance=ExtResource("1_msvfn")]
+transform = Transform3D(-0.999328, 0, 0.0366437, 0, 1, 0, -0.0366437, 0, -0.999328, -25, 0, 0)
+
+[node name="Lamp7" parent="." instance=ExtResource("1_msvfn")]
+transform = Transform3D(0.64812, 0, 0.761538, 0, 1, 0, -0.761538, 0, 0.64812, 0, 0, -25)
+
+[node name="Lamp8" parent="." instance=ExtResource("1_msvfn")]
+transform = Transform3D(-0.726575, 0, -0.687087, 0, 1, 0, 0.687087, 0, -0.726575, 0, 0, 25)

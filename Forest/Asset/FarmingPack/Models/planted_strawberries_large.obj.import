@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c5wv3jc6vca5l"
+path="res://.godot/imported/planted_strawberries_large.obj-76076c29d50547c99b4ab4bcf5457f55.mesh"
+
+[deps]
+
+files=["res://.godot/imported/planted_strawberries_large.obj-76076c29d50547c99b4ab4bcf5457f55.mesh"]
+
+source_file="res://Forest/Asset/FarmingPack/Models/planted_strawberries_large.obj"
+dest_files=["res://.godot/imported/planted_strawberries_large.obj-76076c29d50547c99b4ab4bcf5457f55.mesh", "res://.godot/imported/planted_strawberries_large.obj-76076c29d50547c99b4ab4bcf5457f55.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

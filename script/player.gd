@@ -1,0 +1,128 @@
+extends CharacterBody3D
+
+const Max_Walk_Speed = 5.0
+const Max_Run_Speed = 12.0
+const Jump_velo = 5.0
+
+const Walk_bo_freq = 2.0
+const  Walk_bo_amp = 0.08
+const FOV_change = 1.5
+const  stamina_cool_down = 3
+
+var cur_stamina = 100
+var max_stamina = 100
+var cur_wait_time = 0
+var last_sta = 0
+
+
+var speed = 0
+var Base_FOV = 75.0
+var Sensitivity = 0.003
+var t_bo = 0.0
+var is_lock = false
+
+var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
+
+@onready var head = $head
+@onready var camera = $head/Camera3D
+
+func _ready() -> void:
+	#Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+	AudioManager.forest_sfx.play()
+	
+func _input(event: InputEvent) -> void:
+	if Input.is_action_just_pressed('mouse_lock'):
+		if is_lock == false:
+			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+			is_lock = true
+			
+		elif is_lock == true:
+			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+			is_lock = false
+	
+	if event is InputEventMouseMotion and is_lock:
+			head.rotate_y(-event.relative.x * Sensitivity)
+			camera.rotate_x(-event.relative.y * Sensitivity)
+			camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(-60), deg_to_rad(60))
+
+func _unhandled_input(event: InputEvent) -> void:
+	if Input.is_action_just_pressed("esc_menu"):
+		$All_canvas_layer/pause_canva_layer.visible = true
+		get_tree().paused = not get_tree().paused
+		if get_tree().paused == true:
+			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+			is_lock = false
+		else:
+			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+			is_lock = true
+
+
+func _physics_process(delta: float) -> void:
+	
+	var input_vec = Input.get_vector("left","right","forward","backward")
+	var directionn = (head.transform.basis * Vector3(input_vec.x, 0 ,input_vec.y)).normalized()
+	
+	if not is_on_floor():
+		velocity.y -= gravity * delta
+	
+	if Input.is_action_just_pressed("ui_accept") and is_on_floor() and cur_stamina >= 10:
+		cur_stamina -= 10
+		velocity.y = Jump_velo
+		cur_wait_time = 0
+	
+	if Input.is_action_pressed('sprint') and is_on_floor() and cur_stamina >= 10 and directionn != Vector3.ZERO:
+		cur_stamina -= 20 * delta
+		speed = Max_Run_Speed
+		cur_wait_time = 0
+	else:
+		
+		if cur_wait_time >= stamina_cool_down and cur_stamina <= 100:
+			cur_stamina += delta * 10
+			if cur_stamina > 100:
+				cur_stamina = 100
+			if cur_stamina < 0:
+				cur_stamina = 0
+		cur_wait_time += delta 
+		speed = Max_Walk_Speed
+		
+	if last_sta != cur_stamina:
+		GlobalValSignal.emit_signal("Sta_dis",int(cur_stamina))
+		last_sta = cur_stamina
+
+	if is_on_floor():
+		if directionn:
+			velocity.x = directionn.x * speed
+			velocity.z = directionn.z * speed
+			if not AudioManager.run.playing:
+				
+				AudioManager.run.play()
+		else:
+			velocity.x = lerp(velocity.x, directionn.x * speed, delta * 15.0)
+			velocity.z = lerp(velocity.x, directionn.x * speed, delta * 15.0)
+	else:
+		velocity.x = lerp(velocity.x, directionn.x * speed, delta * 2.0)
+		velocity.z = lerp(velocity.z, directionn.z * speed, delta * 2.0)
+		
+	if velocity.y > 0.0 or velocity.x >= -0.5 and velocity.x <= 0.5 and velocity.z >= -0.5 and velocity.z <= 0.5 and AudioManager.run.playing:
+		AudioManager.run.stop()
+	
+	t_bo += delta * velocity.length() * float(is_on_floor())
+	camera.transform.origin = head_bob(t_bo)
+	
+	var velocity_clamed = clamp(velocity.length(), 0.5, Max_Run_Speed)
+	var target_FOV = Base_FOV + FOV_change * velocity_clamed
+	camera.fov = lerp(camera.fov, target_FOV, delta * 1)
+	
+	
+
+	#if position.y <= -100.0:
+		#queue_free()
+	
+	move_and_slide()
+
+func head_bob(time) -> Vector3:
+	var posi = Vector3.ZERO
+	posi.y = sin(time * Walk_bo_freq) * Walk_bo_amp
+	posi.x = sin(time * Walk_bo_freq / 2) * Walk_bo_amp
+	return posi
+	

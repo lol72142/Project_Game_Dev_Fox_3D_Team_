@@ -1,0 +1,285 @@
+[gd_scene load_steps=2 format=3 uid="uid://e3u0uhb4kmol"]
+
+[ext_resource type="ArrayMesh" uid="uid://rkt6th73fnbn" path="res://Forest/Asset/FarmingPack/Models/farmland.obj" id="1_yxr8q"]
+
+[node name="farmland" type="Node3D"]
+
+[node name="f1" type="Node3D" parent="."]
+
+[node name="Farmland" type="MeshInstance3D" parent="f1"]
+mesh = ExtResource("1_yxr8q")
+skeleton = NodePath("../..")
+
+[node name="Farmland2" type="MeshInstance3D" parent="f1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.25, 0, 0)
+mesh = ExtResource("1_yxr8q")
+skeleton = NodePath("../..")
+
+[node name="Farmland3" type="MeshInstance3D" parent="f1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0)
+mesh = ExtResource("1_yxr8q")
+skeleton = NodePath("../..")
+
+[node name="Farmland4" type="MeshInstance3D" parent="f1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.75, 0, 0)
+mesh = ExtResource("1_yxr8q")
+skeleton = NodePath("../..")
+
+[node name="Farmland5" type="MeshInstance3D" parent="f1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+mesh = ExtResource("1_yxr8q")
+skeleton = NodePath("../..")
+
+[node name="Farmland6" type="MeshInstance3D" parent="f1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.25, 0, 0)
+mesh = ExtResource("1_yxr8q")
+skeleton = NodePath("../..")
+
+[node name="Farmland7" type="MeshInstance3D" parent="f1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, 0)
+mesh = ExtResource("1_yxr8q")
+skeleton = NodePath("../..")
+
+[node name="Farmland8" type="MeshInstance3D" parent="f1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.75, 0, 0)
+mesh = ExtResource("1_yxr8q")
+skeleton = NodePath("../..")
+
+[node name="Farmland9" type="MeshInstance3D" parent="f1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+mesh = ExtResource("1_yxr8q")
+skeleton = NodePath("../..")
+
+[node name="f2" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.25)
+
+[node name="Farmland" type="MeshInstance3D" parent="f2"]
+mesh = ExtResource("1_yxr8q")
+skeleton = NodePath("../..")
+
+[node name="Farmland2" type="MeshInstance3D" parent="f2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.25, 0, 0)
+mesh = ExtResource("1_yxr8q")
+skeleton = NodePath("../..")
+
+[node name="Farmland3" type="MeshInstance3D" parent="f2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0)
+mesh = ExtResource("1_yxr8q")
+skeleton = NodePath("../..")
+
+[node name="Farmland4" type="MeshInstance3D" parent="f2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.75, 0, 0)
+mesh = ExtResource("1_yxr8q")
+skeleton = NodePath("../..")
+
+[node name="Farmland5" type="MeshInstance3D" parent="f2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+mesh = ExtResource("1_yxr8q")
+skeleton = NodePath("../..")
+
+[node name="Farmland6" type="MeshInstance3D" parent="f2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.25, 0, 0)
+mesh = ExtResource("1_yxr8q")
+skeleton = NodePath("../..")
+
+[node name="Farmland7" type="MeshInstance3D" parent="f2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, 0)
+mesh = ExtResource("1_yxr8q")
+skeleton = NodePath("../..")
+
+[node name="Farmland8" type="MeshInstance3D" parent="f2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.75, 0, 0)
+mesh = ExtResource("1_yxr8q")
+skeleton = NodePath("../..")
+
+[node name="Farmland9" type="MeshInstance3D" parent="f2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+mesh = ExtResource("1_yxr8q")
+skeleton = NodePath("../..")
+
+[node name="f3" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.5)
+
+[node name="Farmland" type="MeshInstance3D" parent="f3"]
+mesh = ExtResource("1_yxr8q")
+skeleton = NodePath("../..")
+
+[node name="Farmland2" type="MeshInstance3D" parent="f3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.25, 0, 0)
+mesh = ExtResource("1_yxr8q")
+skeleton = NodePath("../..")
+
+[node name="Farmland3" type="MeshInstance3D" parent="f3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0)
+mesh = ExtResource("1_yxr8q")
+skeleton = NodePath("../..")
+
+[node name="Farmland4" type="MeshInstance3D" parent="f3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.75, 0, 0)
+mesh = ExtResource("1_yxr8q")
+skeleton = NodePath("../..")
+
+[node name="Farmland5" type="MeshInstance3D" parent="f3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+mesh = ExtResource("1_yxr8q")
+skeleton = NodePath("../..")
+
+[node name="Farmland6" type="MeshInstance3D" parent="f3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.25, 0, 0)
+mesh = ExtResource("1_yxr8q")
+skeleton = NodePath("../..")
+
+[node name="Farmland7" type="MeshInstance3D" parent="f3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, 0)
+mesh = ExtResource("1_yxr8q")
+skeleton = NodePath("../..")
+
+[node name="Farmland8" type="MeshInstance3D" parent="f3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.75, 0, 0)
+mesh = ExtResource("1_yxr8q")
+skeleton = NodePath("../..")
+
+[node name="Farmland9" type="MeshInstance3D" parent="f3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+mesh = ExtResource("1_yxr8q")
+skeleton = NodePath("../..")
+
+[node name="f4" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.75)
+
+[node name="Farmland" type="MeshInstance3D" parent="f4"]
+mesh = ExtResource("1_yxr8q")
+skeleton = NodePath("../..")
+
+[node name="Farmland2" type="MeshInstance3D" parent="f4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.25, 0, 0)
+mesh = ExtResource("1_yxr8q")
+skeleton = NodePath("../..")
+
+[node name="Farmland3" type="MeshInstance3D" parent="f4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0)
+mesh = ExtResource("1_yxr8q")
+skeleton = NodePath("../..")
+
+[node name="Farmland4" type="MeshInstance3D" parent="f4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.75, 0, 0)
+mesh = ExtResource("1_yxr8q")
+skeleton = NodePath("../..")
+
+[node name="Farmland5" type="MeshInstance3D" parent="f4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+mesh = ExtResource("1_yxr8q")
+skeleton = NodePath("../..")
+
+[node name="Farmland6" type="MeshInstance3D" parent="f4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.25, 0, 0)
+mesh = ExtResource("1_yxr8q")
+skeleton = NodePath("../..")
+
+[node name="Farmland7" type="MeshInstance3D" parent="f4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, 0)
+mesh = ExtResource("1_yxr8q")
+skeleton = NodePath("../..")
+
+[node name="Farmland8" type="MeshInstance3D" parent="f4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.75, 0, 0)
+mesh = ExtResource("1_yxr8q")
+skeleton = NodePath("../..")
+
+[node name="Farmland9" type="MeshInstance3D" parent="f4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+mesh = ExtResource("1_yxr8q")
+skeleton = NodePath("../..")
+
+[node name="f5" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Farmland" type="MeshInstance3D" parent="f5"]
+mesh = ExtResource("1_yxr8q")
+skeleton = NodePath("../..")
+
+[node name="Farmland2" type="MeshInstance3D" parent="f5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.25, 0, 0)
+mesh = ExtResource("1_yxr8q")
+skeleton = NodePath("../..")
+
+[node name="Farmland3" type="MeshInstance3D" parent="f5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0)
+mesh = ExtResource("1_yxr8q")
+skeleton = NodePath("../..")
+
+[node name="Farmland4" type="MeshInstance3D" parent="f5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.75, 0, 0)
+mesh = ExtResource("1_yxr8q")
+skeleton = NodePath("../..")
+
+[node name="Farmland5" type="MeshInstance3D" parent="f5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+mesh = ExtResource("1_yxr8q")
+skeleton = NodePath("../..")
+
+[node name="Farmland6" type="MeshInstance3D" parent="f5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.25, 0, 0)
+mesh = ExtResource("1_yxr8q")
+skeleton = NodePath("../..")
+
+[node name="Farmland7" type="MeshInstance3D" parent="f5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, 0)
+mesh = ExtResource("1_yxr8q")
+skeleton = NodePath("../..")
+
+[node name="Farmland8" type="MeshInstance3D" parent="f5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.75, 0, 0)
+mesh = ExtResource("1_yxr8q")
+skeleton = NodePath("../..")
+
+[node name="Farmland9" type="MeshInstance3D" parent="f5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+mesh = ExtResource("1_yxr8q")
+skeleton = NodePath("../..")
+
+[node name="f6" type="Node3D" parent="."]
+
+[node name="Farmland" type="MeshInstance3D" parent="f6"]
+mesh = ExtResource("1_yxr8q")
+skeleton = NodePath("../..")
+
+[node name="Farmland2" type="MeshInstance3D" parent="f6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.25, 0, 0)
+mesh = ExtResource("1_yxr8q")
+skeleton = NodePath("../..")
+
+[node name="Farmland3" type="MeshInstance3D" parent="f6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0)
+mesh = ExtResource("1_yxr8q")
+skeleton = NodePath("../..")
+
+[node name="Farmland4" type="MeshInstance3D" parent="f6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.75, 0, 0)
+mesh = ExtResource("1_yxr8q")
+skeleton = NodePath("../..")
+
+[node name="Farmland5" type="MeshInstance3D" parent="f6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+mesh = ExtResource("1_yxr8q")
+skeleton = NodePath("../..")
+
+[node name="Farmland6" type="MeshInstance3D" parent="f6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.25, 0, 0)
+mesh = ExtResource("1_yxr8q")
+skeleton = NodePath("../..")
+
+[node name="Farmland7" type="MeshInstance3D" parent="f6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, 0)
+mesh = ExtResource("1_yxr8q")
+skeleton = NodePath("../..")
+
+[node name="Farmland8" type="MeshInstance3D" parent="f6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.75, 0, 0)
+mesh = ExtResource("1_yxr8q")
+skeleton = NodePath("../..")
+
+[node name="Farmland9" type="MeshInstance3D" parent="f6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+mesh = ExtResource("1_yxr8q")
+skeleton = NodePath("../..")

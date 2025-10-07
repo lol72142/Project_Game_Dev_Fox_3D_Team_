@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://iwq1suv6oki0"]
+
+[ext_resource type="ArrayMesh" uid="uid://2ao8yrjau6sy" path="res://Forest/Asset/Church/CHAHIN_CHURCH.obj" id="1_vwx2p"]
+
+[node name="Mom_Home" type="Node3D"]
+
+[node name="ChahinChurch" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_vwx2p")

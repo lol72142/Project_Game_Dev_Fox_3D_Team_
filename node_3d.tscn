@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://dous2pucm247f"]
+
+[ext_resource type="PackedScene" uid="uid://bbxop6nt0x0t1" path="res://sence/player.tscn" id="2_a0tk4"]
+[ext_resource type="PackedScene" uid="uid://c6g1hyug1yf61" path="res://Forest/Tree/with_col/mmmoretree_1.tscn" id="2_noarx"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_r3fl7"]
+size = Vector3(50, 0.4, 50)
+
+[node name="Node3D" type="Node3D"]
+
+[node name="CSGMesh3D" type="CSGMesh3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.16226685, 0)
+use_collision = true
+mesh = SubResource("BoxMesh_r3fl7")
+
+[node name="CharacterBody3D" parent="." instance=ExtResource("2_a0tk4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.583338, 1.3026242, 6.369522)
+
+[node name="mmmoretree_1" parent="." node_paths=PackedStringArray("player_node") instance=ExtResource("2_noarx")]
+player_node = NodePath("../CharacterBody3D")
+
+[editable path="mmmoretree_1"]
+[editable path="mmmoretree_1/moretree2"]
+[editable path="mmmoretree_1/moretree2/Tree_1"]
