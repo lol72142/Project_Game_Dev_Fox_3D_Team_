@@ -23,7 +23,7 @@ shape = SubResource("CylinderShape3D_gjatf")
 
 [node name="StateMachine" type="Node" parent="." node_paths=PackedStringArray("Init_state")]
 script = ExtResource("2_iq6vw")
-Init_state = NodePath("EnemyChase")
+Init_state = NodePath("Enemy_warding")
 metadata/_custom_type_script = "uid://dy1tdw44h7q0y"
 
 [node name="Enemy_warding" type="Node" parent="StateMachine"]
