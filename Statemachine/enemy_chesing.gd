@@ -27,9 +27,7 @@ func process(delta):
 		
 	if distance_enemy_player > enemy.chace_distance:
 		emit_signal('Transition', self, "Enemy_warding")
-		
-	
-		
+		AudioManager.start_chasing_loop()
 		
 func physics_process(delta: float) -> void:
 	
@@ -43,6 +41,7 @@ func physics_process(delta: float) -> void:
 			is_acttack = false
 			wait_time = 0
 			cur_time = 0
+			AudioManager.start_chasing_loop()
 		enemy.velocity = Vector3.ZERO
 		animation_player.stop()
 	else:
