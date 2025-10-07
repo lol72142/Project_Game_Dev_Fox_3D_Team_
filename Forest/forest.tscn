@@ -22,6 +22,7 @@
 ambient_light_source = 2
 ambient_light_color = Color(1, 1, 1, 1)
 tonemap_exposure = 0.1
+fog_enabled = true
 fog_density = 0.06
 
 [sub_resource type="NavigationMesh" id="NavigationMesh_dlcfm"]

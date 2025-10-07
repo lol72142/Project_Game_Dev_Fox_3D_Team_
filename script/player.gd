@@ -5,9 +5,9 @@ const Max_Run_Speed = 12.0
 const Jump_velo = 5.0
 
 const Walk_bo_freq = 2.0
-const  Walk_bo_amp = 0.08
+const Walk_bo_amp = 0.08
 const FOV_change = 1.5
-const  stamina_cool_down = 3
+const stamina_cool_down = 2
 
 var cur_stamina = 100
 var max_stamina = 100
@@ -77,7 +77,7 @@ func _physics_process(delta: float) -> void:
 	else:
 		
 		if cur_wait_time >= stamina_cool_down and cur_stamina <= 100:
-			cur_stamina += delta * 10
+			cur_stamina += delta * 15
 			if cur_stamina > 100:
 				cur_stamina = 100
 			if cur_stamina < 0:

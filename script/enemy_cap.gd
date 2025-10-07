@@ -2,13 +2,15 @@ extends CharacterBody3D
 
 @export var marker: Marker3D = null
 @export var walk_speed: float = 1.5
-@export var run_speed: float = 4
+@export var run_speed: float = 5
 @export var chace_distance: float = 15.0
-var player: CharacterBody3D = null
+
 
 @onready var navigate_agent: NavigationAgent3D = $NavigationAgent3D
 
 var gravity: float
+var player: CharacterBody3D = null
+var attack_distance: float = 3
 
 func _ready() -> void:
 	player = get_tree().get_first_node_in_group("player")
@@ -38,7 +40,9 @@ func _physics_process(delta: float) -> void:
 
 func Multiple_by_chicken():
 	var mul = GlobalValSignal.Current_Number_Food
-	walk_speed += (mul * 2 * 0.45) / mul
-	run_speed += (mul * 2 * 0.6) / mul
-	chace_distance += mul + 1
+	walk_speed += (mul * 2 * 0.15) / mul
+	run_speed += (mul * 2 * 0.1) / mul
+	if mul <= 6:
+		mul += 4 
+	chace_distance += mul + 2
 	print(walk_speed, " ",run_speed, " ",chace_distance)
