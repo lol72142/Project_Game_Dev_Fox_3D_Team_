@@ -93,11 +93,6 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
 
-[node name="Label" type="Label" parent="setting_canva_layer/setting_menu/ColorRect/VBoxContainer" index="0"]
-layout_mode = 2
-text = "Volume"
-horizontal_alignment = 1
-
 [node name="resume" type="Button" parent="setting_canva_layer/setting_menu/ColorRect" index="2"]
 custom_minimum_size = Vector2(100, 50)
 layout_mode = 1

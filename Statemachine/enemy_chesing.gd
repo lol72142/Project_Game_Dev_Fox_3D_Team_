@@ -2,6 +2,9 @@ extends State
 class_name EnemyChase
 @onready var animation_player: AnimationPlayer = $"../../bacteria/AnimationPlayer"
 @onready var enemy: CharacterBody3D = get_parent().get_parent()
+@onready var chace_ing: AudioStreamPlayer = $"../../sound/chace_ing"
+
+
 var dammage = 1
 var player: CharacterBody3D = null
 var is_acttack = false
@@ -16,13 +19,15 @@ func hit_and_wait():
 	is_acttack = true
 
 func enter():
-	AudioManager.start_chasing_loop()
+	chace_ing.play()
+	#AudioManager.start_chasing_loop()
+	
 
 func process(delta):
 	enemy.navigate_agent.target_position = player.global_transform.origin
 	
-	var distance_enemy_player = enemy.global_position.distance_to(player.global_position)
-	
+	var distance_enemy_player = enemy_to_distance(player)
+	chace_ing.volume_db = distance_to_db(distance_enemy_player)
 	if distance_enemy_player <= enemy.attack_distance and is_acttack == false:
 		GlobalValSignal.Current_HP_Player -= dammage
 		GlobalValSignal.emit_signal("Get_Hit")
@@ -30,7 +35,7 @@ func process(delta):
 		
 	if distance_enemy_player > enemy.chace_distance:
 		emit_signal('Transition', self, "Enemy_warding")
-		AudioManager.stop_chasing_loop()
+		chace_ing.stop()
 		
 func physics_process(delta: float) -> void:
 	
@@ -44,7 +49,8 @@ func physics_process(delta: float) -> void:
 			is_acttack = false
 			wait_time = 0
 			cur_time = 0
-			AudioManager.start_chasing_loop()
+			#AudioManager.start_chasing_loop()
+			chace_ing.play()
 		enemy.velocity = Vector3.ZERO
 		animation_player.stop()
 	else:
@@ -53,3 +59,12 @@ func physics_process(delta: float) -> void:
 		
 		animation_player.get_animation("mixamo_com").loop = true
 		animation_player.play("mixamo_com")
+
+func enemy_to_distance(body):
+	return enemy.global_position.distance_to(body.global_position)
+
+func distance_to_db(distance_):
+	var dis = clamp(distance_, 0, enemy.chace_distance * 2)
+	var nor = (dis - 0) / (enemy.chace_distance * 2 - 0)
+	var range_ = nor * 36
+	return clamp((7.5 - range_),-30,5)

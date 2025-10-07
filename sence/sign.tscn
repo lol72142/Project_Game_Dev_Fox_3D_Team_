@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://bykru3n5ymf3e"]
+
+[ext_resource type="ArrayMesh" uid="uid://yp1j86k6rrlr" path="res://farm_h/sign.obj" id="1_4cxm1"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_ddgih"]
+viewport_path = NodePath("Sign/SubViewport")
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Sign" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.10958272, 0.49330378, -0.011454225)
+mesh = ExtResource("1_4cxm1")
+
+[node name="SubViewport" type="SubViewport" parent="Sign"]
+transparent_bg = true
+
+[node name="Sprite3D" type="Sprite3D" parent="Sign/SubViewport"]
+transform = Transform3D(0.02792158, 0, -0.9996101, 0, 1, 0, 0.9996101, 0, 0.02792158, -0.21665865, -0.48413897, 2.2800565)
+texture = SubResource("ViewportTexture_ddgih")
+
+[node name="Label" type="Label" parent="Sign/SubViewport"]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "asfagg"

@@ -14,9 +14,11 @@ script = ExtResource("1_78770")
 
 [node name="forest_sfx" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("1_x2f28")
+bus = &"Music"
 
 [node name="Run" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_20upo")
+bus = &"SFX"
 
 [node name="miao" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_oedao")

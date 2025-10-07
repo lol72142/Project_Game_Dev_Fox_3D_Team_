@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://c2txtd0fog1v4"]
+[gd_scene load_steps=10 format=3 uid="uid://c2txtd0fog1v4"]
 
 [ext_resource type="Script" uid="uid://cfkr7dafownt4" path="res://script/enemy_cap.gd" id="1_xjxsv"]
 [ext_resource type="Script" uid="uid://dy1tdw44h7q0y" path="res://Statemachine/state_machine.gd" id="2_iq6vw"]
@@ -6,6 +6,8 @@
 [ext_resource type="Script" uid="uid://80enafrttakb" path="res://Statemachine/enemy_warding.gd" id="3_iq6vw"]
 [ext_resource type="Script" uid="uid://s6f4js0dpsef" path="res://Statemachine/enemy_fallback.gd" id="5_3ta23"]
 [ext_resource type="PackedScene" uid="uid://beew7w0qdmjo7" path="res://asset/model/Running.fbx" id="5_gjatf"]
+[ext_resource type="AudioStream" uid="uid://dj2katxrqs36" path="res://asset/audio/Serverblight Sounds (Only voices) (mp3cut.net).mp3" id="7_eyu7f"]
+[ext_resource type="AudioStream" uid="uid://c2bg6wty335eb" path="res://asset/audio/30-40.mp3" id="8_jduk1"]
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_gjatf"]
 height = 0.95703125
@@ -83,5 +85,16 @@ bones/44/rotation = Quaternion(0.0069344444, 0.488972, 0.870229, -0.059664384)
 bones/45/rotation = Quaternion(-0.18494569, 0.01243444, -0.027358383, 0.9822892)
 bones/46/rotation = Quaternion(0.6837157, -0.013065685, 0.059567925, 0.7271959)
 bones/47/rotation = Quaternion(-0.09013376, 0.008817541, -0.073609814, 0.9931666)
+
+[node name="sound" type="Node" parent="."]
+
+[node name="ward_ing" type="AudioStreamPlayer" parent="sound"]
+stream = ExtResource("7_eyu7f")
+bus = &"SFX"
+
+[node name="chace_ing" type="AudioStreamPlayer" parent="sound"]
+stream = ExtResource("8_jduk1")
+bus = &"SFX"
+parameters/looping = true
 
 [editable path="bacteria"]
