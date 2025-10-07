@@ -44,5 +44,5 @@ func Multiple_by_chicken():
 	run_speed += (mul * 2 * 0.1) / mul
 	if mul <= 6:
 		mul += 4 
-	chace_distance += mul + 2
+	chace_distance += mul + 1
 	print(walk_speed, " ",run_speed, " ",chace_distance)

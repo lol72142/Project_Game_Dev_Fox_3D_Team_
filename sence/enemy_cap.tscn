@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 [gd_scene load_steps=22 format=3 uid="uid://c2txtd0fog1v4"]
 
 [ext_resource type="Script" uid="uid://bosvocn3ks6ef" path="res://Forest/cutscreen_2.gd" id="1_jhbua"]
@@ -10,6 +11,18 @@
 [ext_resource type="PackedScene" uid="uid://hl3hqs7ulecw" path="res://Forest/Building/Lantern.tscn" id="8_cqui2"]
 [ext_resource type="PackedScene" uid="uid://bxim8ftpl6g2w" path="res://Forest/Tree/with_col/walltree.tscn" id="9_eew27"]
 [ext_resource type="Texture2D" uid="uid://bsfp64dod28al" path="res://Grass_Ground_Texture.jpg" id="10_dbgni"]
+=======
+[gd_scene load_steps=10 format=3 uid="uid://c2txtd0fog1v4"]
+
+[ext_resource type="Script" uid="uid://cfkr7dafownt4" path="res://script/enemy_cap.gd" id="1_xjxsv"]
+[ext_resource type="Script" uid="uid://dy1tdw44h7q0y" path="res://Statemachine/state_machine.gd" id="2_iq6vw"]
+[ext_resource type="Script" uid="uid://d4ndiff0ngmlv" path="res://Statemachine/enemy_chesing.gd" id="3_gmvms"]
+[ext_resource type="Script" uid="uid://80enafrttakb" path="res://Statemachine/enemy_warding.gd" id="3_iq6vw"]
+[ext_resource type="Script" uid="uid://s6f4js0dpsef" path="res://Statemachine/enemy_fallback.gd" id="5_3ta23"]
+[ext_resource type="PackedScene" uid="uid://beew7w0qdmjo7" path="res://asset/model/Running.fbx" id="5_gjatf"]
+[ext_resource type="AudioStream" uid="uid://dj2katxrqs36" path="res://asset/audio/Serverblight Sounds (Only voices) (mp3cut.net).mp3" id="7_18yw8"]
+[ext_resource type="AudioStream" uid="uid://c2bg6wty335eb" path="res://asset/audio/30-40.mp3" id="8_eyu7f"]
+>>>>>>> Stashed changes
 
 [sub_resource type="Animation" id="Animation_x4rm4"]
 resource_name = "Ending"
@@ -173,6 +186,7 @@ size = Vector3(500, 0.04, 450)
 [sub_resource type="BoxShape3D" id="BoxShape3D_wubod"]
 size = Vector3(400, 1, 400)
 
+<<<<<<< Updated upstream
 [node name="cutscreen" type="Node3D"]
 script = ExtResource("1_jhbua")
 
@@ -821,3 +835,20 @@ metadata/_edit_lock_ = true
 shape = SubResource("BoxShape3D_wubod")
 
 [editable path="scene/Home/Deposit"]
+=======
+[node name="sound" type="Node" parent="."]
+
+[node name="ward_ding" type="AudioStreamPlayer" parent="sound"]
+stream = ExtResource("7_18yw8")
+mix_target = 1
+bus = &"SFX"
+
+[node name="chase_ing" type="AudioStreamPlayer" parent="sound"]
+stream = ExtResource("8_eyu7f")
+volume_db = 5.0
+mix_target = 1
+bus = &"SFX"
+parameters/looping = true
+
+[editable path="bacteria"]
+>>>>>>> Stashed changes

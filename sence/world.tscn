@@ -481,6 +481,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.455551, 0.0430002, 0.75340
 [node name="Marker3D" type="Marker3D" parent="spawn_enemy"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -57.477264, 0, -58.93045)
 
+[node name="Marker3D2" type="Marker3D" parent="spawn_enemy"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56.26182, 0, 28.020607)
+
 [editable path="env_obj-node/depost_layer/Deposit"]
 [editable path="enemy_cap"]
 [editable path="enemy_cap/bacteria"]

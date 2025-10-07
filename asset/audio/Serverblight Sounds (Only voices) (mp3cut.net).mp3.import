@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dj2katxrqs36"
+path="res://.godot/imported/Serverblight Sounds (Only voices) (mp3cut.net).mp3-239d8061fa16e0c7ba86cbc21ce0ab49.mp3str"
+
+[deps]
+
+source_file="res://asset/audio/Serverblight Sounds (Only voices) (mp3cut.net).mp3"
+dest_files=["res://.godot/imported/Serverblight Sounds (Only voices) (mp3cut.net).mp3-239d8061fa16e0c7ba86cbc21ce0ab49.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

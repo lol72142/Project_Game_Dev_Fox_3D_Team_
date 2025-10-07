@@ -84,7 +84,6 @@ text = "Quit"
 [node name="setting_canva_layer" parent="." instance=ExtResource("2_jgr1o")]
 unique_name_in_owner = true
 process_mode = 0
-visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -92,11 +91,6 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
-
-[node name="Label" type="Label" parent="setting_canva_layer/setting_menu/ColorRect/VBoxContainer" index="0"]
-layout_mode = 2
-text = "Volume"
-horizontal_alignment = 1
 
 [node name="resume" type="Button" parent="setting_canva_layer/setting_menu/ColorRect" index="2"]
 custom_minimum_size = Vector2(100, 50)

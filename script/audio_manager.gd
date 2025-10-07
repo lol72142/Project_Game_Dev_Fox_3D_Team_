@@ -6,6 +6,7 @@ extends Node
 @onready var chasing_1: AudioStreamPlayer = $Chasing_1
 @onready var chasing_2: AudioStreamPlayer = $Chasing_2
 @onready var chasing_3: AudioStreamPlayer = $Chasing_3
+@onready var warding: AudioStreamPlayer = $warding
 
 
 @export var min_delay: float = 2.0
@@ -43,3 +44,6 @@ func start_chasing_loop() -> void:
 
 func stop_chasing_loop() -> void:
 	random_loop_active = false
+	
+func ward_():
+	warding.play()
