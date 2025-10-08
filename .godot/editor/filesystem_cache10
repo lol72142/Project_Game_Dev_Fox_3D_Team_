@@ -1,8 +1,8 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1759932512
+::res://::1759934020
 default_bus_layout.tres::AudioBusLayout::2682683987679272539::1759874479::0::1::::<><><>0<>0<><>::
 end_game.gd::GDScript::786518184546385386::1759932387::0::1::::<>Node<><>0<>0<><>::
-export_presets.cfg::TextFile::-1::1759591824::0::1::::<><><>0<>0<><>::
+export_presets.cfg::TextFile::-1::1759933573::0::1::::<><><>0<>0<><>::
 Grass_Ground_Texture.jpg::CompressedTexture2D::3661109400903303319::1759145236::1759846781::1::::<><><>0<>0<>e15f9541046306195cbe5d2e425e65fa<>res://.godot/imported/Grass_Ground_Texture.jpg-793aaf662ae5353de01791a754a53d5f.s3tc.ctex::
 icon.svg::CompressedTexture2D::2553369970934339109::1759145236::1759846781::1::::<><><>0<>0<>cfa79173d819e1345f23b4cf7905381d<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.s3tc.ctex::
 mappingnggg.png::CompressedTexture2D::530555332156109757::1759754028::1759846781::1::::<><><>0<>0<>fead47ffa5aa29a480a615afb3cf603b<>res://.godot/imported/mappingnggg.png-1f819d75caecbc1b282cc6bc69d0d5e3.ctex::
@@ -30,10 +30,10 @@ Serverblight Sounds (Only voices) (mp3cut.net).mp3::AudioStreamMP3::230803177864
 ::res://asset/model/::1759846799
 bacteria_backrooms.glb::PackedScene::4503259261500417841::1759675198::1759846797::1::::<><><>0<>0<>dc91e3b8f7f72ebf8b47121057351d06<>res://.godot/imported/bacteria_backrooms.glb-983a19791ccb5b0ba11bc54b8a5e52c9.scn::
 Running.fbx::PackedScene::2676827683372560496::1759729913::1759846799::1::::<><><>0<>0<>5430f6ead4a6d930eb1f74e9e940e597<>res://.godot/imported/Running.fbx-ccd11c02c60cc725c29ef22ce24d7159.scn::
-::res://docs/::1759846781
-index.apple-touch-icon.png::CompressedTexture2D::4275793033556496385::1759591822::1759846781::1::::<><><>0<>0<>2763e52eee532131d571044920f3537b<>res://.godot/imported/index.apple-touch-icon.png-b21a756d869f84af832970a74d8371bc.s3tc.ctex::
-index.icon.png::CompressedTexture2D::3256712936411025623::1759591822::1759846781::1::::<><><>0<>0<>26a8f9376a52d5e009ffdefd413a7bc2<>res://.godot/imported/index.icon.png-b92c9a802ad4b78e247784454a6b506f.ctex::
-index.png::CompressedTexture2D::545132610050068310::1759591823::1759846781::1::::<><><>0<>0<>ee7a5ef0e6b3df96ea34e2f1333ae408<>res://.godot/imported/index.png-0c78d14d192abe5f22f8c25928ca1ab8.ctex::
+::res://docs/::1759933574
+index.apple-touch-icon.png::CompressedTexture2D::4275793033556496385::1759933574::1759934021::1::::<><><>0<>0<>2763e52eee532131d571044920f3537b<>res://.godot/imported/index.apple-touch-icon.png-b21a756d869f84af832970a74d8371bc.s3tc.ctex::
+index.icon.png::CompressedTexture2D::3256712936411025623::1759933574::1759934021::1::::<><><>0<>0<>26a8f9376a52d5e009ffdefd413a7bc2<>res://.godot/imported/index.icon.png-b92c9a802ad4b78e247784454a6b506f.ctex::
+index.png::CompressedTexture2D::545132610050068310::1759933574::1759934021::1::::<><><>0<>0<>ee7a5ef0e6b3df96ea34e2f1333ae408<>res://.godot/imported/index.png-0c78d14d192abe5f22f8c25928ca1ab8.ctex::
 ::res://farm_h/::1759875006
 Barn.glb::PackedScene::2670469344573704282::1759145236::1759846794::1::::<><><>0<>0<>3bd86c704fa971b1c7b35ed47a04bb93<>res://.godot/imported/Barn.glb-deac39eaf077a2a250273790fa1e3585.scn::
 chickens_by_Hatty_black.fbx::PackedScene::6595210181504534164::1759145236::1759846794::1::::<><><>0<>0<>6b6c5bb48a0c7f2022c3907d4ad7fae4<>res://.godot/imported/chickens_by_Hatty_black.fbx-cb198e11f4a17913a3233a037a9323c9.scn::
@@ -57,7 +57,7 @@ TowerWindmill.obj::Mesh::5971983375217840585::1759145236::1759846787::1::::<><><
 WaterTower.obj::Mesh::7885517146784537256::1759145236::1759846787::1::::<><><>0<>0<>e42a0459500cb158a0c6868c06acb44c<>res://.godot/imported/WaterTower.obj-a193fb20e0745b3c9f47ba83ce8f897e.mesh<*>res://.godot/imported/WaterTower.obj-a193fb20e0745b3c9f47ba83ce8f897e.mesh::
 Well.obj::Mesh::2813427989047672656::1759145236::1759846787::1::::<><><>0<>0<>b0b66dccd97dc7712f5e47eb10a908c5<>res://.godot/imported/Well.obj-c987d383bc349dbb9e5e9e8b48f3db46.mesh<*>res://.godot/imported/Well.obj-c987d383bc349dbb9e5e9e8b48f3db46.mesh::
 Windmill.obj::Mesh::7144831458997818170::1759145236::1759846787::1::::<><><>0<>0<>0ce0c311d9ccc39db8a759453a06d451<>res://.godot/imported/Windmill.obj-a6b5786527f689e2ea235849830d49c2.mesh<*>res://.godot/imported/Windmill.obj-a6b5786527f689e2ea235849830d49c2.mesh::
-::res://Forest/::1759903217
+::res://Forest/::1759932543
 cabbage.tscn::PackedScene::300540562584099947::1759665672::0::1::::<><><>0<>0<><>::uid://dipmly8d368n0::::res://Forest/Asset/FarmingPack/Models/planted_cabbage_large.obj
 cutscreen2.tscn::PackedScene::1817624959832683662::1759875059::0::1::::<><><>0<>0<><>::uid://cfs68pd1erdrf::::res://Forest/cutscreen_2_ok.gd<>uid://q4lv0ry2ejbe::::res://Forest/cutscreen.tres<>uid://ctrk00e3ddgep::::res://Logo_Loading/image.png<>uid://e8rt4ap6q7vk::::res://sence/bacteria.tscn<>uid://d5kqx6m2q7xi::::res://Forest/Building/floor_dirt_grave.tscn<>uid://cp7gtpj8m2mdg::::res://sence/deposit.tscn<>uid://8donvon65h2o::::res://Forest/Tree/with_col/tree_1.tscn<>uid://hl3hqs7ulecw::::res://Forest/Building/Lantern.tscn<>uid://bxim8ftpl6g2w::::res://Forest/Tree/with_col/walltree.tscn<>uid://bsfp64dod28al::::res://Grass_Ground_Texture.jpg
 cutscreen.gd::GDScript::5334658719980915504::1759847156::0::1::::<>Node3D<><>0<>0<><>::
@@ -67,7 +67,7 @@ cutscreen_2.gd::GDScript::3407523478576851065::1759875006::0::1::::<>Node3D<><>0
 cutscreen_2_ok.gd::GDScript::5162886336796065947::1759875016::0::1::::<>Node3D<><>0<>0<><>::
 farmzone.tscn::PackedScene::8300391560860264812::1759665672::0::1::::<><><>0<>0<><>::uid://e3u0uhb4kmol::::res://Forest/Building/farmland.tscn<>uid://ejt4hgjn17bj::::res://Forest/cabbage.tscn
 forest.gd::GDScript::5559760567404036425::1759591672::0::1::::<>Node3D<><>0<>0<><>::
-forest.tscn::PackedScene::3768780934202419225::1759903217::0::1::::<><><>0<>0<><>::uid://clhgpds7ta4bd::::res://Forest/forest.gd<>uid://bykru3n5ymf3e::::res://sence/sign.tscn<>uid://hl3hqs7ulecw::::res://Forest/Building/Lantern.tscn<>uid://bxecf50pc56s0::::res://farm_h/OBJ/BigBarn.obj<>uid://dqi1ibfy4fv77::::res://Forest/farmzone.tscn<>uid://j6k2gcxpdeao::::res://farm_h/OBJ/Silo.obj<>uid://ch1xnu7f6bmga::::res://farm_h/OBJ/ChickenCoop.obj<>uid://duvokykwm5pl0::::res://Forest/Building/fence.tscn<>uid://bbxop6nt0x0t1::::res://sence/player.tscn<>uid://cp7gtpj8m2mdg::::res://sence/deposit.tscn<>uid://d5kqx6m2q7xi::::res://Forest/Building/floor_dirt_grave.tscn<>uid://bsfp64dod28al::::res://Grass_Ground_Texture.jpg<>uid://cxqebdx286lfj::::res://Forest/nature.tscn<>uid://dxhm7m338dmjr::::res://script/nature_parent.gd<>uid://bxim8ftpl6g2w::::res://Forest/Tree/with_col/walltree.tscn<>uid://iwq1suv6oki0::::res://Forest/Building/church.tscn<>uid://crumkuh7mqpre::::res://sence/object_inter_pick/chicken_3_kg.tscn<>uid://c2txtd0fog1v4::::res://sence/enemy_cap.tscn
+forest.tscn::PackedScene::3768780934202419225::1759932543::0::1::::<><><>0<>0<><>::uid://clhgpds7ta4bd::::res://Forest/forest.gd<>uid://bykru3n5ymf3e::::res://sence/sign.tscn<>uid://hl3hqs7ulecw::::res://Forest/Building/Lantern.tscn<>uid://bxecf50pc56s0::::res://farm_h/OBJ/BigBarn.obj<>uid://dqi1ibfy4fv77::::res://Forest/farmzone.tscn<>uid://j6k2gcxpdeao::::res://farm_h/OBJ/Silo.obj<>uid://ch1xnu7f6bmga::::res://farm_h/OBJ/ChickenCoop.obj<>uid://duvokykwm5pl0::::res://Forest/Building/fence.tscn<>uid://bbxop6nt0x0t1::::res://sence/player.tscn<>uid://cp7gtpj8m2mdg::::res://sence/deposit.tscn<>uid://d5kqx6m2q7xi::::res://Forest/Building/floor_dirt_grave.tscn<>uid://bsfp64dod28al::::res://Grass_Ground_Texture.jpg<>uid://cxqebdx286lfj::::res://Forest/nature.tscn<>uid://dxhm7m338dmjr::::res://script/nature_parent.gd<>uid://bxim8ftpl6g2w::::res://Forest/Tree/with_col/walltree.tscn<>uid://iwq1suv6oki0::::res://Forest/Building/church.tscn<>uid://crumkuh7mqpre::::res://sence/object_inter_pick/chicken_3_kg.tscn<>uid://c2txtd0fog1v4::::res://sence/enemy_cap.tscn
 nature.gd::GDScript::5423801628993407218::1759745553::0::1::::<>Node3D<><>0<>0<><>::
 nature.tscn::PackedScene::6420459663263512967::1759763490::0::1::::<><><>0<>0<><>::uid://8donvon65h2o::::res://Forest/Tree/with_col/tree_1.tscn
 ::res://Forest/Asset/::1759846781
@@ -423,7 +423,7 @@ walltree.tscn::PackedScene::4018066937177875212::1759598189::0::1::::<><><>0<>0<
 Icon.png::CompressedTexture2D::1270613394669641764::1759591672::1759846781::1::::<><><>0<>0<>c416b21cf0e1f1b37f6f612819dfd972<>res://.godot/imported/Icon.png-42b93c5b93314f39273edb8ad4075fed.ctex::
 image.png::CompressedTexture2D::6142176953642417783::1759745553::1759846781::1::::<><><>0<>0<>e967c49710d50a5b13d763478f009e94<>res://.godot/imported/image.png-fd2ec88dd47659cbcdaa9fbc3348fb14.s3tc.ctex::
 Loading.png::CompressedTexture2D::5139798380121862272::1759591672::1759846781::1::::<><><>0<>0<>c81ca87961be450cef65f271b32b818c<>res://.godot/imported/Loading.png-86a69681a4e1cf1e21703a56c05042f2.ctex::
-::res://script/::1759929550
+::res://script/::1759932915
 audio_manager.gd::GDScript::219645746641770581::1759875006::0::1::::<>Node<><>0<>0<><>::
 db_manager.gd::GDScript::2563377255305408433::1759874630::0::1::::<>HSlider<><>0<>0<><>::
 deposit.gd::GDScript::881919727882108783::1759740977::0::1::::<>Node3D<><>0<>0<><>::
@@ -433,7 +433,7 @@ Global_val_signal.gd::GDScript::5480834284926619349::1759833809::0::1::::<>Node<
 GUI.gd::GDScript::3402127939822627785::1759764738::0::1::::<>Control<><>0<>0<><>::
 interact.gd::GDScript::6849830153932156455::1759592426::0::1::::<>Node<><>0<>0<><>::
 inter_component_obj.gd::GDScript::3623971655794982309::1759592613::0::1::::<>Node<><>0<>0<><>::
-main_menu.gd::GDScript::297029252598256547::1759875016::0::1::::<>Control<><>0<>0<><>::
+main_menu.gd::GDScript::297029252598256547::1759932915::0::1::::<>Control<><>0<>0<><>::
 mmmoretree_1_parent.gd::GDScript::4595652857029693022::1759599247::0::1::::<>Node3D<><>0<>0<><>::
 moretree_1_tag.gd::GDScript::1406063448494218238::1759596812::0::1::::<>StaticBody3D<><>0<>0<><>::
 nature_parent.gd::GDScript::8788842523201769115::1759599247::0::1::::<>Node3D<><>0<>0<><>::

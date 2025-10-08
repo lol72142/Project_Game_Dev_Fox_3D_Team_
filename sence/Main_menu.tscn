@@ -1173,12 +1173,12 @@ text = "Setting"
 
 [node name="GameTitle" type="Label" parent="Main_menu"]
 layout_mode = 0
-offset_left = 313.0
+offset_left = 442.0
 offset_top = 38.0
-offset_right = 908.0
+offset_right = 1037.0
 offset_bottom = 146.0
 theme_override_font_sizes/font_size = 62
-text = "WHAT IS THIS GAME"
+text = "Fox Nights"
 
 [node name="setting_canva_layer" parent="." instance=ExtResource("2_sihkl")]
 visible = false
