@@ -44,11 +44,8 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="pause_menu" parent="pause_canva_layer" index="0"]
-visible = false
-
 [node name="setting_canva_layer" parent="pause_canva_layer" index="1"]
-visible = true
+visible = false
 
 [editable path="user_inter_player"]
 [editable path="pause_canva_layer"]

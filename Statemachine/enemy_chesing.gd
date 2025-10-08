@@ -2,8 +2,9 @@ extends State
 class_name EnemyChase
 @onready var animation_player: AnimationPlayer = $"../../bacteria/AnimationPlayer"
 @onready var enemy: CharacterBody3D = get_parent().get_parent()
-@onready var chace_ing: AudioStreamPlayer = $"../../sound/chace_ing"
+@onready var sound: Node = $"../../sound"
 
+var track
 
 var dammage = 1
 var player: CharacterBody3D = null
@@ -19,7 +20,8 @@ func hit_and_wait():
 	is_acttack = true
 
 func enter():
-	chace_ing.play()
+	track = sound.select_chace()
+	track.play()
 	#AudioManager.start_chasing_loop()
 	
 
@@ -27,7 +29,7 @@ func process(delta):
 	enemy.navigate_agent.target_position = player.global_transform.origin
 	
 	var distance_enemy_player = enemy_to_distance(player)
-	chace_ing.volume_db = distance_to_db(distance_enemy_player)
+	track.volume_db = distance_to_db(distance_enemy_player)
 	if distance_enemy_player <= enemy.attack_distance and is_acttack == false:
 		GlobalValSignal.Current_HP_Player -= dammage
 		GlobalValSignal.emit_signal("Get_Hit")
@@ -35,7 +37,7 @@ func process(delta):
 		
 	if distance_enemy_player > enemy.chace_distance:
 		emit_signal('Transition', self, "Enemy_warding")
-		chace_ing.stop()
+		track.stop()
 		
 func physics_process(delta: float) -> void:
 	
@@ -50,7 +52,8 @@ func physics_process(delta: float) -> void:
 			wait_time = 0
 			cur_time = 0
 			#AudioManager.start_chasing_loop()
-			chace_ing.play()
+			track = sound.select_chace()
+			track.play()
 		enemy.velocity = Vector3.ZERO
 		animation_player.stop()
 	else:

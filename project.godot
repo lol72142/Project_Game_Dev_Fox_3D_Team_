@@ -22,6 +22,7 @@ boot_splash/icon="res://icon.svg"
 
 AudioManager="*res://sence/audio_manager.tscn"
 GlobalValSignal="*res://script/Global_val_signal.gd"
+EndGame="*res://sence/end_game.tscn"
 
 [display]
 

@@ -20,7 +20,7 @@ func process(delta: float) -> void:
 	if distance_from_mark > far_from_dis and so_far == false:
 		so_far = true
 		go_to_spawn()
-		print("go home")
+		
 	elif distance_from_mark < 5 and so_far == true:
 		so_far = false
 		emit_signal('Transition', self, "Enemy_warding")

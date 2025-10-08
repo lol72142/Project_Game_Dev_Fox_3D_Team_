@@ -1,0 +1,31 @@
+[gd_scene load_steps=6 format=3 uid="uid://blxewnpegq3h2"]
+
+[ext_resource type="Script" uid="uid://budm6br7wltvc" path="res://script/sound_sfx.gd" id="1_6r0ov"]
+[ext_resource type="AudioStream" uid="uid://c2bg6wty335eb" path="res://asset/audio/30-40.mp3" id="2_turum"]
+[ext_resource type="AudioStream" uid="uid://b4x051k8ecwdg" path="res://asset/audio/20-03.mp3" id="3_jxfi8"]
+[ext_resource type="AudioStream" uid="uid://cpw260fjn47pf" path="res://asset/audio/10-20.mp3" id="4_gnqoa"]
+[ext_resource type="AudioStream" uid="uid://dj2katxrqs36" path="res://asset/audio/Serverblight Sounds (Only voices) (mp3cut.net).mp3" id="5_0b0f3"]
+
+[node name="sound" type="Node" node_paths=PackedStringArray("chace_", "ward_")]
+script = ExtResource("1_6r0ov")
+chace_ = [NodePath("chace/chace_ing"), NodePath("chace/chace_ing_2"), NodePath("chace/chace_ing_3")]
+ward_ = [NodePath("ward/ward_ing")]
+
+[node name="chace" type="Node3D" parent="."]
+
+[node name="chace_ing" type="AudioStreamPlayer3D" parent="chace"]
+stream = ExtResource("2_turum")
+bus = &"SFX"
+parameters/looping = true
+
+[node name="chace_ing_2" type="AudioStreamPlayer3D" parent="chace"]
+stream = ExtResource("3_jxfi8")
+
+[node name="chace_ing_3" type="AudioStreamPlayer3D" parent="chace"]
+stream = ExtResource("4_gnqoa")
+
+[node name="ward" type="Node3D" parent="."]
+
+[node name="ward_ing" type="AudioStreamPlayer3D" parent="ward"]
+stream = ExtResource("5_0b0f3")
+bus = &"SFX"
